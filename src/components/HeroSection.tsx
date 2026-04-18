@@ -19,7 +19,7 @@ const HeroSection = () => {
           <div className="text-primary-foreground">
             <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-1.5 mb-6 text-sm backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-              Relanova · Human Touch to a Connected World
+              Relanova · Human Touch in a Connected World
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] mb-6">
