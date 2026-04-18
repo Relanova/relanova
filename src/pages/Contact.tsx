@@ -1,7 +1,9 @@
 import Layout from "@/components/Layout";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Clock, Send, MessageCircle } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send, MessageCircle, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "@/hooks/use-toast";
 
 const serviceOptions = [
   "B — Business Focus",
@@ -25,10 +27,65 @@ const Contact = () => {
     privacy: false,
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    if (submitting) return;
+    setSubmitting(true);
+    try {
+      const id = crypto.randomUUID();
+      const { error: insertError } = await supabase
+        .from("contact_submissions")
+        .insert({
+          id,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || null,
+          company: formData.company || null,
+          service: formData.service || null,
+          message: formData.message,
+        });
+      if (insertError) throw insertError;
+
+      // Confirmation to visitor
+      await supabase.functions.invoke("send-transactional-email", {
+        body: {
+          templateName: "contact-confirmation",
+          recipientEmail: formData.email,
+          idempotencyKey: `contact-confirm-${id}`,
+          templateData: { name: formData.name, message: formData.message },
+        },
+      });
+
+      // Notification to Monia
+      await supabase.functions.invoke("send-transactional-email", {
+        body: {
+          templateName: "contact-notification",
+          recipientEmail: "monia@relanova.be",
+          idempotencyKey: `contact-notify-${id}`,
+          templateData: {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            company: formData.company,
+            service: formData.service,
+            message: formData.message,
+          },
+        },
+      });
+
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Contact form error:", err);
+      toast({
+        title: "Verzenden mislukt",
+        description: "Er ging iets mis. Probeer opnieuw of mail direct naar monia@relanova.be.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -192,8 +249,8 @@ const Contact = () => {
                       Ik ga akkoord met het privacybeleid en geef toestemming voor verwerking van mijn gegevens conform GDPR. *
                     </label>
                   </div>
-                  <Button variant="navy" size="lg" type="submit" className="w-full gap-2">
-                    Bericht Versturen <Send className="w-4 h-4" />
+                  <Button variant="navy" size="lg" type="submit" className="w-full gap-2" disabled={submitting}>
+                    {submitting ? (<>Versturen... <Loader2 className="w-4 h-4 animate-spin" /></>) : (<>Bericht Versturen <Send className="w-4 h-4" /></>)}
                   </Button>
                 </form>
               )}
