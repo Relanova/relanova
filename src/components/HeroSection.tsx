@@ -19,7 +19,7 @@ const HeroSection = () => {
           <div className="text-primary-foreground">
             <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-1.5 mb-6 text-sm backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-              Ecosystem Architect — BRIDGE Method™
+              Relanova · Human Touch to a Connected World
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] mb-6">
@@ -28,7 +28,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8 max-w-xl font-sans">
-              Met mijn BRIDGE‑methode maak ik groei eenvoudiger en slimmer.
+              Met de BRIDGE‑methode van Relanova maak ik groei eenvoudiger en slimmer.
               Van heldere strategie tot sterke partnerships — ik help bedrijven
               hun ecosysteem bouwen voor duurzame groei.
             </p>
@@ -64,7 +64,7 @@ const HeroSection = () => {
               <div className="absolute -inset-4 bg-secondary/20 rounded-2xl rotate-3" />
               <img
                 src={heroPortrait}
-                alt="Monia Ben Tahar — Ecosystem Architect en oprichtster van MBT Consult & Connect"
+                alt="Monia Ben Tahar — Ecosystem Architect en oprichtster van Relanova"
                 className="relative rounded-2xl shadow-2xl w-full max-w-md object-cover aspect-[3/4]"
                 width={768}
                 height={960}

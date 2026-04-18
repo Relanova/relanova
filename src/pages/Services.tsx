@@ -78,7 +78,7 @@ const faqs = [
   { q: "Voor wie zijn de diensten geschikt?", a: "Onze diensten zijn geschikt voor KMO's, scale-ups en mid-market bedrijven in België en daarbuiten die hun strategie willen versterken en duurzaam willen groeien." },
   { q: "Hoe lang duurt een volledig BRIDGE-traject?", a: "Een volledig traject duurt gemiddeld 3-6 maanden, afhankelijk van de omvang van uw organisatie en de gekozen diensten." },
   { q: "Kan ik ook individuele lagen afnemen?", a: "Ja, u kunt elke BRIDGE-laag apart afnemen. We raden echter aan om minimaal de eerste vier lagen (B-R-I-D) samen te doen voor het beste resultaat." },
-  { q: "Werkt MBT Consult & Connect ook remote?", a: "Absoluut. We werken zowel on-site als remote, met flexibele inzet op basis van uw behoeften." },
+  { q: "Werkt Relanova ook remote?", a: "Absoluut. We werken zowel on-site als remote vanuit Sint-Baafs-Vijve, met flexibele inzet op basis van uw behoeften." },
   { q: "Wat kost een gratis kennismakingsgesprek?", a: "Het 15-minuten discovery call is volledig gratis en vrijblijvend. Boek eenvoudig via onze contactpagina." },
 ];
 

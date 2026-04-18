@@ -50,11 +50,11 @@ const Contact = () => {
             <div className="lg:col-span-2 space-y-6">
               <div className="bg-card rounded-xl p-6 border border-border space-y-5">
                 <h3 className="font-serif font-bold text-foreground text-lg">Direct Contact</h3>
-                <a href="mailto:monia@mbtconsult.be" className="flex items-center gap-3 text-muted-foreground hover:text-secondary transition-colors font-sans text-sm group">
+                <a href="mailto:monia@relanova.be" className="flex items-center gap-3 text-muted-foreground hover:text-secondary transition-colors font-sans text-sm group">
                   <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
                     <Mail className="w-4 h-4 text-secondary" />
                   </div>
-                  monia@mbtconsult.be
+                  monia@relanova.be
                 </a>
                 <a href="tel:+32488285886" className="flex items-center gap-3 text-muted-foreground hover:text-secondary transition-colors font-sans text-sm group">
                   <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
@@ -73,11 +73,11 @@ const Contact = () => {
                   </div>
                   WhatsApp Chat
                 </a>
-                <div className="flex items-center gap-3 text-muted-foreground font-sans text-sm">
-                  <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center">
+                <div className="flex items-start gap-3 text-muted-foreground font-sans text-sm">
+                  <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0">
                     <MapPin className="w-4 h-4 text-secondary" />
                   </div>
-                  België (Remote & On-site)
+                  <span>Vijvedreef 67<br />8710 Sint-Baafs-Vijve, België<br /><span className="text-xs text-muted-foreground/70">Reg: BE1004.202.297</span></span>
                 </div>
               </div>
 
