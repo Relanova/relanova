@@ -22,11 +22,11 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
           <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
-            <span className="font-serif text-primary-foreground font-bold text-lg">M</span>
+            <span className="font-serif text-primary-foreground font-bold text-lg">R</span>
           </div>
           <div className="flex flex-col leading-none">
-            <span className="font-serif font-bold text-foreground text-base tracking-tight">MBT Consult</span>
-            <span className="text-muted-foreground text-[10px] tracking-widest uppercase">& Connect</span>
+            <span className="font-serif font-bold text-foreground text-base tracking-tight">Relanova</span>
+            <span className="text-muted-foreground text-[10px] tracking-widest uppercase">Human Touch · Connected World</span>
           </div>
         </Link>
 

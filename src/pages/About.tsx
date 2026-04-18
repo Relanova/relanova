@@ -43,9 +43,9 @@ const About = () => {
                 ontstaat wanneer strategie, mensen en relaties op elkaar worden afgestemd.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
-                Als oprichter van MBT Consult & Connect ontwikkelde ik de BRIDGE Methodology™ —
-                een bewezen 6-laags framework dat bedrijven helpt hun marktpositie te versterken
-                en groei te versnellen door een scherp verhaal en een slim ecosysteem.
+                Als oprichter van Relanova — ondersteund door MBT Consult & Connect — ontwikkelde ik de
+                BRIDGE Methodology™: een bewezen 6-laags framework dat bedrijven helpt hun marktpositie
+                te versterken en groei te versnellen door een scherp verhaal en een slim ecosysteem.
               </p>
               <Link to="/contact">
                 <Button variant="navy" size="lg" className="gap-2">
