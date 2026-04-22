@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import AuthorBio from "@/components/AuthorBio";
 import { supabase } from "@/integrations/supabase/client";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -77,6 +78,10 @@ const News = () => {
               ))}
             </div>
           )}
+
+          <div className="mt-16 max-w-3xl mx-auto">
+            <AuthorBio />
+          </div>
         </div>
       </section>
     </Layout>

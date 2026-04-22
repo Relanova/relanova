@@ -6,6 +6,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Calendar, User, Loader2 } from "lucide-react";
+import AuthorBio from "@/components/AuthorBio";
 
 interface Post {
   id: string;
@@ -99,6 +100,8 @@ const NewsPost = () => {
               {post.tags.map((tag) => <Badge key={tag} variant="outline">#{tag}</Badge>)}
             </div>
           )}
+
+          <AuthorBio />
         </div>
       </article>
     </Layout>
