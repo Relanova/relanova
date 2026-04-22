@@ -56,6 +56,13 @@ const HeroSection = () => {
                   tot leven te brengen.
                 </p>
               </div>
+              <div>
+                <h3 className="font-serif font-semibold text-primary-foreground text-lg">Bridge-methode</h3>
+                <p>
+                  Om deze groei te stimuleren, werk ik met de Bridge-methode. De zes lagen hieronder zijn ons
+                  stappenplan om je strategie te laten landen in de dagelijkse werking.
+                </p>
+              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
