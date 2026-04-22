@@ -28,9 +28,9 @@ const HeroSection = () => {
             </h1>
 
             <div className="text-primary-foreground/80 leading-relaxed mb-8 max-w-xl font-sans space-y-4">
-              <p className="text-lg italic">Van strategie naar resultaat…</p>
+              <p className="text-2xl md:text-3xl font-serif font-bold text-primary-foreground not-italic">Van strategie naar resultaat…</p>
               <p>
-                Ik help organisaties groeien door de juiste koers te bepalen én deze succesvol uit te voeren.
+                Ik help organisaties groeien door de juiste koers te bepalen en deze succesvol uit te voeren.
                 Met een scherpe strategie, sterke partnerships en effectieve marketing zorg ik voor tastbare resultaten.
               </p>
               <p className="font-semibold text-primary-foreground">Wat ik voor je kan betekenen?</p>
