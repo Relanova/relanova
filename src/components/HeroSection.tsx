@@ -27,11 +27,36 @@ const HeroSection = () => {
               <span className="text-secondary">groei makkelijker wordt.</span>
             </h1>
 
-            <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8 max-w-xl font-sans">
-              Met de BRIDGE‑methode van Relanova maak ik groei eenvoudiger en slimmer.
-              Van heldere strategie tot sterke partnerships — ik help bedrijven
-              hun ecosysteem bouwen voor duurzame groei.
-            </p>
+            <div className="text-primary-foreground/80 leading-relaxed mb-8 max-w-xl font-sans space-y-4">
+              <p className="text-lg italic">Van strategie naar resultaat…</p>
+              <p>
+                Ik help organisaties groeien door de juiste koers te bepalen én deze succesvol uit te voeren.
+                Met een scherpe strategie, sterke partnerships en effectieve marketing zorg ik voor tastbare resultaten.
+              </p>
+              <p className="font-semibold text-primary-foreground">Wat ik voor je kan betekenen?</p>
+              <div>
+                <h3 className="font-serif font-semibold text-primary-foreground text-lg">Strategie & Positionering</h3>
+                <p>
+                  Waar sta je nu en waar wil je naartoe? Samen ontwikkelen we een heldere strategie en een
+                  onderscheidende positie in de markt. Zodat je doelgroep jou kiest, niet je concurrent.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-serif font-semibold text-primary-foreground text-lg">Partnerships, Sponsoring & Business Development</h3>
+                <p>
+                  Groei versnellen doe je niet alleen. Ik help je bij het vinden en realiseren van strategische
+                  partnerships, sponsorships en nieuwe business opportunities die echt bijdragen aan jouw doelen.
+                </p>
+              </div>
+              <div>
+                <h3 className="font-serif font-semibold text-primary-foreground text-lg">Marketing & Team Versterking</h3>
+                <p>
+                  Een goed plan is niets zonder uitvoering. Of je nu tijdelijke versterking nodig hebt, marketing
+                  expertise zoekt of je team wilt versterken: ik zorg voor de kennis en capaciteit om je plannen
+                  tot leven te brengen.
+                </p>
+              </div>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
               <Link to="/contact">

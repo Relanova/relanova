@@ -58,6 +58,11 @@ const BridgeServicesPreview = () => {
     <section className="section-padding bg-background">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-14">
+          <p className="text-muted-foreground leading-relaxed font-sans mb-6">
+            Met de BRIDGE‑methode van Relanova maak ik groei eenvoudiger en slimmer.
+            Van heldere strategie tot sterke partnerships — ik help bedrijven hun ecosysteem
+            bouwen voor duurzame groei.
+          </p>
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">De BRIDGE Method™</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">
             Zes lagen naar duurzame groei
