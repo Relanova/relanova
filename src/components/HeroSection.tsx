@@ -87,7 +87,7 @@ const HeroSection = () => {
 
             {/* Trust Signals */}
             <div className="flex flex-wrap gap-6 text-sm text-primary-foreground/70">
-              {["10+ jaar ervaring", "100+ bedrijven geholpen", "BRIDGE-methode"].map((item) => (
+              {["15+ jaar ervaring", "100+ bedrijven geholpen", "BRIDGE-methode"].map((item) => (
                 <span key={item} className="flex items-center gap-1.5">
                   <CheckCircle className="w-4 h-4 text-secondary" />
                   {item}
