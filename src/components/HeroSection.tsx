@@ -31,7 +31,7 @@ const HeroSection = () => {
               <p className="text-2xl md:text-3xl font-serif font-bold text-primary-foreground not-italic">Van strategie naar resultaat…</p>
               <p>
                 Ik help organisaties groeien door de juiste koers te bepalen en deze succesvol uit te voeren — als strategisch partner.
-                Met 25+ jaar ervaring bij o.a. Nationale Loterij, BASE, Telenet en Nestlé.
+                Met 15+ jaar ervaring bij o.a. Nationale Loterij, BASE, Telenet en Nestlé.
               </p>
               <p className="font-semibold text-primary-foreground">Wat ik voor je kan betekenen?</p>
               <div>
