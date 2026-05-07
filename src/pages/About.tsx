@@ -38,8 +38,8 @@ const About = () => {
               </h1>
               <p className="text-xl text-secondary font-serif italic mb-6">Ecosystem Architect</p>
               <p className="text-muted-foreground leading-relaxed mb-4 font-sans">
-                Met meer dan 15 jaar ervaring in strategie, business development en organisatieadvies,
-                help ik ambitieuze bedrijven hun ecosysteem bouwen. Ik geloof dat duurzame groei
+                Met meer dan 15 jaar ervaring in strategie en business development, met focus op marketing,
+                communicatie en partnerships, help ik ambitieuze bedrijven hun ecosysteem bouwen. Ik geloof dat duurzame groei
                 ontstaat wanneer strategie, mensen en relaties op elkaar worden afgestemd.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
