@@ -16,12 +16,12 @@ const values = [
 ];
 
 const bridgeLayers = [
-  { letter: "B", title: "Business Focus", detail: "Strategie & ambitie-ontwikkeling via CEO-interviews", layer: "Laag 1" },
-  { letter: "R", title: "Relevantie & Realiteit", detail: "Markt- en netwerkwaarde-analyse", layer: "Laag 1" },
-  { letter: "I", title: "Identiteit & Inzicht", detail: "Missie, visie en positioneringsbepaling", layer: "Laag 1" },
-  { letter: "D", title: "Design & Richting", detail: "Strategische keuzes en prioriteiten", layer: "Laag 1" },
-  { letter: "G", title: "Groei & Partnerships", detail: "Initiatieven, partnerships en activatie", layer: "Laag 2" },
-  { letter: "E", title: "Expansie & Evaluatie", detail: "Implementatie, schaling en ecosysteemrendement", layer: "Laag 3" },
+  { letter: "B", title: "Business Focus", detail: "Strategie & ambitie-ontwikkeling via CEO-interviews", layer: "Fase 1" },
+  { letter: "R", title: "Relevantie & Realiteit", detail: "Markt- en netwerkwaarde-analyse", layer: "Fase 1" },
+  { letter: "I", title: "Identiteit & Inzicht", detail: "Missie, visie en positioneringsbepaling", layer: "Fase 1" },
+  { letter: "D", title: "Design & Richting", detail: "Strategische keuzes en prioriteiten", layer: "Fase 1" },
+  { letter: "G", title: "Groei & Partnerships", detail: "Initiatieven, partnerships en activatie", layer: "Fase 2" },
+  { letter: "E", title: "Expansie & Evaluatie", detail: "Implementatie, schaling en ecosysteemrendement", layer: "Fase 2" },
 ];
 
 const About = () => {
@@ -74,7 +74,7 @@ const About = () => {
             <div className="bg-card rounded-xl p-8 border border-border">
               <h2 className="text-2xl font-serif font-bold text-foreground mb-4">Missie</h2>
               <p className="text-muted-foreground leading-relaxed font-sans">
-                Ik versterk bedrijven door hun strategie, verhaal en samenwerkingen te verbinden tot één slim
+                Ik versterk bedrijven door hun strategie, verhaal en samenwerkingen te verbinden tot een slim
                 ecosysteem dat duurzame groei mogelijk maakt. Mijn missie is organisaties duidelijkheid, richting
                 en daadkracht geven — zodat strategie niet in documenten blijft hangen, maar echt rendeert in de markt.
               </p>
@@ -158,9 +158,9 @@ const About = () => {
           {/* Three Layers Overview */}
           <div className="mt-12 grid md:grid-cols-3 gap-5">
             {[
-              { layer: "Laag 1", title: "Strategie & Positionering", letters: "B–R–I–D", desc: "Het fundament: wie ben je, waar sta je, en waar ga je heen?" },
-              { layer: "Laag 2", title: "Partnerships & Ecosystemen", letters: "G", desc: "Het netwerk: welke samenwerkingen versnellen jouw groei?" },
-              { layer: "Laag 3", title: "Groei & Activatie", letters: "G–E", desc: "De actie: implementeren, schalen en rendement meten." },
+              { layer: "Fase 1", title: "Strategie & Positionering", letters: "B–R–I–D", desc: "Het fundament: wie ben je, waar sta je, en waar ga je heen?" },
+              { layer: "Fase 2", title: "Partnerships & Ecosystemen", letters: "G", desc: "Het netwerk: welke samenwerkingen versnellen jouw groei?" },
+              { layer: "Fase 2", title: "Groei & Activatie", letters: "G–E", desc: "De actie: implementeren, schalen en rendement meten." },
             ].map((item, i) => (
               <div key={i} className="bg-primary rounded-xl p-6 text-center">
                 <span className="text-xs text-secondary font-semibold uppercase tracking-widest font-sans">{item.layer}</span>

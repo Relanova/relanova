@@ -16,7 +16,7 @@ const CTASection = () => {
               Klaar om je ecosysteem tot leven te brengen?
             </h2>
             <p className="text-primary-foreground/80 text-lg mb-8 font-sans">
-              Boek een gratis 15-min strategie-scan en ontdek in één gesprek of de BRIDGE-methode
+              Boek een gratis 15-min strategie-scan en ontdek in een gesprek of de BRIDGE-methode
               werkt voor jou. Geen verkooppraatje. Wel helder inzicht.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
