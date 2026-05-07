@@ -59,7 +59,7 @@ const Cases = () => {
             Resultaten die spreken
           </h1>
           <p className="text-muted-foreground text-lg font-sans">
-            Ontdek hoe de BRIDGE Methodology™ bedrijven helpt hun groei te versnellen
+            Ontdek hoe de BRIDGE-methodeology™ bedrijven helpt hun groei te versnellen
             met meetbare resultaten.
           </p>
         </div>

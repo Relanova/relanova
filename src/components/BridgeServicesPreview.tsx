@@ -58,7 +58,7 @@ const BridgeServicesPreview = () => {
     <section className="section-padding bg-background">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">De BRIDGE Method™</span>
+          <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">De BRIDGE-methode</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">
             De BRIDGE-methode: Van strategie naar uitvoering
           </h2>

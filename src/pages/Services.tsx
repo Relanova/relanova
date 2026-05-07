@@ -74,7 +74,7 @@ const services = [
 ];
 
 const faqs = [
-  { q: "Wat is de BRIDGE Methodology™?", a: "BRIDGE is een bewezen 6-laags strategisch framework dat Business Focus, Relevantie, Identiteit, Design, Groei en Expansie verbindt tot één geïntegreerd ecosysteem voor duurzame bedrijfsgroei." },
+  { q: "Wat is de BRIDGE-methodeology™?", a: "BRIDGE is een bewezen 6-laags strategisch framework dat Business Focus, Relevantie, Identiteit, Design, Groei en Expansie verbindt tot één geïntegreerd ecosysteem voor duurzame bedrijfsgroei." },
   { q: "Voor wie zijn de diensten geschikt?", a: "Onze diensten zijn geschikt voor KMO's, scale-ups en mid-market bedrijven in België en daarbuiten die hun strategie willen versterken en duurzaam willen groeien." },
   { q: "Hoe lang duurt een volledig BRIDGE-traject?", a: "Een volledig traject duurt gemiddeld 3-6 maanden, afhankelijk van de omvang van uw organisatie en de gekozen diensten." },
   { q: "Kan ik ook individuele lagen afnemen?", a: "Ja, u kunt elke BRIDGE-laag apart afnemen. We raden echter aan om minimaal de eerste vier lagen (B-R-I-D) samen te doen voor het beste resultaat." },
@@ -97,7 +97,7 @@ const Services = () => {
         <div className="container mx-auto text-center max-w-3xl">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Diensten</span>
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-3 mb-4">
-            Strategische diensten via de BRIDGE Method™
+            Strategische diensten via de BRIDGE-methode
           </h1>
           <p className="text-muted-foreground text-lg font-sans leading-relaxed">
             Van strategie tot partnerships — elke BRIDGE-laag biedt een concrete dienst
