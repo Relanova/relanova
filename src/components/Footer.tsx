@@ -21,7 +21,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-3">
-              Human Touch to a Connected World. Strategische groei via de BRIDGE-methodeology™ — ondersteund door MBT Consult & Connect.
+              Human Touch to a Connected World. Strategische groei via de BRIDGE-methode.
             </p>
             <p className="text-primary-foreground/60 text-xs italic leading-relaxed mb-4">
               Relanova staat voor een vernieuwde aanpak: echte waarde ontstaat door relaties, verbinding en vertrouwen.
@@ -106,7 +106,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-primary-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-primary-foreground/50 text-xs text-center sm:text-left">
-            © 2026 Relanova — ondersteund door MBT Consult & Connect · Reg: BE1004.202.297 · BRIDGE-methode is a registered trademark.
+            © 2026 Relanova · Reg: BE1004.202.297 · BRIDGE-methode is a registered trademark.
           </p>
           <div className="flex items-center gap-4 text-xs text-primary-foreground/50">
             <Link to="/privacy" className="hover:text-secondary transition-colors">Privacy Policy</Link>
