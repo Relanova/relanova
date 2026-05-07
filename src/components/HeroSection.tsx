@@ -30,8 +30,8 @@ const HeroSection = () => {
             <div className="text-primary-foreground/80 leading-relaxed mb-8 max-w-xl font-sans space-y-4">
               <p className="text-2xl md:text-3xl font-serif font-bold text-primary-foreground not-italic">Van strategie naar resultaat…</p>
               <p>
-                Ik help organisaties groeien door de juiste koers te bepalen en deze succesvol uit te voeren.
-                Met een scherpe strategie, sterke partnerships en effectieve marketing zorg ik voor tastbare resultaten.
+                Ik help organisaties groeien door de juiste koers te bepalen en deze succesvol uit te voeren — als strategisch partner.
+                Met 25+ jaar ervaring bij o.a. Nationale Loterij, BASE, Telenet en Nestlé.
               </p>
               <p className="font-semibold text-primary-foreground">Wat ik voor je kan betekenen?</p>
               <div>
@@ -40,12 +40,18 @@ const HeroSection = () => {
                   Waar sta je nu en waar wil je naartoe? Samen ontwikkelen we een heldere strategie en een
                   onderscheidende positie in de markt. Zodat je doelgroep jou kiest, niet je concurrent.
                 </p>
+                <p className="italic text-primary-foreground/60 text-sm mt-1">
+                  → Resultaat: Een strategie die leeft in je team en keuzes die echt bijdragen aan groei.
+                </p>
               </div>
               <div>
                 <h3 className="font-serif font-semibold text-primary-foreground text-lg">Partnerships, Sponsoring & Business Development</h3>
                 <p>
                   Groei versnellen doe je niet alleen. Ik help je bij het vinden en realiseren van strategische
                   partnerships, sponsorships en nieuwe business opportunities die echt bijdragen aan jouw doelen.
+                </p>
+                <p className="italic text-primary-foreground/60 text-sm mt-1">
+                  → Resultaat: Samenwerkingen die bijdragen aan omzet, merkwaarde of impact — niet alleen 'leuke deals'. Ik werk met een select netwerk van specialisten om de beste oplossing te leveren — geen eiland, wel het juiste team rond jouw vraag.
                 </p>
               </div>
               <div>
@@ -55,14 +61,14 @@ const HeroSection = () => {
                   expertise zoekt of je team wilt versterken: ik zorg voor de kennis en capaciteit om je plannen
                   tot leven te brengen.
                 </p>
-              </div>
-              <div>
-                <h3 className="font-serif font-semibold text-primary-foreground text-lg">Bridge-methode</h3>
-                <p>
-                  Om deze groei te stimuleren, werk ik met de Bridge-methode. De zes lagen hieronder zijn ons
-                  stappenplan om je strategie te laten landen in de dagelijkse werking.
+                <p className="italic text-primary-foreground/60 text-sm mt-1">
+                  → Resultaat: Plannen die worden uitgevoerd, met de juiste capaciteit op het juiste moment.
                 </p>
               </div>
+              <p className="italic text-primary-foreground/70 text-sm border-l-2 border-secondary/60 pl-4">
+                Ook inzetbaar als interim strategisch leiderschap: tijdelijke senior expertise voor marketing,
+                communicatie en partnerships, zonder de kosten van een fulltime directie.
+              </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-10">

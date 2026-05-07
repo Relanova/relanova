@@ -20,8 +20,11 @@ const Footer = () => {
                 <span className="text-primary-foreground/60 text-[10px] tracking-widest uppercase">Human Touch in a Connected World</span>
               </div>
             </div>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed mb-4">
+            <p className="text-primary-foreground/70 text-sm leading-relaxed mb-3">
               Human Touch to a Connected World. Strategische groei via de BRIDGE Methodology™ — ondersteund door MBT Consult & Connect.
+            </p>
+            <p className="text-primary-foreground/60 text-xs italic leading-relaxed mb-4">
+              Relanova staat voor een vernieuwde aanpak: echte waarde ontstaat door relaties, verbinding en vertrouwen.
             </p>
             <div className="flex gap-3">
               <a href="https://www.linkedin.com/in/moniabentahar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-secondary flex items-center justify-center transition-colors">
