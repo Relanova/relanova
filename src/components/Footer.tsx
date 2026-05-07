@@ -21,7 +21,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-3">
-              Human Touch to a Connected World. Strategische groei via de BRIDGE-methode.
+              Strategische groei via de BRIDGE-methode.
             </p>
             <p className="text-primary-foreground/60 text-xs italic leading-relaxed mb-4">
               Relanova staat voor een vernieuwde aanpak: echte waarde ontstaat door relaties, verbinding en vertrouwen.
