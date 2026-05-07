@@ -44,7 +44,7 @@ const About = () => {
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
                 Als oprichter van Relanova — ondersteund door MBT Consult & Connect — ontwikkelde ik de
-                BRIDGE Methodology™: een bewezen 6-laags framework dat bedrijven helpt hun marktpositie
+                BRIDGE-methodeology™: een bewezen 6-laags framework dat bedrijven helpt hun marktpositie
                 te versterken en groei te versnellen door een scherp verhaal en een slim ecosysteem.
               </p>
               <Link to="/contact">
@@ -114,13 +114,13 @@ const About = () => {
         </div>
       </section>
 
-      {/* BRIDGE Methodology Interactive */}
+      {/* BRIDGE-methodeology Interactive */}
       <section className="section-padding bg-background">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
             <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Het Framework</span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">
-              De BRIDGE Methodology™
+              De BRIDGE-methodeology™
             </h2>
             <p className="text-muted-foreground font-sans max-w-xl mx-auto">
               Zes bewezen lagen die strategie, positionering en partnerships verbinden

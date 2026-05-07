@@ -31,7 +31,7 @@ const AuthorBio = () => {
         <p className="text-sm text-muted-foreground font-sans mb-3">
           Ecosystem Architect & oprichter van Relanova · 10+ jaar ervaring in
           strategische bedrijfsontwikkeling, positionering en partnerships ·
-          Bedenker van de BRIDGE Method™
+          Bedenker van de BRIDGE-methode
         </p>
         <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground font-sans">
           <a
