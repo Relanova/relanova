@@ -57,15 +57,42 @@ const BridgeServicesPreview = () => {
   return (
     <section className="section-padding bg-background">
       <div className="container mx-auto">
-        <div className="text-center max-w-2xl mx-auto mb-14">
+        <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">De BRIDGE Method™</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">
-            Zes lagen naar duurzame groei
+            De BRIDGE-methode: Van strategie naar uitvoering
           </h2>
           <p className="text-muted-foreground leading-relaxed font-sans">
-            Elk bedrijf is uniek. Mijn BRIDGE-methode biedt een bewezen 6-laags framework
-            dat strategie, positionering en partnerships verbindt tot één krachtig ecosysteem.
+            Om groei te stimuleren werk ik met de BRIDGE-methode — een gefaseerde aanpak die
+            strategie verbindt met uitvoering:
           </p>
+          <p className="text-muted-foreground leading-relaxed font-sans mt-2">
+            Elke laag apart inzetbaar, of als complete reis. Start waar jij bent.
+          </p>
+        </div>
+
+        {/* Two phase cards */}
+        <div className="grid md:grid-cols-2 gap-6 mb-12 max-w-5xl mx-auto">
+          <div className="bg-card rounded-xl p-6 border-l-4 border-navy border-y border-r border-border shadow-sm">
+            <span className="text-xs font-semibold text-secondary uppercase tracking-widest font-sans">Fase 1 · BRID</span>
+            <h3 className="font-serif font-bold text-xl text-foreground mt-2 mb-2">Strategie & Fundament</h3>
+            <p className="text-sm text-muted-foreground font-sans mb-3">
+              Business Focus → Relevance → Identity → Direction
+            </p>
+            <p className="text-sm italic text-muted-foreground font-sans">
+              → Resultaat: Heldere koers, scherpe keuzes, teamaligned.
+            </p>
+          </div>
+          <div className="bg-card rounded-xl p-6 border-l-4 border-gold border-y border-r border-border shadow-sm">
+            <span className="text-xs font-semibold text-secondary uppercase tracking-widest font-sans">Fase 2 · GE</span>
+            <h3 className="font-serif font-bold text-xl text-foreground mt-2 mb-2">Actie, Groei & Meten</h3>
+            <p className="text-sm text-muted-foreground font-sans mb-3">
+              Growth → Expansion & Evaluation
+            </p>
+            <p className="text-sm italic text-muted-foreground font-sans">
+              → Resultaat: Partnerships die renderen, initiatieven die schalen, continue bijsturing op cijfers & impact.
+            </p>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
