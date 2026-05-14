@@ -106,6 +106,9 @@ const HeroSection = () => {
                 className="relative rounded-2xl shadow-2xl w-full max-w-md object-cover aspect-[3/4]"
                 width={768}
                 height={960}
+                fetchPriority="high"
+                loading="eager"
+                decoding="async"
               />
               {/* Floating Card */}
               <div className="absolute -bottom-4 -left-4 bg-card rounded-xl shadow-lg p-4 animate-float">
