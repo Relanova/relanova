@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Eye, Heart, Link2, Zap, TreeDeciduous, Layout as LayoutIcon, Target } from "lucide-react";
@@ -27,6 +28,11 @@ const bridgeLayers = [
 const About = () => {
   return (
     <Layout>
+      <SEO
+        title="Over Monia Ben Tahar — Ecosystem Architect | Relanova"
+        description="Maak kennis met Monia Ben Tahar, oprichter van Relanova en bedenker van de BRIDGE-methode voor strategische groei via ecosystemen."
+        path="/about"
+      />
       {/* Hero */}
       <section className="section-padding bg-muted/30">
         <div className="container mx-auto">

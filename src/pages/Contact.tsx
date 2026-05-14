@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Mail, Phone, MapPin, Clock, Send, MessageCircle, Loader2 } from "lucide-react";
@@ -90,6 +91,11 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Contact — Plan een gratis gesprek | Relanova"
+        description="Boek een gratis 15-minuten strategiegesprek met Monia Ben Tahar of stuur direct een bericht via het contactformulier."
+        path="/contact"
+      />
       <section className="section-padding bg-muted/30">
         <div className="container mx-auto">
           <div className="text-center max-w-2xl mx-auto mb-14">

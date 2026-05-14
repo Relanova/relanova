@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import AuthorBio from "@/components/AuthorBio";
 import { supabase } from "@/integrations/supabase/client";
 import { Card } from "@/components/ui/card";
@@ -35,6 +36,11 @@ const News = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Nieuws & Inzichten | Relanova"
+        description="Praktische artikels over strategie, partnerships en duurzame groei door Monia Ben Tahar."
+        path="/nieuws"
+      />
       <section className="bg-primary text-primary-foreground py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="font-serif text-4xl md:text-5xl mb-4">Nieuws & Inzichten</h1>

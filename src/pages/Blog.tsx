@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import AuthorBio from "@/components/AuthorBio";
 import { supabase } from "@/integrations/supabase/client";
 import { Card } from "@/components/ui/card";
@@ -23,7 +24,6 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    document.title = "Blog & Inzichten | Relanova — Human Touch in a Connected World";
     (async () => {
       const { data } = await supabase
         .from("blog_posts")
@@ -37,6 +37,11 @@ const Blog = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Blog & Inzichten | Relanova"
+        description="Artikelen, analyses en tips over strategie, partnerships en ecosysteem-gedreven groei."
+        path="/blog"
+      />
       <section className="section-padding bg-muted/30">
         <div className="container mx-auto text-center max-w-3xl">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Blog & Inzichten</span>

@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Target, BarChart3, Lightbulb, Map, Handshake, TrendingUp, Check } from "lucide-react";
@@ -92,6 +93,20 @@ const packages = [
 const Services = () => {
   return (
     <Layout>
+      <SEO
+        title="Diensten & Pakketten — BRIDGE-methode | Relanova"
+        description="Strategie, positionering, partnerships en groei. Ontdek de BRIDGE-diensten en pakketten van Relanova voor KMO's en scale-ups."
+        path="/services"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((f) => ({
+            "@type": "Question",
+            name: f.q,
+            acceptedAnswer: { "@type": "Answer", text: f.a },
+          })),
+        }}
+      />
       {/* Hero */}
       <section className="section-padding bg-muted/30">
         <div className="container mx-auto text-center max-w-3xl">
