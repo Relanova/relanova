@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, TrendingUp, Users, Target } from "lucide-react";
@@ -52,6 +53,23 @@ const cases = [
 const Cases = () => {
   return (
     <Layout>
+      <SEO
+        title="Cases & Resultaten | Relanova"
+        description="Bekijk hoe de BRIDGE-methode bedrijven hielp groeien via strategie, positionering en partnerships — met meetbare resultaten."
+        path="/cases"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          name: "Cases & Resultaten",
+          url: "https://www.relanova.be/cases",
+          hasPart: cases.map((c) => ({
+            "@type": "CreativeWork",
+            name: c.title,
+            about: c.industry,
+            description: c.challenge,
+          })),
+        }}
+      />
       <section className="section-padding bg-muted/30">
         <div className="container mx-auto text-center max-w-3xl">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Case Studies</span>

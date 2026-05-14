@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { supabase } from "@/integrations/supabase/client";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -41,13 +42,6 @@ const NewsPost = () => {
     })();
   }, [slug]);
 
-  useEffect(() => {
-    if (!post) return;
-    document.title = post.seo_title || `${post.title} | Relanova`;
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta && post.seo_description) meta.setAttribute("content", post.seo_description);
-  }, [post]);
-
   if (loading) {
     return <Layout><div className="min-h-[50vh] flex items-center justify-center"><Loader2 className="h-6 w-6 animate-spin text-primary" /></div></Layout>;
   }
@@ -65,6 +59,23 @@ const NewsPost = () => {
 
   return (
     <Layout>
+      <SEO
+        title={post.seo_title || `${post.title} | Relanova`}
+        description={post.seo_description || post.excerpt || post.title}
+        path={`/nieuws/${post.slug}`}
+        ogType="article"
+        image={post.cover_image_url || undefined}
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.title,
+          description: post.excerpt || undefined,
+          image: post.cover_image_url || undefined,
+          author: { "@type": "Person", name: post.author },
+          datePublished: post.published_at || undefined,
+          mainEntityOfPage: `https://www.relanova.be/nieuws/${post.slug}`,
+        }}
+      />
       <article className="py-12">
         <div className="container mx-auto px-4 max-w-3xl">
           <Button asChild variant="ghost" size="sm" className="mb-6">
