@@ -1,0 +1,15 @@
+# Relanova
+
+> Relanova — Human Touch in a Connected World. Strategisch advies, partnerships en ecosysteem-opbouw door Monia Ben Tahar via de BRIDGE-methode.
+
+Relanova helpt ambitieuze bedrijven hun strategie, positionering en partnerships op elkaar afstemmen. De BRIDGE-methode is een 6-laags framework (Business Focus, Relevantie & Realiteit, Identiteit & Inzicht, Design & Richting, Groei & Partnerships, Expansie & Evaluatie) voor duurzame groei via ecosystemen.
+
+## Pages
+
+- [Home](/): Overzicht van Relanova, BRIDGE-methode en aanpak.
+- [Over mij](/about): Achtergrond van Monia Ben Tahar, Ecosystem Architect.
+- [Diensten](/services): Strategische diensten, pakketten en FAQ rond de BRIDGE-methode.
+- [Cases](/cases): Praktijkvoorbeelden en resultaten van klanten.
+- [Nieuws](/nieuws): Artikels en inzichten over strategie, partnerships en groei.
+- [Blog](/blog): Diepgaande blogposts over ecosysteem-gedreven groei.
+- [Contact](/contact): Boek een gratis 15-minuten strategiegesprek.
