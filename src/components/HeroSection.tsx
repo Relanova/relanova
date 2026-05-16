@@ -45,18 +45,6 @@ const HeroSection = () => {
                 loading="eager"
                 decoding="async"
               />
-              {/* Floating Card */}
-              <div className="absolute -bottom-4 -left-4 bg-card rounded-xl shadow-lg p-4 animate-float">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center">
-                    <span className="text-lg">🌉</span>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-sm text-foreground">BRIDGE-methode</p>
-                    <p className="text-xs text-muted-foreground">6-Layer Strategic Framework</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
