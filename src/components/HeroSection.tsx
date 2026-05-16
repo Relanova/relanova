@@ -26,6 +26,9 @@ const HeroSection = () => {
               Ik verbind strategie, positionering en partnerships zodat{" "}
               <span className="text-secondary">groei makkelijker wordt.</span>
             </h1>
+            <p className="text-lg md:text-xl text-primary-foreground/90 font-sans mb-6 max-w-xl">
+              Voor KMO's en leiders die strategie willen omzetten in resultaat — zonder ruis, zonder quick fixes.
+            </p>
 
             <div className="text-primary-foreground/80 leading-relaxed mb-8 max-w-xl font-sans space-y-4">
               <p className="text-2xl md:text-3xl font-serif font-bold text-primary-foreground not-italic">Van strategie naar resultaat…</p>
@@ -68,6 +71,9 @@ const HeroSection = () => {
               <p className="italic text-primary-foreground/70 text-sm border-l-2 border-secondary/60 pl-4">
                 Ook inzetbaar als interim strategisch leiderschap: tijdelijke senior expertise voor marketing,
                 communicatie en partnerships, zonder de kosten van een fulltime directie.
+              </p>
+              <p className="text-primary-foreground font-sans pt-2">
+                Beschikbaar strategisch en/of uitvoerend. Elke dienst is apart inzetbaar, naargelang jouw behoefte.
               </p>
             </div>
 
