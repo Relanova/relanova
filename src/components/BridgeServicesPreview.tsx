@@ -118,10 +118,6 @@ const BridgeServicesPreview = () => {
           ))}
         </div>
 
-        <p className="text-center text-foreground font-sans max-w-3xl mx-auto mb-10">
-          ❌ Strategie blijft hangen in presentaties → ✅ Met BRIDGE: uitvoering die gemeten en bijgestuurd wordt.
-        </p>
-
         <div className="text-center">
           <Link to="/services">
             <Button variant="navy" size="lg" className="gap-2">
