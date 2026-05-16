@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import HeroSection from "@/components/HeroSection";
+import HeroSection, { HeroServicesBlock, HeroCTABlock } from "@/components/HeroSection";
 import BridgeServicesPreview from "@/components/BridgeServicesPreview";
 import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -16,10 +16,12 @@ const Index = () => {
         path="/"
       />
       <HeroSection />
-      <StatsSection />
       <HerkenJeDit />
       <WieHelpIk />
       <ValueProp />
+      <HeroServicesBlock />
+      <HeroCTABlock />
+      <StatsSection />
       <SeniorExpertise />
       <BridgeServicesPreview />
       <TestimonialsSection />
