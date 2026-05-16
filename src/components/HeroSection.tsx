@@ -135,7 +135,7 @@ export const HeroCTABlock = () => {
       </div>
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="max-w-3xl mx-auto text-primary-foreground">
-          <div className="flex flex-col sm:flex-row gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row gap-4 mb-3">
             <Link to="/contact">
               <Button variant="hero" size="xl" className="gap-2">
                 Gratis Gesprek Inplannen
@@ -148,6 +148,9 @@ export const HeroCTABlock = () => {
               </Button>
             </Link>
           </div>
+          <p className="text-sm text-primary-foreground/80 font-sans mb-10 max-w-xl">
+            Je krijgt direct 1-2 heldere inzichten over jouw groeivraag — ook als we niet samenwerken.
+          </p>
 
           {/* Trust Signals */}
           <div className="flex flex-wrap gap-6 text-sm text-primary-foreground/70">

@@ -29,9 +29,11 @@ export const HerkenJeDit = () => {
 
 export const WieHelpIk = () => {
   const items = [
-    "KMO's die vastzitten in 'doen' zonder strategie",
-    "Scale-ups die partnerships willen schalen",
-    "Bedrijven die interim marketing-leiderschap nodig hebben",
+    "Kleine bedrijven, KMO's en corporates die strategie willen verbinden met concrete uitvoering",
+    "Teams die senior expertise zoeken — van strategische koers tot dagelijkse implementatie",
+    "Organisaties die positionering en partnerships willen laten renderen",
+    "Leiders die samenwerkingen willen opbouwen die echt bijdragen, ondersteund door een actief netwerk",
+    "Bedrijven die interim marketing-leiderschap nodig hebben — direct inzetbaar, met menselijke maat",
   ];
   return (
     <section className="section-padding bg-background">
@@ -51,6 +53,9 @@ export const WieHelpIk = () => {
             </li>
           ))}
         </ul>
+        <p className="text-foreground font-sans mt-8 italic">
+          Elke organisatie welkom die klaar is voor groei zonder ruis: van visie tot uitvoering.
+        </p>
       </div>
     </section>
   );
