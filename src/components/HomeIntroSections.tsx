@@ -54,7 +54,7 @@ export const WieHelpIk = () => {
           ))}
         </ul>
         <p className="text-foreground font-sans mt-8 italic">
-          Elke organisatie welkom die klaar is voor groei zonder ruis: van visie tot uitvoering.
+          Elke organisatie is welkom die klaar is voor groei zonder ruis — van visie tot uitvoering.
         </p>
       </div>
     </section>
