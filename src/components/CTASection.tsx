@@ -31,6 +31,9 @@ const CTASection = () => {
                 </Button>
               </a>
             </div>
+            <p className="text-primary-foreground/80 text-sm mt-6 font-sans italic">
+              Je krijgt direct 1-2 heldere inzichten over jouw groeivraag — ook als we niet samenwerken.
+            </p>
           </div>
         </div>
       </div>
