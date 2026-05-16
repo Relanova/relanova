@@ -22,7 +22,7 @@ const CTASection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
                 <Button variant="hero" size="xl" className="gap-2">
-                  Plan je strategie-scan <ArrowRight className="w-5 h-5" />
+                  Boek je gratis strategie-scan <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
               <a href="https://wa.me/32488285886" target="_blank" rel="noopener noreferrer">
