@@ -16,6 +16,13 @@ const Index = () => {
         path="/"
       />
       <HeroSection />
+      <section className="py-8 md:py-10 bg-background border-b border-border">
+        <div className="container mx-auto max-w-3xl text-center">
+          <p className="text-base md:text-lg font-serif text-foreground italic">
+            🌉 De BRIDGE-methode: geen framework, maar een manier om mensen, visie en uitvoering samen te brengen.
+          </p>
+        </div>
+      </section>
       <HerkenJeDit />
       <WieHelpIk />
       <ValueProp />
