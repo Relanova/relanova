@@ -33,8 +33,8 @@ export const WieHelpIk = () => {
     "Teams die senior expertise zoeken - van strategische koers tot dagelijkse implementatie",
     "Organisaties die positionering en partnerships willen laten renderen",
     "Leiders die samenwerkingen willen opbouwen die echt bijdragen, ondersteund door een actief netwerk",
-    "Bedrijven die interim marketing-leiderschap nodig hebben - direct inzetbaar, met menselijke maat",
-    "Ook voor zelfstandigen die een strategische partner zoeken - zonder fulltime hire.",
+    "Bedrijven die interim marketing-leiderschap nodig hebben - direct inzetbaar op menselijke maat",
+    "Zelfstandigen die een strategische partner zoek - zonder fulltime aanwerving",
   ];
   return (
     <section className="section-padding bg-background">
