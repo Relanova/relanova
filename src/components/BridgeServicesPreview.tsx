@@ -7,7 +7,7 @@ const bridgeServices = [
     letter: "B",
     title: "Business Focus",
     subtitle: "Strategie & Ambitie",
-    description: "CEO-interviews, visie en groeistrategie — het fundament voor alles.",
+    description: "CEO-interviews, visie en groeistrategie - het fundament voor alles.",
     icon: Target,
     color: "bg-navy/10 text-navy",
   },
@@ -23,7 +23,7 @@ const bridgeServices = [
     letter: "I",
     title: "Identiteit & Inzicht",
     subtitle: "Positionering",
-    description: "Missie, visie en waarden — een unieke marktpositie die resonance creëert.",
+    description: "Missie, visie en waarden - een unieke marktpositie die resonance creëert.",
     icon: Lightbulb,
     color: "bg-gold/10 text-gold",
   },
@@ -63,7 +63,7 @@ const BridgeServicesPreview = () => {
             De BRIDGE-methode: Van strategie naar uitvoering
           </h2>
           <p className="text-muted-foreground leading-relaxed font-sans">
-            Om groei te stimuleren werk ik met de BRIDGE-methode — een gefaseerde aanpak die
+            Om groei te stimuleren werk ik met de BRIDGE-methode - een gefaseerde aanpak die
             strategie verbindt met uitvoering:
           </p>
           <p className="text-muted-foreground leading-relaxed font-sans mt-2">
@@ -108,7 +108,7 @@ const BridgeServicesPreview = () => {
                 <div>
                   <div className="flex items-baseline gap-2 mb-1">
                     <span className="text-2xl font-serif font-bold text-secondary">{service.letter}</span>
-                    <span className="text-xs text-muted-foreground font-sans uppercase tracking-wider">— {service.subtitle}</span>
+                    <span className="text-xs text-muted-foreground font-sans uppercase tracking-wider">- {service.subtitle}</span>
                   </div>
                   <h3 className="font-serif font-semibold text-lg text-foreground mb-2">{service.title}</h3>
                   <p className="text-sm text-muted-foreground leading-relaxed font-sans">{service.description}</p>

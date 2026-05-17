@@ -7,12 +7,12 @@ import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 
 const serviceOptions = [
-  "B — Business Focus",
-  "R — Relevantie & Realiteit",
-  "I — Identiteit & Inzicht",
-  "D — Design & Richting",
-  "G — Groei & Partnerships",
-  "E — Expansie & Evaluatie",
+  "B - Business Focus",
+  "R - Relevantie & Realiteit",
+  "I - Identiteit & Inzicht",
+  "D - Design & Richting",
+  "G - Groei & Partnerships",
+  "E - Expansie & Evaluatie",
   "Volledig BRIDGE-traject",
   "Ik weet het nog niet",
 ];
@@ -92,7 +92,7 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Contact — Plan een gratis gesprek | Relanova"
+        title="Contact - Plan een gratis gesprek | Relanova"
         description="Boek een gratis 15-minuten strategiegesprek met Monia Ben Tahar of stuur direct een bericht via het contactformulier."
         path="/contact"
       />

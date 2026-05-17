@@ -30,10 +30,10 @@ export const HerkenJeDit = () => {
 export const WieHelpIk = () => {
   const items = [
     "Kleine bedrijven, KMO's en corporates die strategie willen verbinden met concrete uitvoering",
-    "Teams die senior expertise zoeken — van strategische koers tot dagelijkse implementatie",
+    "Teams die senior expertise zoeken - van strategische koers tot dagelijkse implementatie",
     "Organisaties die positionering en partnerships willen laten renderen",
     "Leiders die samenwerkingen willen opbouwen die echt bijdragen, ondersteund door een actief netwerk",
-    "Bedrijven die interim marketing-leiderschap nodig hebben — direct inzetbaar, met menselijke maat",
+    "Bedrijven die interim marketing-leiderschap nodig hebben - direct inzetbaar, met menselijke maat",
   ];
   return (
     <section className="section-padding bg-background">
@@ -54,7 +54,7 @@ export const WieHelpIk = () => {
           ))}
         </ul>
         <p className="text-foreground font-sans mt-8 italic">
-          Elke organisatie is welkom die klaar is voor groei zonder ruis — van visie tot uitvoering.
+          Elke organisatie is welkom die klaar is voor groei zonder ruis - van visie tot uitvoering.
         </p>
         <p className="text-foreground font-sans mt-4 italic">
           Bij Relanova begint elke strategie bij de mens. Omdat AI kan analyseren, maar alleen mensen kunnen verbinden.
@@ -87,7 +87,7 @@ export const SeniorExpertise = () => (
         <p className="text-muted-foreground leading-relaxed font-sans">
           Senior ondersteuning in marketing, communicatie, sponsoring, sales of events hoeft geen
           fulltime aanwerving te zijn. Voor KMO's, startups en scale-ups die strategische en/of
-          uitvoerende begeleiding nodig hebben — maar (nog) niet toe zijn aan een vaste hire —
+          uitvoerende begeleiding nodig hebben - maar (nog) niet toe zijn aan een vaste hire -
           biedt Relanova de oplossing. Je krijgt een ervaren partner die regie neemt, jouw doelen
           centraal stelt en naadloos aansluit bij je team.
         </p>
