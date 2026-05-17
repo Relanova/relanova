@@ -46,7 +46,7 @@ const HeroSection = () => {
                 decoding="async"
               />
               <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white border border-border shadow-lg rounded-full px-4 py-1.5 text-xs md:text-sm text-primary font-sans whitespace-nowrap">
-                🌉 BRIDGE - 6 layers
+                🌉 BRIDGE-methode / 6-Layer Strategic Framework
               </div>
             </div>
           </div>
