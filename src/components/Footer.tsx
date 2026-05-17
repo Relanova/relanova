@@ -64,12 +64,12 @@ const Footer = () => {
           <div>
             <h4 className="font-serif font-semibold mb-4 text-base">BRIDGE Diensten</h4>
             <ul className="space-y-2.5 text-sm text-primary-foreground/70">
-              <li>B — Business Focus</li>
-              <li>R — Relevantie & Realiteit</li>
-              <li>I — Identiteit & Inzicht</li>
-              <li>D — Design & Richting</li>
-              <li>G — Groei & Partnerships</li>
-              <li>E — Expansie & Evaluatie</li>
+              <li>B - Business Focus</li>
+              <li>R - Relevantie & Realiteit</li>
+              <li>I - Identiteit & Inzicht</li>
+              <li>D - Design & Richting</li>
+              <li>G - Groei & Partnerships</li>
+              <li>E - Expansie & Evaluatie</li>
             </ul>
           </div>
 

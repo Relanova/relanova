@@ -15,7 +15,7 @@ const AuthorBio = () => {
     >
       <img
         src={authorPhoto}
-        alt="Monia Ben Tahar — Ecosystem Architect bij Relanova"
+        alt="Monia Ben Tahar - Ecosystem Architect bij Relanova"
         className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover shrink-0 border-2 border-secondary/30"
         width={112}
         height={112}

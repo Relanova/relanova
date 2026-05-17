@@ -15,7 +15,7 @@ const services = [
   {
     letter: "B",
     icon: Target,
-    title: "Business Focus — Strategie & Ambitie",
+    title: "Business Focus - Strategie & Ambitie",
     layer: "Fase 1",
     description: "We starten met een diepgaand CEO-interview om uw ambitie, visie en groeisdoelen te bepalen. Dit is het fundament van uw strategisch ecosysteem.",
     deliverables: ["CEO Vision Interview rapport", "Groeistrategie canvas", "Ambitie-alignment document", "Stakeholder mapping"],
@@ -25,7 +25,7 @@ const services = [
   {
     letter: "R",
     icon: BarChart3,
-    title: "Relevantie & Realiteit — Marktanalyse",
+    title: "Relevantie & Realiteit - Marktanalyse",
     layer: "Fase 1",
     description: "Via diepte-interviews met management en medewerkers ontdekken we de echte marktwaarde van uw organisatie en identificeren we kansen en uitdagingen.",
     deliverables: ["Marktanalyse rapport", "Concurrentie-overzicht", "Interne feedback analyse", "Kansen & risico matrix"],
@@ -35,9 +35,9 @@ const services = [
   {
     letter: "I",
     icon: Lightbulb,
-    title: "Identiteit & Inzicht — Positionering",
+    title: "Identiteit & Inzicht - Positionering",
     layer: "Fase 1",
-    description: "We definiëren uw missie, visie en waarden — de inner roots van uw organisatie. Zo creëren we een unieke marktpositie die resonance opbouwt.",
+    description: "We definiëren uw missie, visie en waarden - de inner roots van uw organisatie. Zo creëren we een unieke marktpositie die resonance opbouwt.",
     deliverables: ["Missie & visie formulering", "Waardepropositie", "Positioneringsstrategie", "Brand narrative"],
     price: "Vanaf €2.500",
     duration: "3 weken",
@@ -45,7 +45,7 @@ const services = [
   {
     letter: "D",
     icon: Map,
-    title: "Design & Richting — Strategische Planning",
+    title: "Design & Richting - Strategische Planning",
     layer: "Fase 1",
     description: "In strategische workshops gebruiken we BHAG, Porter en Ansoff modellen om gefocuste keuzes te maken en een roadmap te bouwen.",
     deliverables: ["Strategische roadmap", "Prioriteitenmatrix", "BHAG definitie", "Actieplan met KPI's"],
@@ -55,7 +55,7 @@ const services = [
   {
     letter: "G",
     icon: Handshake,
-    title: "Groei & Partnerships — Business Development",
+    title: "Groei & Partnerships - Business Development",
     layer: "Fase 2",
     description: "We bouwen een roadmap met marketing, partnerships, events en samenwerkingen. Alles gericht op duurzame groei via uw ecosysteem.",
     deliverables: ["Partnership roadmap", "Channel partner strategie", "Sponsorship plan", "Community engagement plan"],
@@ -65,7 +65,7 @@ const services = [
   {
     letter: "E",
     icon: TrendingUp,
-    title: "Expansie & Evaluatie — Schaalbaar Maken",
+    title: "Expansie & Evaluatie - Schaalbaar Maken",
     layer: "Fase 2",
     description: "We implementeren de roadmap met uw team, ontwikkelen partners en zetten experts in om uw ecosysteem duurzaam te laten renderen.",
     deliverables: ["Implementatie ondersteuning", "Team versterking advies", "Marketing activatie", "Rendement meting"],
@@ -94,7 +94,7 @@ const Services = () => {
   return (
     <Layout>
       <SEO
-        title="Diensten & Pakketten — BRIDGE-methode | Relanova"
+        title="Diensten & Pakketten - BRIDGE-methode | Relanova"
         description="Strategie, positionering, partnerships en groei. Ontdek de BRIDGE-diensten en pakketten van Relanova voor KMO's en scale-ups."
         path="/services"
         jsonLd={{
@@ -115,7 +115,7 @@ const Services = () => {
             Strategische diensten via de BRIDGE-methode
           </h1>
           <p className="text-muted-foreground text-lg font-sans leading-relaxed">
-            Van strategie tot partnerships — elke BRIDGE-laag biedt een concrete dienst
+            Van strategie tot partnerships - elke BRIDGE-laag biedt een concrete dienst
             gericht op duurzame groei voor uw organisatie.
           </p>
         </div>

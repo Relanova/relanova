@@ -10,10 +10,10 @@ const values = [
   { icon: Eye, title: "Helderheid", desc: "Altijd scherp, duidelijk en richtinggevend" },
   { icon: Heart, title: "Menselijkheid (EQ)", desc: "Relaties, vertrouwen en context bepalen succes" },
   { icon: Link2, title: "Verbinding", desc: "Breng mensen, ideeën en organisaties samen rond gedeelde belangen" },
-  { icon: Zap, title: "Relevantie", desc: "Alles moet waarde toevoegen voor markt én organisatie" },
+  { icon: Zap, title: "Relevantie", desc: "Alles moet waarde toevoegen voor markt en organisatie" },
   { icon: TreeDeciduous, title: "Duurzaamheid", desc: "Geen quick wins, maar ecosystemen die blijven renderen" },
   { icon: LayoutIcon, title: "Rust & structuur", desc: "Orde in complexiteit zodat keuzes eenvoudig worden" },
-  { icon: Target, title: "Impact", desc: "Alles draagt bij aan groei—tastbaar, meetbaar en strategisch" },
+  { icon: Target, title: "Impact", desc: "Alles draagt bij aan groei-tastbaar, meetbaar en strategisch" },
 ];
 
 const bridgeLayers = [
@@ -29,7 +29,7 @@ const About = () => {
   return (
     <Layout>
       <SEO
-        title="Over Monia Ben Tahar — Ecosystem Architect | Relanova"
+        title="Over Monia Ben Tahar - Ecosystem Architect | Relanova"
         description="Maak kennis met Monia Ben Tahar, oprichter van Relanova en bedenker van de BRIDGE-methode voor strategische groei via ecosystemen."
         path="/about"
       />
@@ -49,7 +49,7 @@ const About = () => {
                 ontstaat wanneer strategie, mensen en relaties op elkaar worden afgestemd.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
-                Als oprichter van Relanova — ontwikkelde ik de
+                Als oprichter van Relanova - ontwikkelde ik de
                 BRIDGE-methode: een bewezen 6-laags framework dat bedrijven helpt hun marktpositie
                 te versterken en groei te versnellen door een scherp verhaal en een slim ecosysteem.
               </p>
@@ -82,7 +82,7 @@ const About = () => {
               <p className="text-muted-foreground leading-relaxed font-sans">
                 Ik versterk bedrijven door hun strategie, verhaal en samenwerkingen te verbinden tot een slim
                 ecosysteem dat duurzame groei mogelijk maakt. Mijn missie is organisaties duidelijkheid, richting
-                en daadkracht geven — zodat strategie niet in documenten blijft hangen, maar echt rendeert in de markt.
+                en daadkracht geven - zodat strategie niet in documenten blijft hangen, maar echt rendeert in de markt.
               </p>
             </div>
             <div className="bg-card rounded-xl p-8 border border-border">

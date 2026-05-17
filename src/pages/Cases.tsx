@@ -7,7 +7,7 @@ import CTASection from "@/components/CTASection";
 
 const cases = [
   {
-    title: "TechGrow NV — Van Startup naar Scale-up",
+    title: "TechGrow NV - Van Startup naar Scale-up",
     industry: "Technologie",
     layers: ["B", "R", "I", "D", "G"],
     challenge: "TechGrow had een sterk product maar miste strategische richting en partnerships om door te groeien.",
@@ -21,7 +21,7 @@ const cases = [
     author: "Sarah Van den Berg, CEO",
   },
   {
-    title: "GreenScale — Ecosysteem voor Duurzame Groei",
+    title: "GreenScale - Ecosysteem voor Duurzame Groei",
     industry: "Duurzaamheid",
     layers: ["B", "R", "I", "G", "E"],
     challenge: "GreenScale wilde schalen maar had geen duidelijke go-to-market strategie of partner ecosysteem.",
@@ -35,7 +35,7 @@ const cases = [
     author: "Thomas Janssen, Oprichter",
   },
   {
-    title: "InnoHub — Merkidentiteit & Marktpositie",
+    title: "InnoHub - Merkidentiteit & Marktpositie",
     industry: "Innovation Hub",
     layers: ["I", "D", "G"],
     challenge: "InnoHub had een verwaterd merk en onduidelijke positionering in een concurrerende markt.",
@@ -55,7 +55,7 @@ const Cases = () => {
     <Layout>
       <SEO
         title="Cases & Resultaten | Relanova"
-        description="Bekijk hoe de BRIDGE-methode bedrijven hielp groeien via strategie, positionering en partnerships — met meetbare resultaten."
+        description="Bekijk hoe de BRIDGE-methode bedrijven hielp groeien via strategie, positionering en partnerships - met meetbare resultaten."
         path="/cases"
         jsonLd={{
           "@context": "https://schema.org",
@@ -120,7 +120,7 @@ const Cases = () => {
                 {/* Quote */}
                 <div className="bg-muted/30 rounded-lg p-5 border-l-4 border-secondary">
                   <p className="text-sm text-foreground italic font-sans mb-2">"{c.quote}"</p>
-                  <p className="text-xs text-muted-foreground font-sans font-semibold">— {c.author}</p>
+                  <p className="text-xs text-muted-foreground font-sans font-semibold">- {c.author}</p>
                 </div>
               </div>
             </div>

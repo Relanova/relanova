@@ -40,7 +40,7 @@ const HeroSection = () => {
               <div className="absolute -inset-4 bg-secondary/20 rounded-2xl rotate-3" />
               <img
                 src={heroPortrait}
-                alt="Monia Ben Tahar — Ecosystem Architect en oprichtster van Relanova"
+                alt="Monia Ben Tahar - Ecosystem Architect en oprichtster van Relanova"
                 className="relative rounded-2xl shadow-2xl w-full max-w-md object-cover aspect-[3/4]"
                 width={768}
                 height={960}
@@ -71,8 +71,8 @@ export const HeroServicesBlock = () => {
           <div className="text-primary-foreground/80 leading-relaxed font-sans space-y-4">
             <p className="text-2xl md:text-3xl font-serif font-bold text-primary-foreground not-italic">Van strategie naar resultaat…</p>
             <p>
-              Ik help organisaties groeien door de juiste koers te bepalen én deze strategisch én operationeel uit te voeren — als strategisch partner.
-              Met 15+ jaar ervaring bij o.a. Nationale Loterij, BASE, Telenet en Nestlé.
+              Ik help organisaties groeien door de juiste koers te bepalen en deze strategisch en operationeel uit te voeren - als strategisch partner.
+              Met 15+ jaar ervaring bij o.a. Nationale Loterij, BASE, Telenet en Nestle.
             </p>
             <p className="font-semibold text-primary-foreground">Wat ik voor je kan betekenen?</p>
             <div>
@@ -92,7 +92,7 @@ export const HeroServicesBlock = () => {
                 partnerships, sponsorships en nieuwe business opportunities die echt bijdragen aan jouw doelen.
               </p>
               <p className="italic text-primary-foreground/60 text-sm mt-1">
-                → Resultaat: Samenwerkingen die bijdragen aan omzet, merkwaarde of impact — niet alleen 'leuke deals'. Ik werk met een select netwerk van specialisten om de beste oplossing te leveren — geen eiland, wel het juiste team rond jouw vraag.
+                → Resultaat: Samenwerkingen die bijdragen aan omzet, merkwaarde of impact - niet alleen 'leuke deals'. Ik werk met een select netwerk van specialisten om de beste oplossing te leveren - geen eiland, wel het juiste team rond jouw vraag.
               </p>
             </div>
             <div>
@@ -143,7 +143,7 @@ export const HeroCTABlock = () => {
             </Link>
           </div>
           <p className="text-sm text-primary-foreground/80 font-sans mb-10 max-w-xl">
-            Je krijgt direct 1-2 heldere inzichten over jouw groeivraag — ook als we niet samenwerken.
+            Je krijgt direct 1-2 heldere inzichten over jouw groeivraag - ook als we niet samenwerken.
           </p>
 
           {/* Trust Signals */}

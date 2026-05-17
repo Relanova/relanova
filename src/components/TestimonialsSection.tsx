@@ -10,7 +10,7 @@ const testimonials = [
   {
     name: "Thomas Janssen",
     role: "Oprichter, GreenScale",
-    text: "De BRIDGE-methode gaf ons structuur waar we die misten. Monia's aanpak is uniek — ze denkt in ecosystemen, niet in silo's.",
+    text: "De BRIDGE-methode gaf ons structuur waar we die misten. Monia's aanpak is uniek - ze denkt in ecosystemen, niet in silo's.",
     rating: 5,
   },
   {
