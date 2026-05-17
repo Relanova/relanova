@@ -29,9 +29,6 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl">
               Voor KMO's en leiders die strategie willen omzetten in resultaat - door teams, partners en uitvoering te verbinden.
             </p>
-            <p className="mt-4 text-sm text-primary-foreground/70 font-sans italic">
-              🌉 BRIDGE-methode - 6-layer strategic framework
-            </p>
           </div>
 
           {/* Portrait */}
@@ -48,6 +45,9 @@ const HeroSection = () => {
                 loading="eager"
                 decoding="async"
               />
+              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-primary/85 backdrop-blur-md border border-secondary/40 shadow-lg rounded-full px-4 py-2 text-xs md:text-sm text-primary-foreground font-sans whitespace-nowrap">
+                🌉 BRIDGE-methode - 6-layer strategic framework
+              </div>
             </div>
           </div>
         </div>
