@@ -13,22 +13,38 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-primary/90" />
       </div>
 
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32">
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="text-primary-foreground">
-            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-1.5 mb-6 text-sm backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-1.5 mb-8 text-sm backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
               Relanova · Human Touch in a Connected World
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] mb-8">
               Ik verbind strategie, positionering en partnerships zodat{" "}
               <span className="text-secondary">groei makkelijker wordt.</span>
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl">
+            <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-10">
               Voor KMO's en leiders die strategie willen omzetten in resultaat - door teams, partners en uitvoering te verbinden.
             </p>
+
+            <div className="border-l-2 border-secondary/50 pl-4 max-w-xl">
+              <p className="text-sm text-primary-foreground/70 font-sans">
+                <span className="text-primary-foreground/90">🌉 BRIDGE:</span> van strategie naar uitvoering in 6 stappen. Start waar jij bent.
+              </p>
+              <a
+                href="#bridge-methode"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("bridge-methode")?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="inline-block mt-1 text-xs text-secondary hover:text-secondary/80 font-sans underline-offset-4 hover:underline"
+              >
+                Ontdek de volledige methode ↓
+              </a>
+            </div>
           </div>
 
           {/* Portrait */}
@@ -45,9 +61,6 @@ const HeroSection = () => {
                 loading="eager"
                 decoding="async"
               />
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white border border-border shadow-lg rounded-full px-4 py-1.5 text-xs md:text-sm text-primary font-sans whitespace-nowrap">
-                🌉 BRIDGE-methode / 6-Layer Strategic Framework
-              </div>
             </div>
           </div>
         </div>
