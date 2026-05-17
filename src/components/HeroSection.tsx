@@ -26,8 +26,11 @@ const HeroSection = () => {
               Ik verbind strategie, positionering en partnerships zodat{" "}
               <span className="text-secondary">groei makkelijker wordt.</span>
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-10">
+            <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-6">
               Voor KMO's en leiders die strategie willen omzetten in resultaat - door teams, partners en uitvoering te verbinden.
+            </p>
+            <p className="text-sm text-primary-foreground/70 font-sans max-w-xl mb-10 italic">
+              Relanova = Relation + Nova. Echte waarde ontstaat door mensen te verbinden.
             </p>
           </div>
 
