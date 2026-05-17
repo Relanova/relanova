@@ -29,6 +29,9 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl">
               Voor KMO's en leiders die strategie willen omzetten in resultaat - door teams, partners en uitvoering te verbinden.
             </p>
+            <p className="mt-4 text-sm text-primary-foreground/70 font-sans italic">
+              🌉 BRIDGE-methode - 6-layer strategic framework
+            </p>
           </div>
 
           {/* Portrait */}
