@@ -56,6 +56,9 @@ export const WieHelpIk = () => {
         <p className="text-foreground font-sans mt-8 italic">
           Elke organisatie is welkom die klaar is voor groei zonder ruis — van visie tot uitvoering.
         </p>
+        <p className="text-foreground font-sans mt-4 italic">
+          Bij Relanova begint elke strategie bij de mens. Omdat AI kan analyseren, maar alleen mensen kunnen verbinden.
+        </p>
       </div>
     </section>
   );
