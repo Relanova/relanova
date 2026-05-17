@@ -142,7 +142,7 @@ export const HeroCTABlock = () => {
           <div className="flex flex-col sm:flex-row gap-4 mb-3">
             <Link to="/contact">
               <Button variant="hero" size="xl" className="gap-2">
-                Gratis Gesprek Inplannen
+                Boek je gratis strategie-scan
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
