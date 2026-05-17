@@ -29,8 +29,8 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-6">
               Voor KMO's en leiders die strategie willen omzetten in resultaat - door teams, partners en uitvoering te verbinden.
             </p>
-            <p className="text-sm text-primary-foreground/70 font-sans max-w-xl mb-10 italic">
-              Relanova = Relation + Nova. Echte waarde ontstaat door mensen te verbinden.
+            <p className="text-sm md:text-base text-primary-foreground/70 font-sans max-w-xl mb-10 italic">
+              Relanova staat voor een vernieuwde manier van denken waarin echte waarde ontstaat door relaties, verbinding en vertrouwen.
             </p>
           </div>
 
