@@ -29,22 +29,6 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-10">
               Voor KMO's en leiders die strategie willen omzetten in resultaat - door teams, partners en uitvoering te verbinden.
             </p>
-
-            <div className="border-l-2 border-secondary/50 pl-4 max-w-xl">
-              <p className="text-sm text-primary-foreground/70 font-sans">
-                <span className="text-primary-foreground/90">🌉 BRIDGE:</span> van strategie naar uitvoering in 6 stappen. Start waar jij bent.
-              </p>
-              <a
-                href="#bridge-methode"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById("bridge-methode")?.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="inline-block mt-1 text-xs text-secondary hover:text-secondary/80 font-sans underline-offset-4 hover:underline"
-              >
-                Ontdek de volledige methode ↓
-              </a>
-            </div>
           </div>
 
           {/* Portrait */}
@@ -61,6 +45,9 @@ const HeroSection = () => {
                 loading="eager"
                 decoding="async"
               />
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-10 bg-white border border-border shadow-lg rounded-full px-4 py-1.5 text-xs md:text-sm text-primary font-sans whitespace-nowrap">
+                🌉 BRIDGE-methode <span className="text-primary/60">/ 6-Layer Strategic Framework</span>
+              </div>
             </div>
           </div>
         </div>
