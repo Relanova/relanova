@@ -45,7 +45,7 @@ const HeroSection = () => {
                 loading="eager"
                 decoding="async"
               />
-              <div className="absolute bottom-3 right-3 bg-primary/85 backdrop-blur-md border border-secondary/40 shadow-lg rounded-full px-3 py-1 text-xs text-primary-foreground font-sans whitespace-nowrap">
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-white border border-border shadow-lg rounded-full px-4 py-1.5 text-xs text-primary font-sans font-medium whitespace-nowrap">
                 🌉 BRIDGE - 6 layers
               </div>
             </div>
