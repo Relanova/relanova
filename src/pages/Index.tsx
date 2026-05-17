@@ -16,18 +16,6 @@ const Index = () => {
         path="/"
       />
       <HeroSection />
-      <div className="bg-background py-6 text-center">
-        <a
-          href="#bridge-methode"
-          onClick={(e) => {
-            e.preventDefault();
-            document.getElementById("bridge-methode")?.scrollIntoView({ behavior: "smooth" });
-          }}
-          className="inline-block text-sm text-muted-foreground hover:text-primary font-sans underline-offset-4 hover:underline transition-colors"
-        >
-          Ontdek de volledige methode ↓
-        </a>
-      </div>
       <HerkenJeDit />
       <WieHelpIk />
       <ValueProp />
