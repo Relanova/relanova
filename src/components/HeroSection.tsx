@@ -27,7 +27,7 @@ const HeroSection = () => {
               <span className="text-secondary">groei makkelijker wordt.</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl">
-              Human Touch in a Connected World. Echte groei begint bij mensen. Ik verbind strategie, partners en uitvoering.
+              Voor KMO's en leiders die strategie willen omzetten in resultaat - door teams, partners en uitvoering te verbinden.
             </p>
           </div>
 
