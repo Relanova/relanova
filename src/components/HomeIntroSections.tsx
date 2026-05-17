@@ -34,7 +34,7 @@ export const WieHelpIk = () => {
     "Organisaties die positionering en partnerships willen laten renderen",
     "Leiders die samenwerkingen willen opbouwen die echt bijdragen, ondersteund door een actief netwerk",
     "Bedrijven die interim marketing-leiderschap nodig hebben - direct inzetbaar op menselijke maat",
-    "Zelfstandigen die een strategische partner zoek - zonder fulltime aanwerving",
+    "Zelfstandigen die een strategische partner zoeken - zonder fulltime aanwerving",
   ];
   return (
     <section className="section-padding bg-background">
