@@ -55,7 +55,7 @@ const bridgeServices = [
 
 const BridgeServicesPreview = () => {
   return (
-    <section className="section-padding bg-background">
+    <section id="bridge-methode" className="section-padding bg-background">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">De BRIDGE-methode</span>
