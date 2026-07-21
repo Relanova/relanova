@@ -81,7 +81,7 @@ export const HeroServicesBlock = () => {
                 Waar sta je nu en waar wil je naartoe? Samen ontwikkelen we een heldere strategie en een
                 onderscheidende positie in de markt. Zodat je doelgroep jou kiest, niet je concurrent.
               </p>
-              <p className="italic text-primary-foreground/60 text-sm mt-1">
+              <p className="text-primary-foreground/70 text-sm mt-1 font-medium">
                 → Resultaat: Een strategie die leeft in je team en keuzes die echt bijdragen aan groei.
               </p>
             </div>
@@ -91,7 +91,7 @@ export const HeroServicesBlock = () => {
                 Groei versnellen doe je niet alleen. Ik help je bij het vinden en realiseren van strategische
                 partnerships, sponsorships en nieuwe business opportunities die echt bijdragen aan jouw doelen.
               </p>
-              <p className="italic text-primary-foreground/60 text-sm mt-1">
+              <p className="text-primary-foreground/70 text-sm mt-1 font-medium">
                 → Resultaat: Samenwerkingen die bijdragen aan omzet, merkwaarde of impact - niet alleen 'leuke deals'. Ik werk met een select netwerk van specialisten om de beste oplossing te leveren - geen eiland, wel het juiste team rond jouw vraag.
               </p>
             </div>
@@ -102,7 +102,7 @@ export const HeroServicesBlock = () => {
                 expertise zoekt of je team wilt versterken: ik zorg voor de kennis en capaciteit om je plannen
                 tot leven te brengen.
               </p>
-              <p className="italic text-primary-foreground/60 text-sm mt-1">
+              <p className="text-primary-foreground/70 text-sm mt-1 font-medium">
                 → Resultaat: Plannen die worden uitgevoerd, met de juiste capaciteit op het juiste moment.
               </p>
             </div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Instagram, ArrowUp, MessageCircle, FileText } from "lucide-react";
+import relanovaIcon from "@/assets/relanova-icon.png.asset.json";
 
 const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -12,9 +13,11 @@ const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center">
-                <span className="font-serif text-secondary-foreground font-bold text-lg">R</span>
-              </div>
+              <img
+                src={relanovaIcon.url}
+                alt="Relanova"
+                className="w-8 h-8 shrink-0 brightness-0 invert"
+              />
               <div className="flex flex-col leading-none">
                 <span className="font-serif font-bold text-base">Relanova</span>
                 <span className="text-primary-foreground/60 text-[10px] tracking-widest uppercase">Human Touch in a Connected World</span>
