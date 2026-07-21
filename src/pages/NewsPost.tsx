@@ -102,7 +102,7 @@ const NewsPost = () => {
 
           {post.excerpt && <p className="text-lg text-muted-foreground italic mb-8">{post.excerpt}</p>}
 
-          <div className="prose prose-lg max-w-none prose-headings:font-serif prose-headings:text-primary prose-a:text-secondary">
+          <div className="prose prose-lg max-w-none font-sans prose-p:font-sans prose-li:font-sans prose-blockquote:font-sans prose-headings:font-serif prose-headings:text-primary prose-a:text-secondary">
             <ReactMarkdown>{post.content}</ReactMarkdown>
           </div>
 
