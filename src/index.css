@@ -20,40 +20,39 @@
     --primary: 197 47% 26%;                /* #245163 petrol */
     --primary-foreground: 0 0% 100%;
 
-    /* Brand — teal accent */
-    --secondary: 174 64% 30%;              /* #1C7E74 teal */
+    /* Brand — blue-teal accent (no green) */
+    --secondary: 192 62% 32%;              /* petrol-teal, blue side */
     --secondary-foreground: 0 0% 100%;
 
     /* Soft neutral surface */
-    --muted: 180 8% 96%;                   /* #F5F7F7 */
-    --muted-foreground: 195 12% 38%;
+    --muted: 200 15% 96%;
+    --muted-foreground: 197 15% 38%;
 
-    /* Accent = lighter teal for hovers/links */
-    --accent: 174 55% 42%;
+    /* Accent = lighter blue-teal for hovers/links */
+    --accent: 192 55% 42%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 180 10% 90%;
-    --input: 180 10% 90%;
-    --ring: 174 64% 30%;
+    --border: 200 12% 90%;
+    --input: 200 12% 90%;
+    --ring: 192 62% 32%;
 
-    --radius: 0.125rem;                    /* strak, bijna rechthoekig */
+    --radius: 0.125rem;
 
-    /* Aliases so legacy classnames (navy / teal / gold) keep working
-       without hunting through every component. */
+    /* Aliases so legacy classnames keep working */
     --navy: 197 47% 26%;
     --navy-light: 197 42% 34%;
-    --teal: 174 64% 30%;
-    --teal-light: 174 55% 42%;
-    --gold: 174 64% 30%;                   /* remap: no gold, use teal accent */
-    --gold-light: 174 55% 42%;
-    --cream: 180 8% 96%;
-    --warm-gray: 180 10% 92%;
+    --teal: 192 62% 32%;
+    --teal-light: 192 55% 42%;
+    --gold: 192 62% 32%;
+    --gold-light: 192 55% 42%;
+    --cream: 200 15% 96%;
+    --warm-gray: 200 12% 92%;
 
-    /* Signature petrol → teal gradient (huisstijl) */
-    --hero-gradient: linear-gradient(135deg, hsl(174 55% 34%) 0%, hsl(190 50% 30%) 45%, hsl(197 47% 26%) 100%);
+    /* Signature petrol gradient — pure blue family, no green */
+    --hero-gradient: linear-gradient(135deg, hsl(192 62% 32%) 0%, hsl(195 55% 28%) 45%, hsl(197 47% 26%) 100%);
 
     --card-shadow: 0 1px 2px hsl(197 47% 26% / 0.04), 0 8px 24px -12px hsl(197 47% 26% / 0.12);
     --card-shadow-hover: 0 2px 4px hsl(197 47% 26% / 0.06), 0 16px 40px -12px hsl(197 47% 26% / 0.22);
@@ -62,10 +61,10 @@
     --sidebar-foreground: 195 21% 15%;
     --sidebar-primary: 197 47% 26%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 180 8% 96%;
+    --sidebar-accent: 200 15% 96%;
     --sidebar-accent-foreground: 195 21% 15%;
-    --sidebar-border: 180 10% 90%;
-    --sidebar-ring: 174 64% 30%;
+    --sidebar-border: 200 12% 90%;
+    --sidebar-ring: 192 62% 32%;
   }
 }
 
