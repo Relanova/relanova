@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Linkedin, Instagram, ArrowUp, MessageCircle, FileText } from "lucide-react";
+import relanovaIcon from "@/assets/relanova-icon.png.asset.json";
 
 const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
