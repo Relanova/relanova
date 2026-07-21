@@ -51,8 +51,8 @@
     --cream: 200 15% 96%;
     --warm-gray: 200 12% 92%;
 
-    /* Signature petrol-teal → deep petrol gradient: #1C7E74 → #245163 */
-    --hero-gradient: linear-gradient(180deg, #2E636B 0%, #2F5D6A 50%, #245163 100%);
+    /* Exact Relanova gradient sampled from Relanova_Gradient.jpg */
+    --hero-gradient: linear-gradient(180deg, #2E636B 0%, #304F63 100%);
 
     --card-shadow: 0 1px 2px hsl(197 47% 26% / 0.04), 0 8px 24px -12px hsl(197 47% 26% / 0.12);
     --card-shadow-hover: 0 2px 4px hsl(197 47% 26% / 0.06), 0 16px 40px -12px hsl(197 47% 26% / 0.22);
