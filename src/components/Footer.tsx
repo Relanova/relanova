@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Instagram, ArrowUp, MessageCircle } from "lucide-react";
-import Logo from "./Logo";
+import { Mail, Phone, MapPin, Linkedin, Instagram, ArrowUp, MessageCircle, FileText } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -12,28 +11,33 @@ const Footer = () => {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="mb-5">
-              <Logo variant="light" showBaseline />
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-9 h-9 rounded-lg bg-secondary flex items-center justify-center">
+                <span className="font-serif text-secondary-foreground font-bold text-lg">R</span>
+              </div>
+              <div className="flex flex-col leading-none">
+                <span className="font-serif font-bold text-base">Relanova</span>
+                <span className="text-primary-foreground/60 text-[10px] tracking-widest uppercase">Human Touch in a Connected World</span>
+              </div>
             </div>
-            <p className="text-primary-foreground/75 text-sm leading-relaxed mb-3">
+            <p className="text-primary-foreground/70 text-sm leading-relaxed mb-3">
               Strategische groei via de BRIDGE-methode.
             </p>
             <p className="text-primary-foreground/60 text-xs italic leading-relaxed mb-4">
               Relanova staat voor een vernieuwde manier van denken waarin echte waarde ontstaat door relaties, verbinding en vertrouwen.
             </p>
-            <div className="flex gap-2">
-              <a href="https://www.linkedin.com/in/moniabentahar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-9 h-9 border border-primary-foreground/20 hover:border-secondary hover:bg-secondary flex items-center justify-center transition-colors">
+            <div className="flex gap-3">
+              <a href="https://www.linkedin.com/in/moniabentahar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-secondary flex items-center justify-center transition-colors">
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href="https://wa.me/32488285886" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-9 h-9 border border-primary-foreground/20 hover:border-secondary hover:bg-secondary flex items-center justify-center transition-colors">
+              <a href="https://wa.me/32488285886" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-secondary flex items-center justify-center transition-colors">
                 <MessageCircle className="w-4 h-4" />
               </a>
-              <a href="#" aria-label="Instagram" className="w-9 h-9 border border-primary-foreground/20 hover:border-secondary hover:bg-secondary flex items-center justify-center transition-colors">
+              <a href="#" aria-label="Instagram" className="w-9 h-9 rounded-full bg-primary-foreground/10 hover:bg-secondary flex items-center justify-center transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
             </div>
           </div>
-
 
           {/* Quick Links */}
           <div>
@@ -107,7 +111,7 @@ const Footer = () => {
           <div className="flex items-center gap-4 text-xs text-primary-foreground/50">
             <Link to="/privacy" className="hover:text-secondary transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-secondary transition-colors">Algemene Voorwaarden</Link>
-            <button onClick={scrollToTop} aria-label="Scroll to top" className="w-8 h-8 border border-primary-foreground/20 hover:border-secondary hover:bg-secondary flex items-center justify-center transition-colors">
+            <button onClick={scrollToTop} aria-label="Scroll to top" className="w-8 h-8 rounded-full bg-primary-foreground/10 hover:bg-secondary flex items-center justify-center transition-colors">
               <ArrowUp className="w-4 h-4" />
             </button>
           </div>
