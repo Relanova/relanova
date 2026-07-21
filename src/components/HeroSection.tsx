@@ -72,7 +72,7 @@ export const HeroServicesBlock = () => {
             <p className="text-2xl md:text-3xl font-bold text-white not-italic tracking-tight">Van strategie naar resultaat…</p>
             <p>
               Ik help organisaties groeien door de juiste koers te bepalen en deze strategisch en operationeel uit te voeren - als strategisch partner.
-              Met 15+ jaar ervaring bij o.a. Nationale Loterij, BASE, Telenet en Nestle.
+              Met 20+ jaar ervaring bij o.a. Nationale Loterij, BASE, Telenet en Nestle.
             </p>
             <p className="font-semibold text-white">Wat ik voor je kan betekenen?</p>
             <div>
