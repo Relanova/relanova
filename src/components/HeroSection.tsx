@@ -24,7 +24,7 @@ const HeroSection = () => {
 
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] mb-8">
               Ik verbind strategie, positionering en partnerships zodat{" "}
-              <span className="text-secondary">groei makkelijker wordt.</span>
+              <span className="text-[#8FC3CC]">groei makkelijker wordt.</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-6">
               Voor KMO's en leiders die strategie willen omzetten in resultaat - door teams, partners en uitvoering te verbinden.
