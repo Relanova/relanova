@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/relanova-icon.png.asset.json";
+
+const LOGO_SRC = "/favicon.png";
 
 interface LogoProps {
   /** "dark" = logo op lichte achtergrond (petrol icoon + donkere tekst).
@@ -22,7 +23,7 @@ const Logo = ({
   return (
     <Link to="/" className={`flex items-center gap-3 group ${className}`} aria-label="Relanova - Home">
       <img
-        src={logo.url}
+        src={LOGO_SRC}
         alt=""
         aria-hidden="true"
         className={`w-8 h-8 md:w-9 md:h-9 shrink-0 transition-transform duration-500 group-hover:scale-105 ${
