@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone } from "lucide-react";
+import relanovaIcon from "@/assets/relanova-icon.png.asset.json";
 
 const navLinks = [
   { label: "Home", path: "/" },
