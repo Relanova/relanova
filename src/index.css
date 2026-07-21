@@ -16,20 +16,20 @@
     --popover: 0 0% 100%;
     --popover-foreground: 195 21% 15%;
 
-    /* Brand — petrol dominant */
-    --primary: 197 47% 26%;                /* #245163 petrol */
+    /* Brand — petrol dominant (bottom of gradient #304F63) */
+    --primary: 203 35% 29%;                /* #304F63 diep petrolblauw */
     --primary-foreground: 0 0% 100%;
 
-    /* Brand — teal accent (blue family) */
-    --secondary: 174 64% 30%;              /* #1C7E74 petrol-teal */
+    /* Brand — top of gradient #2E636B */
+    --secondary: 188 40% 30%;              /* #2E636B petrol-teal */
     --secondary-foreground: 0 0% 100%;
 
     /* Soft neutral surface */
     --muted: 200 15% 96%;
     --muted-foreground: 197 15% 38%;
 
-    /* Accent = lighter teal for hovers/links */
-    --accent: 186 55% 40%;
+    /* Accent = middle gradient tone #2F5D6A */
+    --accent: 193 38% 30%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 45%;
@@ -37,22 +37,22 @@
 
     --border: 200 12% 90%;
     --input: 200 12% 90%;
-    --ring: 174 64% 30%;
+    --ring: 203 35% 29%;
 
     --radius: 0.125rem;
 
-    /* Aliases so legacy classnames keep working */
-    --navy: 197 47% 26%;
-    --navy-light: 197 42% 34%;
-    --teal: 174 64% 30%;
-    --teal-light: 186 55% 40%;
-    --gold: 174 64% 30%;
-    --gold-light: 186 55% 40%;
+    /* Aliases so legacy classnames keep working — all mapped to gradient family */
+    --navy: 203 35% 29%;
+    --navy-light: 193 38% 30%;
+    --teal: 188 40% 30%;
+    --teal-light: 193 38% 30%;
+    --gold: 188 40% 30%;
+    --gold-light: 193 38% 30%;
     --cream: 200 15% 96%;
     --warm-gray: 200 12% 92%;
 
-    /* Exact Relanova gradient sampled from Relanova_Gradient.jpg */
-    --hero-gradient: linear-gradient(180deg, #2E636B 0%, #304F63 100%);
+    /* Exact Relanova gradient sampled from Relanova_Gradient.jpg (top→mid→bottom) */
+    --hero-gradient: linear-gradient(180deg, #2E636B 0%, #2F5D6A 50%, #304F63 100%);
 
     --card-shadow: 0 1px 2px hsl(197 47% 26% / 0.04), 0 8px 24px -12px hsl(197 47% 26% / 0.12);
     --card-shadow-hover: 0 2px 4px hsl(197 47% 26% / 0.06), 0 16px 40px -12px hsl(197 47% 26% / 0.22);
