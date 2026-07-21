@@ -145,7 +145,7 @@ export const HeroCTABlock = () => {
 
           {/* Trust Signals */}
           <div className="flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/75">
-            {["20+ jaar ervaring", "BRIDGE-methode", "Human Touch"].map((item) => (
+            {["15+ jaar ervaring", "100+ bedrijven geholpen", "BRIDGE-methode"].map((item) => (
               <span key={item} className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-secondary" />
                 {item}
