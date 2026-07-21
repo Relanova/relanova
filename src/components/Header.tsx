@@ -22,11 +22,14 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
-            <span className="font-serif text-primary-foreground font-bold text-lg">R</span>
-          </div>
+        <Link to="/" className="flex items-center gap-2.5 group py-1">
+          <img
+            src={relanovaIcon.url}
+            alt="Relanova"
+            className="w-7 h-7 md:w-8 md:h-8 shrink-0"
+          />
           <div className="flex flex-col leading-none">
-            <span className="font-serif font-bold text-foreground text-base tracking-tight">Relanova</span>
+            <span className="font-sans font-bold text-foreground text-base tracking-tight">Relanova</span>
             <span className="text-muted-foreground text-[10px] tracking-widest uppercase">Human Touch in a Connected World</span>
           </div>
         </Link>
