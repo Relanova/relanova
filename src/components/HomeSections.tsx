@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 import heroBg from "@/assets/hero-bg-pattern.jpg";
+import moniaSignature from "@/assets/monia-signature.png.asset.json";
 
 /* 2. Vertrouwd door CEO's */
 export const VertrouwdDoorCEOs = () => {
