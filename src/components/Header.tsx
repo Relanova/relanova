@@ -27,7 +27,10 @@ const Header = () => {
             alt="Relanova"
             className="w-7 h-7 md:w-8 md:h-8 shrink-0"
           />
-          <span className="font-sans font-bold text-foreground text-base tracking-tight">Relanova</span>
+          <div className="flex flex-col leading-none">
+            <span className="font-sans font-bold text-foreground text-base tracking-tight">Relanova</span>
+            <span className="text-muted-foreground text-[10px] tracking-widest uppercase">Human Touch in a Connected World</span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}

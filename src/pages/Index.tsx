@@ -1,37 +1,31 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import HeroSection from "@/components/HeroSection";
+import HeroSection, { HeroServicesBlock, HeroCTABlock } from "@/components/HeroSection";
 import BridgeServicesPreview from "@/components/BridgeServicesPreview";
-import {
-  TrustedBy,
-  WaaromRelanova,
-  ZoCreerenWijWaarde,
-  BridgeBand,
-  ManierenSamenwerken,
-  CasesResultaten,
-  OverMijHome,
-  BoekStrategieSessie,
-} from "@/components/HomeSections";
+import StatsSection from "@/components/StatsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import CTASection from "@/components/CTASection";
+import { HerkenJeDit, WieHelpIk, ValueProp, SeniorExpertise } from "@/components/HomeIntroSections";
 
 const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Relanova | Strategie. Relaties. Resultaat."
-        description="Wij organiseren strategische groei. Relanova verbindt strategie, mensen en opportuniteiten zodat er groei ontstaat."
+        title="Relanova | Human Touch in a Connected World"
+        description="Strategisch advies, positionering en partnerships via de BRIDGE-methode. Monia Ben Tahar helpt bedrijven duurzaam groeien."
         path="/"
       />
       <HeroSection />
-      <TrustedBy />
-      <WaaromRelanova />
-      <ZoCreerenWijWaarde />
-      <BridgeBand />
-      <ManierenSamenwerken />
-      <CasesResultaten />
-      <OverMijHome />
-      <BoekStrategieSessie />
-      {/* Full BRIDGE-methode - supporting content, deep-linkable */}
+      <HerkenJeDit />
+      <WieHelpIk />
+      <ValueProp />
+      <HeroServicesBlock />
+      <HeroCTABlock />
+      <StatsSection />
+      <SeniorExpertise />
       <BridgeServicesPreview />
+      <TestimonialsSection />
+      <CTASection />
     </Layout>
   );
 };
