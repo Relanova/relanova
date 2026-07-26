@@ -1,29 +1,32 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import HeroSection, { HeroServicesBlock, HeroCTABlock } from "@/components/HeroSection";
+import HeroSection from "@/components/HeroSection";
 import BridgeServicesPreview from "@/components/BridgeServicesPreview";
-import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
-import { HerkenJeDit, WieHelpIk, ValueProp, SeniorExpertise } from "@/components/HomeIntroSections";
+import {
+  WhyCompaniesCall,
+  HowRelanovaCreatesValue,
+  WhatClientsGain,
+  WaysToWorkTogether,
+  AboutMoniaTeaser,
+} from "@/components/HomeIntroSections";
 
 const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Relanova | Human Touch in a Connected World"
-        description="Strategisch advies, positionering en partnerships via de BRIDGE-methode. Monia Ben Tahar helpt bedrijven duurzaam groeien."
+        title="Relanova | Strategic Advisor & Growth Connector"
+        description="Strategy. Relationships. Results. Relanova organiseert strategische groei door strategie, relaties en executie te verbinden."
         path="/"
       />
       <HeroSection />
-      <HerkenJeDit />
-      <WieHelpIk />
-      <ValueProp />
-      <HeroServicesBlock />
-      <HeroCTABlock />
-      <StatsSection />
-      <SeniorExpertise />
+      <WhyCompaniesCall />
+      <HowRelanovaCreatesValue />
+      <WhatClientsGain />
+      <WaysToWorkTogether />
       <BridgeServicesPreview />
+      <AboutMoniaTeaser />
       <TestimonialsSection />
       <CTASection />
     </Layout>

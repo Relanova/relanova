@@ -58,16 +58,19 @@ const BridgeServicesPreview = () => {
     <section id="bridge-methode" className="section-padding bg-background">
       <div className="container mx-auto">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">De BRIDGE-methode</span>
+          <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Ondersteunend raamwerk</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">
-            De BRIDGE-methode: Van strategie naar uitvoering
+            De BRIDGE-methode
           </h2>
+          <p className="text-foreground font-sans font-semibold mb-3">
+            Strategie → BRIDGE-methode → Resultaat
+          </p>
           <p className="text-muted-foreground leading-relaxed font-sans">
-            Om groei te stimuleren werk ik met de BRIDGE-methode - een gefaseerde aanpak die
-            strategie verbindt met uitvoering:
+            BRIDGE is ons raamwerk dat structuur geeft van strategie tot resultaat.
           </p>
           <p className="text-muted-foreground leading-relaxed font-sans mt-2">
-            Elke laag apart inzetbaar, of als complete reis. Start waar jij bent.
+            Om groei te stimuleren werk ik met de BRIDGE-methode - een gefaseerde aanpak die
+            strategie verbindt met uitvoering. Elke laag apart inzetbaar, of als complete reis. Start waar jij bent.
           </p>
         </div>
 
