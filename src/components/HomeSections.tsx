@@ -299,11 +299,16 @@ export const OverMijPreview = () => {
               Human Touch in a Connected World.
             </p>
             <Link to="/about">
-
               <Button variant="navy" size="lg" className="gap-2">
                 Lees meer over Monia <ArrowRight className="w-4 h-4" />
               </Button>
             </Link>
+            <img
+              src={moniaSignature.url}
+              alt="Handtekening Monia - Creating connections that create growth"
+              className="mt-10 w-[280px] max-w-full h-auto"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
