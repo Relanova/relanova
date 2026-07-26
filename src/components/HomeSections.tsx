@@ -166,8 +166,12 @@ export const ManierenSamenwerken = () => {
     },
   ];
   return (
-    <section className="section-padding bg-hero-gradient text-primary-foreground">
-      <div className="container mx-auto max-w-6xl">
+    <section
+      className="section-padding text-primary-foreground relative overflow-hidden"
+      style={{ background: "linear-gradient(135deg, #2E636B 0%, #2F5D6A 50%, #304F63 100%)" }}
+    >
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay pointer-events-none" />
+      <div className="container mx-auto max-w-6xl relative">
         <div className="text-center mb-12">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">
             Manieren om samen te werken
