@@ -39,10 +39,11 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Over Mij</span>
-              <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-3 mb-6">
+              <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-3 mb-3">
                 Monia Ben Tahar
               </h1>
-              <p className="text-xl text-secondary font-serif italic mb-6">Ecosystem Architect</p>
+              <p className="text-xl text-secondary font-serif italic mb-2">Ecosystem Architect</p>
+              <p className="text-sm text-muted-foreground font-sans italic mb-6">Human Touch in a Connected World</p>
               <p className="text-muted-foreground leading-relaxed mb-4 font-sans">
                 Met meer dan 15 jaar ervaring in strategie en business development, met focus op marketing,
                 communicatie en partnerships, help ik ambitieuze bedrijven hun ecosysteem bouwen. Ik geloof dat duurzame groei
