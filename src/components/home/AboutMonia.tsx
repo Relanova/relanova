@@ -34,6 +34,10 @@ const AboutMonia = () => {
             <Link to="/about">
               <Button variant="navy">Lees het volledige verhaal</Button>
             </Link>
+            <div className="mt-8 pt-6 border-t border-border/50">
+              <p className="font-serif italic text-2xl text-secondary mb-1">Monia</p>
+              <p className="text-sm text-muted-foreground font-sans">Creating connections that create growth.</p>
+            </div>
           </div>
         </div>
       </div>
