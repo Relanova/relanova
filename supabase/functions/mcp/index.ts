@@ -3,7 +3,7 @@
 // supabase function: mcp
 // Bundled from src/lib/mcp/index.ts by @lovable.dev/mcp-js.
 // src/lib/mcp/index.ts
-import { defineMcp, auth } from "npm:@lovable.dev/mcp-js@0.24.0";
+import { defineMcp } from "npm:@lovable.dev/mcp-js@0.24.0";
 
 // src/lib/mcp/tools/list-news-posts.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.24.0";
@@ -101,20 +101,11 @@ var get_company_info_default = defineTool3({
 });
 
 // src/lib/mcp/index.ts
-var SUPABASE_URL = "https://qhfgdmbqwpdvdclqsbbd.supabase.co";
 var mcp_default = defineMcp({
   name: "relanova-mcp",
   title: "Relanova MCP",
   version: "0.1.0",
-  instructions: "Tools for the Relanova consulting website. Use `get_company_info` for contact, focus and the BRIDGE methodology; `list_news_posts` to browse published news/blog posts; `get_news_post` to read a single post by slug.",
-  // Require an OAuth bearer token minted by the project's Supabase auth issuer.
-  // Any signed-in user of Relanova can call the tools; unauthenticated callers are rejected.
-  auth: auth.oauth.issuer({
-    issuer: `${SUPABASE_URL}/auth/v1`,
-    jwksUri: `${SUPABASE_URL}/auth/v1/.well-known/jwks.json`,
-    acceptedAudiences: ["authenticated"],
-    resourceName: "Relanova MCP"
-  }),
+  instructions: "Public tools for the Relanova consulting website. Use `get_company_info` for contact, focus and the BRIDGE methodology; `list_news_posts` to browse published news/blog posts; `get_news_post` to read a single post by slug.",
   tools: [get_company_info_default, list_news_posts_default, get_news_post_default]
 });
 

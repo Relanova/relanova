@@ -29,6 +29,7 @@ const Header = () => {
           />
           <div className="flex flex-col leading-none">
             <span className="font-sans font-bold text-foreground text-base tracking-tight">Relanova</span>
+            <span className="text-muted-foreground text-[10px] tracking-widest uppercase">Human Touch in a Connected World</span>
           </div>
         </Link>
 
