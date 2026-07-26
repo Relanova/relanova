@@ -58,8 +58,9 @@ export const WaaromRelanova = () => {
     { icon: Rocket, title: "Executie", desc: "Van plan naar zichtbaar resultaat." },
   ];
   return (
-    <section className="section-padding bg-primary text-primary-foreground">
-      <div className="container mx-auto max-w-6xl">
+    <section className="section-padding bg-primary text-primary-foreground relative overflow-hidden">
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay pointer-events-none" />
+      <div className="container mx-auto max-w-6xl relative">
         <div className="text-center mb-12">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">
             Waarom bedrijven Relanova bellen
