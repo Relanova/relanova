@@ -1,31 +1,45 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import HeroSection, { HeroServicesBlock, HeroCTABlock } from "@/components/HeroSection";
+import HeroSection from "@/components/HeroSection";
 import BridgeServicesPreview from "@/components/BridgeServicesPreview";
-import StatsSection from "@/components/StatsSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import CTASection from "@/components/CTASection";
-import { HerkenJeDit, WieHelpIk, ValueProp, SeniorExpertise } from "@/components/HomeIntroSections";
+import {
+  VertrouwdDoorCEOs,
+  WaaromRelanova,
+  ZoCreerenWaarde,
+  ManierenSamenwerken,
+  CasesResultaten,
+  OverMijPreview,
+  BoekStrategieSessie,
+  BridgeBand,
+} from "@/components/HomeSections";
 
 const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Relanova | Human Touch in a Connected World"
-        description="Strategisch advies, positionering en partnerships via de BRIDGE-methode. Monia Ben Tahar helpt bedrijven duurzaam groeien."
+        title="Relanova | Strategie. Relaties. Resultaat."
+        description="Relanova organiseert strategische groei. Ik verbind strategie, mensen en opportuniteiten zodat er groei ontstaat."
         path="/"
       />
+      {/* 1. Hero */}
       <HeroSection />
-      <HerkenJeDit />
-      <WieHelpIk />
-      <ValueProp />
-      <HeroServicesBlock />
-      <HeroCTABlock />
-      <StatsSection />
-      <SeniorExpertise />
+      {/* 2. Vertrouwd door CEO's */}
+      <VertrouwdDoorCEOs />
+      {/* 3. Waarom bedrijven Relanova bellen */}
+      <WaaromRelanova />
+      {/* 4. Zo creëren wij waarde */}
+      <ZoCreerenWaarde />
+      {/* BRIDGE als ondersteunende band (Strategie → BRIDGE → Resultaat) */}
+      <BridgeBand />
       <BridgeServicesPreview />
-      <TestimonialsSection />
-      <CTASection />
+      {/* 5. Manieren om samen te werken */}
+      <ManierenSamenwerken />
+      {/* 6. Cases & resultaten */}
+      <CasesResultaten />
+      {/* 7. Over Mij */}
+      <OverMijPreview />
+      {/* 8. Boek een strategiesessie */}
+      <BoekStrategieSessie />
     </Layout>
   );
 };
