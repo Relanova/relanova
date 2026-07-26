@@ -320,7 +320,11 @@ export const BoekStrategieSessie = () => {
   return (
     <section className="section-padding bg-background">
       <div className="container mx-auto">
-        <div className="bg-primary rounded-2xl p-10 md:p-16 text-center relative overflow-hidden">
+        <div
+          className="rounded-2xl p-10 md:p-16 text-center relative overflow-hidden"
+          style={{ background: "linear-gradient(135deg, #2E636B 0%, #2F5D6A 50%, #304F63 100%)" }}
+        >
+          <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay pointer-events-none" />
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-secondary blur-3xl" />
             <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-primary-foreground blur-3xl" />
