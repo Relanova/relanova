@@ -34,7 +34,7 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] mb-6">
-              Wij organiseren <span className="text-[#8FC3CC]">strategische groei.</span>
+              Groei begint bij de <span className="text-[#8FC3CC]">juiste verbindingen.</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-4">
               Ik verbind strategie, mensen en opportuniteiten zodat er groei ontstaat.
