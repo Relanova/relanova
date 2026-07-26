@@ -298,13 +298,8 @@ export const OverMijPreview = () => {
             <p className="text-secondary font-sans italic text-sm mb-6">
               Human Touch in a Connected World.
             </p>
-            <div className="border-l-2 border-secondary/40 pl-4 mb-6">
-              <p className="font-serif italic text-2xl text-foreground">Monia</p>
-              <p className="text-sm text-muted-foreground font-sans mt-1">
-                Creating connections that create growth.
-              </p>
-            </div>
             <Link to="/about">
+
               <Button variant="navy" size="lg" className="gap-2">
                 Lees meer over Monia <ArrowRight className="w-4 h-4" />
               </Button>
