@@ -20,7 +20,7 @@ const Footer = () => {
               />
               <div className="flex flex-col leading-none">
                 <span className="font-serif font-bold text-base">Relanova</span>
-                <span className="text-primary-foreground/60 text-[10px] tracking-widest uppercase">Human Touch in a Connected World</span>
+                <span className="text-primary-foreground/60 text-[10px] tracking-widest uppercase">Strategie. Relaties. Resultaat.</span>
               </div>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-3">
