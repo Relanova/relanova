@@ -106,8 +106,9 @@ export const ZoCreerenWaarde = () => {
     { icon: Zap, title: "Executie", desc: "Van plan naar actie, van actie naar resultaat." },
   ];
   return (
-    <section className="section-padding bg-muted/40">
-      <div className="container mx-auto max-w-5xl">
+    <section className="section-padding bg-muted/40 relative overflow-hidden">
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <div className="container mx-auto max-w-5xl relative">
         <div className="text-center mb-12">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">
             Zo creëren wij waarde
