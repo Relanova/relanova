@@ -27,12 +27,12 @@ import logoBnxt from "@/assets/logos/bnxt-league.png.asset.json";
 type LogoItem = { name: string; src?: string };
 export const VertrouwdDoorCEOs = () => {
   const logos: LogoItem[] = [
-    { name: "Nationale Loterij" },
-    { name: "BASE" },
+    { name: "Nationale Loterij", src: logoNationaleLoterij.url },
+    { name: "BASE", src: logoBase.url },
     { name: "Telenet" },
-    { name: "Nestlé" },
-    { name: "[klantlogo]" },
-    { name: "[klantlogo]" },
+    { name: "Nestlé Herta", src: logoHerta.url },
+    { name: "Del Monte", src: logoDelMonte.url },
+    { name: "BNXT League", src: logoBnxt.url },
   ];
   return (
     <section className="py-14 md:py-16 bg-background border-y border-border relative overflow-hidden">
