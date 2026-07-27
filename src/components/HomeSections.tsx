@@ -22,6 +22,7 @@ import logoBase from "@/assets/logos/base.jpg.asset.json";
 import logoHerta from "@/assets/logos/herta.png.asset.json";
 import logoDelMonte from "@/assets/logos/del-monte.png.asset.json";
 import logoBnxt from "@/assets/logos/bnxt-league.png.asset.json";
+import logoTelenet from "@/assets/logos/telenet.png.asset.json";
 
 /* 2. Vertrouwd door CEO's */
 type LogoItem = { name: string; src?: string };
@@ -29,7 +30,7 @@ export const VertrouwdDoorCEOs = () => {
   const logos: LogoItem[] = [
     { name: "Nationale Loterij", src: logoNationaleLoterij.url },
     { name: "BASE", src: logoBase.url },
-    { name: "Telenet" },
+    { name: "Telenet", src: logoTelenet.url },
     { name: "Nestlé Herta", src: logoHerta.url },
     { name: "Del Monte", src: logoDelMonte.url },
     { name: "BNXT League", src: logoBnxt.url },
