@@ -17,6 +17,11 @@ import {
 import heroPortrait from "@/assets/hero-portrait.jpg";
 import heroBg from "@/assets/hero-bg-pattern.jpg";
 import moniaSignature from "@/assets/monia-signature.png.asset.json";
+import logoNationaleLoterij from "@/assets/logos/nationale-loterij.jpg.asset.json";
+import logoBase from "@/assets/logos/base.jpg.asset.json";
+import logoHerta from "@/assets/logos/herta.png.asset.json";
+import logoDelMonte from "@/assets/logos/del-monte.png.asset.json";
+import logoBnxt from "@/assets/logos/bnxt-league.png.asset.json";
 
 /* 2. Vertrouwd door CEO's */
 type LogoItem = { name: string; src?: string };
