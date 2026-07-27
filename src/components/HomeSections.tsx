@@ -19,31 +19,54 @@ import heroBg from "@/assets/hero-bg-pattern.jpg";
 import moniaSignature from "@/assets/monia-signature.png.asset.json";
 
 /* 2. Vertrouwd door CEO's */
+type LogoItem = { name: string; src?: string };
 export const VertrouwdDoorCEOs = () => {
-  const logos = [
-    "Nationale Loterij",
-    "BASE",
-    "Telenet",
-    "Nestlé",
-    "[klantlogo]",
-    "[klantlogo]",
+  const logos: LogoItem[] = [
+    { name: "Nationale Loterij" },
+    { name: "BASE" },
+    { name: "Telenet" },
+    { name: "Nestlé" },
+    { name: "[klantlogo]" },
+    { name: "[klantlogo]" },
   ];
   return (
     <section className="py-14 md:py-16 bg-background border-y border-border relative overflow-hidden">
-      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.15] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 pointer-events-none opacity-30"
+        style={{
+          backgroundColor: "#245163",
+          WebkitMaskImage: `url(${heroBg})`,
+          maskImage: `url(${heroBg})`,
+          WebkitMaskSize: "cover",
+          maskSize: "cover",
+          WebkitMaskPosition: "center",
+          maskPosition: "center",
+        }}
+      />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <p className="text-center text-sm md:text-base text-muted-foreground font-sans mb-8 uppercase tracking-widest">
           Bekende organisaties en leiders vertrouwen op Relanova
         </p>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 items-center max-w-5xl mx-auto">
-          {logos.map((l, i) => (
-            <div
-              key={i}
-              className="h-14 flex items-center justify-center rounded-lg bg-muted/50 border border-border text-muted-foreground font-serif font-semibold text-sm text-center px-2"
-            >
-              {l}
-            </div>
-          ))}
+          {logos.map((l, i) =>
+            l.src ? (
+              <img
+                key={i}
+                src={l.src}
+                alt={l.name}
+                className="h-14 w-full object-contain"
+                loading="lazy"
+              />
+            ) : (
+              <div
+                key={i}
+                className="h-14 flex items-center justify-center rounded-lg border border-dashed border-border text-muted-foreground font-sans text-sm text-center px-2"
+              >
+                [klantlogo]
+              </div>
+            )
+          )}
         </div>
       </div>
     </section>
