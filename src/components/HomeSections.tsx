@@ -30,7 +30,7 @@ export const VertrouwdDoorCEOs = () => {
   ];
   return (
     <section className="py-14 md:py-16 bg-background border-y border-border relative overflow-hidden">
-      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.15] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <p className="text-center text-sm md:text-base text-muted-foreground font-sans mb-8 uppercase tracking-widest">
           Bekende organisaties en leiders vertrouwen op Relanova
@@ -106,14 +106,17 @@ export const ZoCreerenWaarde = () => {
     { icon: Zap, title: "Executie", desc: "Van plan naar actie, van actie naar resultaat." },
   ];
   return (
-    <section className="section-padding bg-muted/40 relative overflow-hidden">
-      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+    <section
+      className="section-padding text-primary-foreground relative overflow-hidden"
+      style={{ background: "linear-gradient(135deg, #2E636B 0%, #2F5D6A 50%, #304F63 100%)" }}
+    >
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay pointer-events-none" />
       <div className="container mx-auto max-w-5xl relative">
         <div className="text-center mb-12">
-          <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">
+          <span className="text-sm font-semibold text-secondary-foreground/90 uppercase tracking-widest font-sans">
             Zo creëren wij waarde
           </span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary-foreground mt-3">
             Onze aanpak. Jouw resultaat.
           </h2>
         </div>
@@ -121,17 +124,17 @@ export const ZoCreerenWaarde = () => {
           {pillars.map((p) => (
             <div
               key={p.title}
-              className="bg-card border border-border rounded-2xl p-8 text-center shadow-sm"
+              className="bg-primary-foreground/5 border border-primary-foreground/15 rounded-2xl p-8 text-center backdrop-blur-sm"
             >
-              <div className="w-14 h-14 rounded-2xl bg-secondary/10 flex items-center justify-center mx-auto mb-4">
-                <p.icon className="w-6 h-6 text-secondary" />
+              <div className="w-14 h-14 rounded-2xl bg-primary-foreground/10 flex items-center justify-center mx-auto mb-4">
+                <p.icon className="w-6 h-6 text-primary-foreground" />
               </div>
-              <h3 className="font-serif font-bold text-xl text-foreground mb-2">{p.title}</h3>
-              <p className="text-muted-foreground font-sans">{p.desc}</p>
+              <h3 className="font-serif font-bold text-xl text-primary-foreground mb-2">{p.title}</h3>
+              <p className="text-primary-foreground/80 font-sans">{p.desc}</p>
             </div>
           ))}
         </div>
-        <p className="text-center text-foreground font-sans max-w-3xl mx-auto text-lg">
+        <p className="text-center text-primary-foreground/90 font-sans max-w-3xl mx-auto text-lg">
           Wat je oplevert: richting, vertrouwen, rust en toegang tot een netwerk dat deuren opent
           die voor anderen gesloten blijven.
         </p>
@@ -219,7 +222,7 @@ export const CasesResultaten = () => {
   ];
   return (
     <section className="section-padding bg-background relative overflow-hidden">
-      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.15] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
       <div className="container mx-auto max-w-5xl relative">
         <div className="text-center mb-12">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">
@@ -276,7 +279,7 @@ export const CasesResultaten = () => {
 export const OverMijPreview = () => {
   return (
     <section className="section-padding bg-muted/30 relative overflow-hidden">
-      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.15] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
       <div className="container mx-auto max-w-5xl relative">
         <div className="grid md:grid-cols-[280px_1fr] gap-10 items-center">
           <div className="flex justify-center md:justify-start">
@@ -356,7 +359,7 @@ export const BoekStrategieSessie = () => {
 /* Compact BRIDGE band (supporting element) */
 export const BridgeBand = () => (
   <section className="py-8 bg-background border-y border-border relative overflow-hidden">
-    <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+    <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.15] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
     <div className="container mx-auto max-w-4xl text-center relative">
       <p className="text-sm font-sans text-muted-foreground uppercase tracking-widest">
         <span className="text-foreground font-semibold">Strategie</span>
