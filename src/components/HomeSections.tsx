@@ -353,8 +353,9 @@ export const BoekStrategieSessie = () => {
 
 /* Compact BRIDGE band (supporting element) */
 export const BridgeBand = () => (
-  <section className="py-8 bg-background border-y border-border">
-    <div className="container mx-auto max-w-4xl text-center">
+  <section className="py-8 bg-background border-y border-border relative overflow-hidden">
+    <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+    <div className="container mx-auto max-w-4xl text-center relative">
       <p className="text-sm font-sans text-muted-foreground uppercase tracking-widest">
         <span className="text-foreground font-semibold">Strategie</span>
         <span className="mx-3 text-secondary">→</span>
