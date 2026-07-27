@@ -29,8 +29,9 @@ export const VertrouwdDoorCEOs = () => {
     "[klantlogo]",
   ];
   return (
-    <section className="py-14 md:py-16 bg-background border-y border-border">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-14 md:py-16 bg-background border-y border-border relative overflow-hidden">
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <p className="text-center text-sm md:text-base text-muted-foreground font-sans mb-8 uppercase tracking-widest">
           Bekende organisaties en leiders vertrouwen op Relanova
         </p>
