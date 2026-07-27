@@ -275,8 +275,9 @@ export const CasesResultaten = () => {
 /* 7. Over Mij (preview) */
 export const OverMijPreview = () => {
   return (
-    <section className="section-padding bg-muted/30">
-      <div className="container mx-auto max-w-5xl">
+    <section className="section-padding bg-muted/30 relative overflow-hidden">
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <div className="container mx-auto max-w-5xl relative">
         <div className="grid md:grid-cols-[280px_1fr] gap-10 items-center">
           <div className="flex justify-center md:justify-start">
             <img
