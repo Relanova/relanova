@@ -29,8 +29,9 @@ export const VertrouwdDoorCEOs = () => {
     "[klantlogo]",
   ];
   return (
-    <section className="py-14 md:py-16 bg-background border-y border-border">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-14 md:py-16 bg-background border-y border-border relative overflow-hidden">
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
         <p className="text-center text-sm md:text-base text-muted-foreground font-sans mb-8 uppercase tracking-widest">
           Bekende organisaties en leiders vertrouwen op Relanova
         </p>
@@ -105,8 +106,9 @@ export const ZoCreerenWaarde = () => {
     { icon: Zap, title: "Executie", desc: "Van plan naar actie, van actie naar resultaat." },
   ];
   return (
-    <section className="section-padding bg-muted/40">
-      <div className="container mx-auto max-w-5xl">
+    <section className="section-padding bg-muted/40 relative overflow-hidden">
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <div className="container mx-auto max-w-5xl relative">
         <div className="text-center mb-12">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">
             Zo creëren wij waarde
@@ -216,8 +218,9 @@ export const CasesResultaten = () => {
     { icon: Globe2, value: "[aantal]", label: "landen" },
   ];
   return (
-    <section className="section-padding bg-background">
-      <div className="container mx-auto max-w-5xl">
+    <section className="section-padding bg-background relative overflow-hidden">
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <div className="container mx-auto max-w-5xl relative">
         <div className="text-center mb-12">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">
             Cases & resultaten
@@ -272,8 +275,9 @@ export const CasesResultaten = () => {
 /* 7. Over Mij (preview) */
 export const OverMijPreview = () => {
   return (
-    <section className="section-padding bg-muted/30">
-      <div className="container mx-auto max-w-5xl">
+    <section className="section-padding bg-muted/30 relative overflow-hidden">
+      <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+      <div className="container mx-auto max-w-5xl relative">
         <div className="grid md:grid-cols-[280px_1fr] gap-10 items-center">
           <div className="flex justify-center md:justify-start">
             <img
@@ -351,8 +355,9 @@ export const BoekStrategieSessie = () => {
 
 /* Compact BRIDGE band (supporting element) */
 export const BridgeBand = () => (
-  <section className="py-8 bg-background border-y border-border">
-    <div className="container mx-auto max-w-4xl text-center">
+  <section className="py-8 bg-background border-y border-border relative overflow-hidden">
+    <img src={heroBg} alt="" aria-hidden="true" className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-multiply pointer-events-none" style={{ filter: "invert(1) sepia(1) saturate(5) hue-rotate(155deg)" }} />
+    <div className="container mx-auto max-w-4xl text-center relative">
       <p className="text-sm font-sans text-muted-foreground uppercase tracking-widest">
         <span className="text-foreground font-semibold">Strategie</span>
         <span className="mx-3 text-secondary">→</span>
