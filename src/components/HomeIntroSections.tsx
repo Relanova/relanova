@@ -13,7 +13,7 @@ export const ZoCrerenWijWaarde = () => {
     { icon: Key, label: "Toegang" },
     { icon: UsersRound, label: "Een sparringpartner" },
     { icon: DoorOpen, label: "Iemand die deuren opent" },
-    { icon: MoveRight, label: "Iemand die beweging creeert" },
+    { icon: ChevronsRight, label: "Iemand die beweging creeert" },
   ];
   return (
     <section className="section-padding bg-background">
