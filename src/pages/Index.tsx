@@ -5,7 +5,7 @@ import BridgeServicesPreview from "@/components/BridgeServicesPreview";
 import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
-import { HerkenJeDit, WieHelpIk, ValueProp, SeniorExpertise } from "@/components/HomeIntroSections";
+import { HerkenJeDit, WieHelpIk, ValueProp, SeniorExpertise, WaaromRelanova } from "@/components/HomeIntroSections";
 
 const Index = () => {
   return (
@@ -18,6 +18,7 @@ const Index = () => {
       <HeroSection />
       <HerkenJeDit />
       <WieHelpIk />
+      <WaaromRelanova />
       <ValueProp />
       <HeroServicesBlock />
       <HeroCTABlock />
