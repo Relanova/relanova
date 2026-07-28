@@ -20,13 +20,12 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="text-primary-foreground">
-            <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-1.5 mb-8 text-sm backdrop-blur-sm">
-              <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
+            <p className="font-sans text-sm md:text-base uppercase tracking-[0.2em] text-primary-foreground/90 mb-6">
               Relanova
-            </div>
+            </p>
 
-            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] mb-8">
-              Strategic Advisor & <span className="text-[#8FC3CC]">Growth Connector</span>
+            <h1 className="font-sans text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.15] mb-8 text-primary-foreground">
+              Strategic Advisor &amp;<br />Growth Connector
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-6">
               Strategie, relaties en executie verbinden om groei te versnellen.
@@ -35,7 +34,7 @@ const HeroSection = () => {
               Strategie. Relaties. Resultaat.
             </p>
             <Link to="/contact">
-              <Button variant="hero" size="xl" className="gap-2">
+              <Button variant="hero" size="xl" className="gap-2 whitespace-nowrap">
                 Boek een strategiesessie
                 <ArrowRight className="w-5 h-5" />
               </Button>
