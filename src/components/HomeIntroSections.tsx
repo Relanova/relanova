@@ -1,4 +1,39 @@
-import { CheckCircle2, Users, Sparkles } from "lucide-react";
+import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket } from "lucide-react";
+
+export const WaaromRelanova = () => {
+  const items = [
+    { icon: TrendingUp, title: "Groei", text: "Strategische keuzes die zorgen voor blijvende, meetbare groei." },
+    { icon: Handshake, title: "Partnerships", text: "De juiste samenwerkingen die deuren openen en waarde creeren." },
+    { icon: Target, title: "Stakeholder-alignment", text: "Alle neuzen in dezelfde richting, intern en extern." },
+    { icon: Network, title: "Ecosystemen", text: "Een sterk netwerk bouwen rond je organisatie." },
+    { icon: Rocket, title: "Executie", text: "Van plan naar actie, zodat er echt beweging ontstaat." },
+  ];
+  return (
+    <section className="section-padding bg-background">
+      <div className="container mx-auto max-w-4xl">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
+            Waarom bedrijven Relanova bellen
+          </h2>
+          <p className="text-muted-foreground font-sans">Voor groei die blijvend impact maakt.</p>
+        </div>
+        <ul className="grid gap-4 md:grid-cols-2">
+          {items.map(({ icon: Icon, title, text }) => (
+            <li key={title} className="flex items-start gap-4 bg-card rounded-lg p-5 border border-border">
+              <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-secondary/10 shrink-0">
+                <Icon className="w-5 h-5 text-secondary" />
+              </div>
+              <div>
+                <h3 className="font-serif font-semibold text-foreground mb-1">{title}</h3>
+                <p className="text-muted-foreground font-sans text-sm">{text}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+};
 
 export const HerkenJeDit = () => {
   const items = [
