@@ -35,6 +35,9 @@ export const ZoCrerenWijWaarde = () => {
             </div>
           ))}
         </div>
+        <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground text-center mb-8">
+          Wat dat jou oplevert
+        </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center max-w-3xl mx-auto">
           {begrippen.slice(0, 4).map(({ icon: Icon, label }) => (
             <div key={label} className="flex flex-col items-center text-center">
