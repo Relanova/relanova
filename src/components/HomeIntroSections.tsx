@@ -125,9 +125,10 @@ export const ManierenOmSamenTeWerken = () => {
               <span className="text-[11px] uppercase tracking-widest font-sans font-medium mb-3" style={{ color: "#245163" }}>
                 {label}
               </span>
-              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl mb-4" style={{ backgroundColor: "rgba(36,81,99,0.1)" }}>
-                <Icon className="w-5 h-5" style={{ color: "#245163" }} />
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl mb-4" style={{ backgroundColor: "#245163" }}>
+                <Icon className="w-5 h-5 text-white" />
               </div>
+
               <h3 className="font-serif font-semibold text-foreground text-lg mb-1">{title}</h3>
               {subtitle && (
                 <p className="text-muted-foreground font-sans text-sm italic mb-2">{subtitle}</p>
