@@ -1,4 +1,41 @@
-import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket, Compass, HeartHandshake, Zap, Handshake as HandshakeIcon, Flower2, Key, UsersRound, DoorOpen, ChevronsRight } from "lucide-react";
+import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket, Compass, HeartHandshake, Zap, Handshake as HandshakeIcon, Flower2, Key, UsersRound, DoorOpen, ChevronsRight, MessageCircle, Presentation, Users2 } from "lucide-react";
+
+export const ManierenOmSamenTeWerken = () => {
+  const diensten = [
+    { label: "Halve dag", icon: Compass, title: "CEO-strategiesessie", text: "Strategische analyse, commerciele kansen, partnerships, stakeholdermapping, positionering en prioriteiten." },
+    { label: "Maandabonnement", icon: MessageCircle, title: "Strategisch adviseur", text: "Strategiesessies, telefonische sparring, review van documenten en snelle strategische ondersteuning." },
+    { label: "Projectbasis", icon: HandshakeIcon, title: "Partnership-strategie", text: "Voor wie strategische partnerships zoekt, sponsorstrategieen wil ontwikkelen of ecosystemen wil bouwen." },
+    { label: "Succesfee", icon: Users2, title: "Executive matchmaking", text: "CEO's verbinden, bedrijven koppelen, investeerders introduceren en experts samenbrengen." },
+    { label: "Dagtarief", icon: Presentation, title: "Executive facilitatie", text: "Board meetings, strategiedagen, leiderschapssessies en stakeholderbijeenkomsten faciliteren." },
+    { label: "Binnenkort", icon: Sparkles, title: "Relanova Circle", text: "Een exclusieve community voor CEO's, founders en decision makers: diners, round tables en high-level networking." },
+  ];
+  return (
+    <section className="section-padding bg-background">
+      <div className="container mx-auto max-w-6xl">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
+            Manieren om samen te werken
+          </h2>
+          <p className="text-muted-foreground font-sans">Kies wat past bij jouw ambitie en fase.</p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {diensten.map(({ label, icon: Icon, title, text }) => (
+            <div key={title} className="bg-card rounded-lg p-6 border border-border flex flex-col">
+              <span className="text-[11px] uppercase tracking-widest text-muted-foreground/80 font-sans font-medium mb-3">
+                {label}
+              </span>
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-secondary/10 mb-4">
+                <Icon className="w-5 h-5 text-secondary" />
+              </div>
+              <h3 className="font-serif font-semibold text-foreground text-lg mb-2">{title}</h3>
+              <p className="text-muted-foreground font-sans text-sm leading-relaxed">{text}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export const ZoCrerenWijWaarde = () => {
   const pijlers = [
