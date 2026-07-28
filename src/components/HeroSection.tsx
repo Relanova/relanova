@@ -27,9 +27,10 @@ const HeroSection = () => {
             <h1 className="font-sans text-left text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.15] mb-4 text-white" style={{ fontWeight: 700 }}>
               Strategic Advisor &amp;<br />Growth Connector
             </h1>
-            <p className="font-sans text-left text-white max-w-xl mb-3" style={{ fontSize: "20px", fontWeight: 600 }}>
-              Strategie, relaties en executie verbinden om groei te versnellen.
+            <p className="font-sans text-left text-white max-w-xl mb-3" style={{ fontSize: "22px", fontWeight: 700 }}>
+              Strategie, relaties en executie verbinden<br />om groei te versnellen.
             </p>
+
 
             <p className="font-sans text-left max-w-xl mb-6 italic text-white/80">
               Strategie. Relaties. Resultaat.
