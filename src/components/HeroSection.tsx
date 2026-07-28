@@ -20,14 +20,14 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="text-primary-foreground">
-            <p className="font-sans text-sm md:text-base uppercase tracking-[0.2em] text-primary-foreground/90 mb-6">
+            <p className="font-sans text-base md:text-lg font-semibold uppercase tracking-[0.3em] text-white mb-6">
               Relanova
             </p>
 
             <h1 className="font-sans text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.15] mb-8 text-primary-foreground">
               Strategic Advisor &amp;<br />Growth Connector
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-6">
+            <p className="text-xl md:text-2xl text-white font-sans max-w-xl mb-6">
               Strategie, relaties en executie verbinden om groei te versnellen.
             </p>
             <p className="text-sm md:text-base text-primary-foreground/70 font-sans max-w-xl mb-10 italic">
