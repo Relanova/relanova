@@ -19,6 +19,7 @@ const Index = () => {
       <HerkenJeDit />
       <WieHelpIk />
       <WaaromRelanova />
+      <ZoCrerenWijWaarde />
       <ValueProp />
       <HeroServicesBlock />
       <HeroCTABlock />
