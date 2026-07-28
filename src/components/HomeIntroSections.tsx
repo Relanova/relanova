@@ -1,4 +1,4 @@
-import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket, Compass, HeartHandshake, Zap, Handshake as HandshakeIcon, Flower2, Key, UsersRound, DoorOpen, MoveRight } from "lucide-react";
+import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket, Compass, HeartHandshake, Zap, Handshake as HandshakeIcon, Flower2, Key, UsersRound, DoorOpen, ChevronsRight } from "lucide-react";
 
 export const ZoCrerenWijWaarde = () => {
   const pijlers = [
@@ -13,7 +13,7 @@ export const ZoCrerenWijWaarde = () => {
     { icon: Key, label: "Toegang" },
     { icon: UsersRound, label: "Een sparringpartner" },
     { icon: DoorOpen, label: "Iemand die deuren opent" },
-    { icon: MoveRight, label: "Iemand die beweging creeert" },
+    { icon: ChevronsRight, label: "Iemand die beweging creeert" },
   ];
   return (
     <section className="section-padding bg-background">
