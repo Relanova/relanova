@@ -1,4 +1,60 @@
-import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket } from "lucide-react";
+import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket, Compass, HeartHandshake, Zap, Handshake as HandshakeIcon, Flower2, Key, UsersRound, DoorOpen, MoveRight } from "lucide-react";
+
+export const ZoCrerenWijWaarde = () => {
+  const pijlers = [
+    { icon: Compass, title: "Strategie", text: "duidelijke koers, scherpe keuzes." },
+    { icon: HeartHandshake, title: "Relaties", text: "de juiste mensen, waardevolle connecties." },
+    { icon: Zap, title: "Executie", text: "van plan naar actie, van actie naar resultaat." },
+  ];
+  const begrippen = [
+    { icon: HandshakeIcon, label: "Vertrouwen" },
+    { icon: Flower2, label: "Rust" },
+    { icon: Target, label: "Overzicht" },
+    { icon: Key, label: "Toegang" },
+    { icon: UsersRound, label: "Een sparringpartner" },
+    { icon: DoorOpen, label: "Iemand die deuren opent" },
+    { icon: MoveRight, label: "Iemand die beweging creeert" },
+  ];
+  return (
+    <section className="section-padding bg-background">
+      <div className="container mx-auto max-w-5xl">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
+            Zo creeren wij waarde
+          </h2>
+          <p className="text-muted-foreground font-sans">Onze aanpak. Jouw resultaat.</p>
+        </div>
+        <div className="grid gap-6 md:grid-cols-3 mb-16">
+          {pijlers.map(({ icon: Icon, title, text }) => (
+            <div key={title} className="bg-card rounded-lg p-6 border border-border text-center">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-secondary/10 mb-4">
+                <Icon className="w-6 h-6 text-secondary" />
+              </div>
+              <h3 className="font-serif font-semibold text-foreground mb-2">{title}</h3>
+              <p className="text-muted-foreground font-sans text-sm">{text}</p>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center max-w-3xl mx-auto">
+          {begrippen.slice(0, 4).map(({ icon: Icon, label }) => (
+            <div key={label} className="flex flex-col items-center text-center">
+              <Icon className="w-10 h-10 mb-3" style={{ color: "#245163" }} strokeWidth={1.5} />
+              <span className="font-sans text-sm font-medium" style={{ color: "#245163" }}>{label}</span>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center max-w-3xl mx-auto mt-8">
+          {begrippen.slice(4).map(({ icon: Icon, label }) => (
+            <div key={label} className="flex flex-col items-center text-center">
+              <Icon className="w-10 h-10 mb-3" style={{ color: "#245163" }} strokeWidth={1.5} />
+              <span className="font-sans text-sm font-medium" style={{ color: "#245163" }}>{label}</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export const WaaromRelanova = () => {
   const items = [
