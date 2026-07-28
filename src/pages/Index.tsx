@@ -5,7 +5,7 @@ import BridgeServicesPreview from "@/components/BridgeServicesPreview";
 import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
-import { HerkenJeDit, WieHelpIk, ValueProp, SeniorExpertise, WaaromRelanova, ZoCrerenWijWaarde, ManierenOmSamenTeWerken } from "@/components/HomeIntroSections";
+import { HerkenJeDit, WieHelpIk, ValueProp, SeniorExpertise, WaaromRelanova, ZoCrerenWijWaarde, ManierenOmSamenTeWerken, CasesResultatenHome } from "@/components/HomeIntroSections";
 
 const Index = () => {
   return (
@@ -28,6 +28,7 @@ const Index = () => {
       <SeniorExpertise />
       <BridgeServicesPreview />
       <TestimonialsSection />
+      <CasesResultatenHome />
       <CTASection />
     </Layout>
   );

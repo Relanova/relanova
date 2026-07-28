@@ -1,4 +1,65 @@
-import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket, Compass, HeartHandshake, Zap, Handshake as HandshakeIcon, Flower2, Key, UsersRound, DoorOpen, ChevronsRight, MessageCircle, Presentation, Users2 } from "lucide-react";
+import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket, Compass, HeartHandshake, Zap, Handshake as HandshakeIcon, Flower2, Key, UsersRound, DoorOpen, ChevronsRight, MessageCircle, Presentation, Users2, Quote } from "lucide-react";
+import { Link } from "react-router-dom";
+
+export const CasesResultatenHome = () => {
+  const quotes = [
+    {
+      text: "Monia is een getalenteerde professional met een opmerkelijk vermogen om samen te werken. Haar sociale vaardigheden zijn van onschatbare waarde gebleken bij de realisatie van complexe marketing en sponsoring projecten.",
+      name: "Nico Ruell",
+      role: "Founder at BUTIK agency",
+    },
+    {
+      text: "I highly recommend Monia for anyone seeking a seasoned professional in sponsorship and marketing. Monia's extensive expertise in these areas is truly impressive, and she has a remarkable talent for building networks and connecting people.",
+      name: "Manu Leroy",
+      role: "Director Marketing & Communication at Royal Belgian FA",
+    },
+  ];
+
+  return (
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4 max-w-6xl">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#245163] mb-3">Cases &amp; resultaten</h2>
+          <p className="text-lg text-gray-700">Echte verhalen. Meetbare impact.</p>
+          <p className="text-sm text-gray-500 mt-2 italic">Aanbevelingen afkomstig van LinkedIn.</p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-6 mb-12">
+          {quotes.map((q) => (
+            <div key={q.name} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <Quote className="w-8 h-8 text-[#245163] mb-4" />
+              <p className="text-gray-800 leading-relaxed mb-5">"{q.text}"</p>
+              <div className="border-t border-gray-100 pt-4">
+                <p className="font-bold text-[#245163]">{q.name}</p>
+                <p className="text-sm text-gray-600">{q.role}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-2 gap-6 max-w-2xl mx-auto mb-10">
+          <div className="text-center">
+            <p className="text-3xl md:text-4xl font-bold text-[#245163]">15+</p>
+            <p className="text-sm text-gray-600 mt-1">jaar ervaring</p>
+          </div>
+          <div className="text-center">
+            <p className="text-3xl md:text-4xl font-bold text-[#245163]">40+</p>
+            <p className="text-sm text-gray-600 mt-1">LinkedIn-aanbevelingen</p>
+          </div>
+        </div>
+
+        <div className="text-center">
+          <Link
+            to="/cases"
+            className="inline-block bg-[#245163] hover:bg-[#1c3f4e] text-white font-semibold px-8 py-3 rounded-lg transition-colors"
+          >
+            Bekijk alle aanbevelingen
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export const ManierenOmSamenTeWerken = () => {
   const hoofddienst = {
