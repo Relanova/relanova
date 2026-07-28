@@ -21,20 +21,20 @@ export const ManierenOmSamenTeWerken = () => {
         </div>
 
         <div
-          className="rounded-2xl p-8 md:p-10 mb-8 text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+          className="rounded-2xl p-5 md:p-6 mb-8 text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
           style={{ backgroundColor: "#245163" }}
         >
-          <div className="flex flex-col md:flex-row md:items-start gap-6">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-white/10 shrink-0">
-              <HoofdIcon className="w-6 h-6 text-white" />
+          <div className="flex items-start gap-4">
+            <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-white/10 shrink-0">
+              <HoofdIcon className="w-5 h-5 text-white" />
             </div>
             <div className="flex-1">
-              <span className="block text-[11px] uppercase tracking-widest text-white/70 font-sans font-medium mb-2">
+              <span className="block text-[11px] uppercase tracking-widest text-white/70 font-sans font-medium mb-1">
                 De eerste stap · {hoofddienst.label}
               </span>
-              <h3 className="font-serif font-bold text-white text-2xl md:text-3xl mb-3">{hoofddienst.title}</h3>
-              <p className="text-white/90 font-sans leading-relaxed">{hoofddienst.text}</p>
-              <p className="text-white font-sans italic mt-3">Alles begint met helderheid en richting.</p>
+              <h3 className="font-serif font-bold text-white text-xl md:text-2xl mb-1.5">{hoofddienst.title}</h3>
+              <p className="text-white/90 font-sans text-sm leading-relaxed">{hoofddienst.text}</p>
+              <p className="text-white font-sans italic text-sm mt-2">Alles begint met helderheid en richting.</p>
             </div>
           </div>
         </div>
