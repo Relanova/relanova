@@ -25,8 +25,8 @@ export const ManierenOmSamenTeWerken = () => {
         "WhatsApp",
         "Review van documenten",
         "Snelle strategische ondersteuning",
+        "Fractional CMO",
         "Marketing services (projectbasis)",
-        "Fractional CMO (maandelijkse begeleiding)",
       ],
     },
     {
