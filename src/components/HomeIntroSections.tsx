@@ -1,13 +1,83 @@
 import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket, Compass, HeartHandshake, Zap, Handshake as HandshakeIcon, Flower2, Key, UsersRound, DoorOpen, ChevronsRight, MessageCircle, Presentation, Users2 } from "lucide-react";
 
 export const ManierenOmSamenTeWerken = () => {
-  const hoofddienst = { label: "Halve dag", icon: Compass, title: "CEO-strategiesessie", text: "Strategische analyse, commerciele kansen, partnerships, stakeholdermapping, positionering en prioriteiten." };
+  const hoofddienst = {
+    label: "Halve dag",
+    icon: Compass,
+    title: "CEO-strategiesessie",
+    items: [
+      "Strategische analyse",
+      "Commerciële kansen",
+      "Partnerships",
+      "Stakeholdermapping",
+      "Positionering",
+      "Prioriteiten bepalen",
+    ],
+  };
   const diensten = [
-    { label: "Maandabonnement", icon: MessageCircle, title: "Strategisch adviseur", text: "Strategiesessies, telefonische sparring, review van documenten en snelle strategische ondersteuning." },
-    { label: "Projectbasis", icon: HandshakeIcon, title: "Partnership-strategie", text: "Voor wie strategische partnerships zoekt, sponsorstrategieen wil ontwikkelen of ecosystemen wil bouwen." },
-    { label: "Succesfee", icon: Users2, title: "Executive matchmaking", text: "CEO's verbinden, bedrijven koppelen, investeerders introduceren en experts samenbrengen." },
-    { label: "Dagtarief", icon: Presentation, title: "Executive facilitatie", text: "Board meetings, strategiedagen, leiderschapssessies en stakeholderbijeenkomsten faciliteren." },
-    { label: "Binnenkort", icon: Sparkles, title: "Relanova Circle", text: "Een exclusieve community voor CEO's, founders en decision makers: diners, round tables en high-level networking." },
+    {
+      label: "Maandabonnement",
+      icon: MessageCircle,
+      title: "Strategisch adviseur",
+      items: [
+        "Twee strategiesessies",
+        "Telefonische sparring",
+        "WhatsApp",
+        "Review van documenten",
+        "Snelle strategische ondersteuning",
+      ],
+    },
+    {
+      label: "Projectbasis",
+      icon: HandshakeIcon,
+      title: "Partnership-strategie",
+      subtitle: "voor organisaties die:",
+      items: [
+        "Strategische partnerships zoeken",
+        "Sponsorstrategieën willen ontwikkelen",
+        "Ecosystemen willen bouwen",
+        "Nieuwe commerciële kansen zoeken",
+      ],
+    },
+    {
+      label: "Succesfee",
+      icon: Users2,
+      title: "Executive matchmaking",
+      subtitle: "geen recruitment, maar:",
+      items: [
+        "CEO's verbinden",
+        "Bedrijven koppelen",
+        "Investeerders introduceren",
+        "Experts samenbrengen",
+        "Strategische coalities vormen",
+      ],
+    },
+    {
+      label: "Dagtarief",
+      icon: Presentation,
+      title: "Executive facilitatie",
+      subtitle: "faciliteren van:",
+      items: [
+        "Board meetings",
+        "Strategiedagen",
+        "Leiderschapssessies",
+        "Stakeholderbijeenkomsten",
+        "Partnerdagen",
+      ],
+    },
+    {
+      label: "Binnenkort",
+      icon: Sparkles,
+      title: "Relanova Circle",
+      subtitle: "een exclusieve community voor CEO's, founders en decision makers, met:",
+      items: [
+        "Besloten diners",
+        "Round tables",
+        "Mastermindgroepen",
+        "Inspiratiesessies",
+        "High-level networking",
+      ],
+    },
   ];
   const HoofdIcon = hoofddienst.icon;
   return (
@@ -32,15 +102,22 @@ export const ManierenOmSamenTeWerken = () => {
               <span className="block text-[11px] uppercase tracking-widest text-white/70 font-sans font-medium mb-1">
                 De eerste stap · {hoofddienst.label}
               </span>
-              <h3 className="font-serif font-bold text-white text-xl md:text-2xl mb-1.5">{hoofddienst.title}</h3>
-              <p className="text-white/90 font-sans text-sm leading-relaxed">{hoofddienst.text}</p>
+              <h3 className="font-serif font-bold text-white text-xl md:text-2xl mb-2">{hoofddienst.title}</h3>
+              <ul className="grid gap-y-1.5 gap-x-4 sm:grid-cols-2 mb-2">
+                {hoofddienst.items.map((it) => (
+                  <li key={it} className="flex items-start gap-2 text-white/90 font-sans text-sm leading-relaxed">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white/70 shrink-0" />
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
               <p className="text-white font-sans italic text-sm mt-2">Alles begint met helderheid en richting.</p>
             </div>
           </div>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch">
-          {diensten.map(({ label, icon: Icon, title, text }) => (
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch [&>*:last-child:nth-child(3n-2)]:lg:col-start-2">
+          {diensten.map(({ label, icon: Icon, title, subtitle, items }) => (
             <div
               key={title}
               className="bg-card rounded-lg p-6 border border-border flex flex-col h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
@@ -51,8 +128,18 @@ export const ManierenOmSamenTeWerken = () => {
               <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl mb-4" style={{ backgroundColor: "rgba(36,81,99,0.1)" }}>
                 <Icon className="w-5 h-5" style={{ color: "#245163" }} />
               </div>
-              <h3 className="font-serif font-semibold text-foreground text-lg mb-2">{title}</h3>
-              <p className="text-muted-foreground font-sans text-sm leading-relaxed">{text}</p>
+              <h3 className="font-serif font-semibold text-foreground text-lg mb-1">{title}</h3>
+              {subtitle && (
+                <p className="text-muted-foreground font-sans text-sm italic mb-2">{subtitle}</p>
+              )}
+              <ul className="space-y-1.5 mt-1">
+                {items.map((it) => (
+                  <li key={it} className="flex items-start gap-2 text-muted-foreground font-sans text-sm leading-relaxed">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#245163" }} />
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
@@ -60,6 +147,7 @@ export const ManierenOmSamenTeWerken = () => {
     </section>
   );
 };
+
 
 export const ZoCrerenWijWaarde = () => {
   const pijlers = [
