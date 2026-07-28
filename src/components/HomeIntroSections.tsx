@@ -17,7 +17,7 @@ export const WaaromRelanova = () => {
           </h2>
           <p className="text-muted-foreground font-sans">Voor groei die blijvend impact maakt.</p>
         </div>
-        <ul className="grid gap-4 md:grid-cols-2">
+        <ul className="grid gap-4 md:grid-cols-2 [&>li:last-child:nth-child(odd)]:md:col-span-2 [&>li:last-child:nth-child(odd)]:md:max-w-md [&>li:last-child:nth-child(odd)]:md:mx-auto [&>li:last-child:nth-child(odd)]:md:w-full">
           {items.map(({ icon: Icon, title, text }) => (
             <li key={title} className="flex items-start gap-4 bg-card rounded-lg p-5 border border-border">
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-secondary/10 shrink-0">
