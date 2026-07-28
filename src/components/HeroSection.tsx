@@ -20,19 +20,20 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="text-primary-foreground">
-            <p className="font-sans text-base md:text-lg font-semibold uppercase tracking-[0.3em] text-white mb-6">
+            <p className="font-sans uppercase text-white" style={{ fontSize: "22px", fontWeight: 700, letterSpacing: "4px", marginBottom: "20px" }}>
               Relanova
             </p>
 
-            <h1 className="font-sans text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-[1.15] mb-8 text-primary-foreground">
+            <h1 className="font-sans text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.15] mb-8 text-white" style={{ fontWeight: 700 }}>
               Strategic Advisor &amp;<br />Growth Connector
             </h1>
-            <p className="text-xl md:text-2xl text-white font-sans max-w-xl mb-6">
+            <p className="font-sans text-white max-w-xl mb-6" style={{ fontSize: "20px", fontWeight: 500 }}>
               Strategie, relaties en executie verbinden om groei te versnellen.
             </p>
-            <p className="text-sm md:text-base text-primary-foreground/70 font-sans max-w-xl mb-10 italic">
+            <p className="font-sans max-w-xl mb-10 italic text-white/80">
               Strategie. Relaties. Resultaat.
             </p>
+
             <Link to="/contact">
               <Button variant="hero" size="xl" className="gap-2 whitespace-nowrap">
                 Boek een strategiesessie
