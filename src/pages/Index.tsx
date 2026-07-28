@@ -28,6 +28,7 @@ const Index = () => {
       <SeniorExpertise />
       <BridgeServicesPreview />
       <TestimonialsSection />
+      <CasesResultatenHome />
       <CTASection />
     </Layout>
   );
