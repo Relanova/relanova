@@ -1,6 +1,8 @@
 import natlot from "@/assets/logos/natlot.jpg.asset.json";
 import base from "@/assets/logos/base.jpg.asset.json";
 import telenet from "@/assets/logos/telenet.png.asset.json";
+import nestle from "@/assets/logos/nestle.svg.asset.json";
+import vandemoortele from "@/assets/logos/vandemoortele.png.asset.json";
 import bnxt from "@/assets/logos/bnxt.png.asset.json";
 import herta from "@/assets/logos/herta.png.asset.json";
 import delmonte from "@/assets/logos/delmonte.png.asset.json";
@@ -9,7 +11,8 @@ const logos = [
   { name: "Nationale Loterij", src: natlot.url },
   { name: "BASE", src: base.url },
   { name: "Telenet", src: telenet.url },
-  { name: "Nestlé", src: null },
+  { name: "Nestlé", src: nestle.url },
+  { name: "Vandemoortele", src: vandemoortele.url },
   { name: "Herta", src: herta.url },
   { name: "Del Monte", src: delmonte.url },
   { name: "BNXT League", src: bnxt.url },
@@ -29,25 +32,16 @@ const TestimonialsSection = () => {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 max-w-5xl mx-auto">
-          {logos.map((logo) =>
-            logo.src ? (
-              <img
-                key={logo.name}
-                src={logo.src}
-                alt={logo.name}
-                title={logo.name}
-                className="h-12 md:h-14 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity grayscale hover:grayscale-0"
-                loading="lazy"
-              />
-            ) : (
-              <div
-                key={logo.name}
-                className="h-12 md:h-14 px-6 flex items-center justify-center border border-dashed border-border rounded-md text-xs text-muted-foreground font-sans"
-              >
-                [logo] {logo.name}
-              </div>
-            )
-          )}
+          {logos.map((logo) => (
+            <img
+              key={logo.name}
+              src={logo.src}
+              alt={logo.name}
+              title={logo.name}
+              className="h-12 md:h-14 w-auto object-contain"
+              loading="lazy"
+            />
+          ))}
         </div>
       </div>
     </section>
