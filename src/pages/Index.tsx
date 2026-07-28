@@ -18,6 +18,7 @@ const Index = () => {
       <HeroSection />
       <HerkenJeDit />
       <WieHelpIk />
+      <WaaromRelanova />
       <ValueProp />
       <HeroServicesBlock />
       <HeroCTABlock />
