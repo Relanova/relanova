@@ -1,14 +1,15 @@
 import { CheckCircle2, Users, Sparkles, TrendingUp, Handshake, Target, Network, Rocket, Compass, HeartHandshake, Zap, Handshake as HandshakeIcon, Flower2, Key, UsersRound, DoorOpen, ChevronsRight, MessageCircle, Presentation, Users2 } from "lucide-react";
 
 export const ManierenOmSamenTeWerken = () => {
+  const hoofddienst = { label: "Halve dag", icon: Compass, title: "CEO-strategiesessie", text: "Strategische analyse, commerciele kansen, partnerships, stakeholdermapping, positionering en prioriteiten." };
   const diensten = [
-    { label: "Halve dag", icon: Compass, title: "CEO-strategiesessie", text: "Strategische analyse, commerciele kansen, partnerships, stakeholdermapping, positionering en prioriteiten." },
     { label: "Maandabonnement", icon: MessageCircle, title: "Strategisch adviseur", text: "Strategiesessies, telefonische sparring, review van documenten en snelle strategische ondersteuning." },
     { label: "Projectbasis", icon: HandshakeIcon, title: "Partnership-strategie", text: "Voor wie strategische partnerships zoekt, sponsorstrategieen wil ontwikkelen of ecosystemen wil bouwen." },
     { label: "Succesfee", icon: Users2, title: "Executive matchmaking", text: "CEO's verbinden, bedrijven koppelen, investeerders introduceren en experts samenbrengen." },
     { label: "Dagtarief", icon: Presentation, title: "Executive facilitatie", text: "Board meetings, strategiedagen, leiderschapssessies en stakeholderbijeenkomsten faciliteren." },
     { label: "Binnenkort", icon: Sparkles, title: "Relanova Circle", text: "Een exclusieve community voor CEO's, founders en decision makers: diners, round tables en high-level networking." },
   ];
+  const HoofdIcon = hoofddienst.icon;
   return (
     <section className="section-padding bg-background">
       <div className="container mx-auto max-w-6xl">
@@ -18,14 +19,37 @@ export const ManierenOmSamenTeWerken = () => {
           </h2>
           <p className="text-muted-foreground font-sans">Kies wat past bij jouw ambitie en fase.</p>
         </div>
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+        <div
+          className="rounded-2xl p-8 md:p-10 mb-8 text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+          style={{ backgroundColor: "#245163" }}
+        >
+          <div className="flex flex-col md:flex-row md:items-start gap-6">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-white/10 shrink-0">
+              <HoofdIcon className="w-6 h-6 text-white" />
+            </div>
+            <div className="flex-1">
+              <span className="block text-[11px] uppercase tracking-widest text-white/70 font-sans font-medium mb-2">
+                De eerste stap · {hoofddienst.label}
+              </span>
+              <h3 className="font-serif font-bold text-white text-2xl md:text-3xl mb-3">{hoofddienst.title}</h3>
+              <p className="text-white/90 font-sans leading-relaxed">{hoofddienst.text}</p>
+              <p className="text-white font-sans italic mt-3">Alles begint met helderheid en richting.</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch">
           {diensten.map(({ label, icon: Icon, title, text }) => (
-            <div key={title} className="bg-card rounded-lg p-6 border border-border flex flex-col">
-              <span className="text-[11px] uppercase tracking-widest text-muted-foreground/80 font-sans font-medium mb-3">
+            <div
+              key={title}
+              className="bg-card rounded-lg p-6 border border-border flex flex-col h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+            >
+              <span className="text-[11px] uppercase tracking-widest font-sans font-medium mb-3" style={{ color: "#245163" }}>
                 {label}
               </span>
-              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-secondary/10 mb-4">
-                <Icon className="w-5 h-5 text-secondary" />
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl mb-4" style={{ backgroundColor: "rgba(36,81,99,0.1)" }}>
+                <Icon className="w-5 h-5" style={{ color: "#245163" }} />
               </div>
               <h3 className="font-serif font-semibold text-foreground text-lg mb-2">{title}</h3>
               <p className="text-muted-foreground font-sans text-sm leading-relaxed">{text}</p>
