@@ -22,6 +22,7 @@ const Index = () => {
       <ZoCrerenWijWaarde />
       <ValueProp />
       <HeroServicesBlock />
+      <ManierenOmSamenTeWerken />
       <HeroCTABlock />
       <StatsSection />
       <SeniorExpertise />
