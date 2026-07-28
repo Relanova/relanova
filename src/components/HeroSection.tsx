@@ -22,23 +22,19 @@ const HeroSection = () => {
           <div className="text-primary-foreground">
             <div className="inline-flex items-center gap-2 bg-primary-foreground/10 rounded-full px-4 py-1.5 mb-8 text-sm backdrop-blur-sm">
               <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-              Relanova — Strategic Advisor & Growth Connector
+              Relanova · Human Touch in a Connected World
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] mb-6">
-              Wij organiseren <span className="text-[#8FC3CC]">strategische groei.</span>
+            <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] mb-8">
+              Ik verbind strategie, positionering en partnerships zodat{" "}
+              <span className="text-[#8FC3CC]">groei makkelijker wordt.</span>
             </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-4">
-              Ik verbind strategie, mensen en opportuniteiten zodat er groei ontstaat.
+            <p className="text-lg md:text-xl text-primary-foreground/90 font-sans max-w-xl mb-6">
+              Voor KMO's en leiders die strategie willen omzetten in resultaat - door teams, partners en uitvoering te verbinden.
             </p>
-            <p className="text-sm md:text-base text-primary-foreground/80 font-sans max-w-xl mb-8 uppercase tracking-widest">
-              Strategie. Relaties. Resultaat.
+            <p className="text-sm md:text-base text-primary-foreground/70 font-sans max-w-xl mb-10 italic">
+              Relanova staat voor een vernieuwde manier van denken waarin echte waarde ontstaat door relaties, verbinding en vertrouwen.
             </p>
-            <Link to="/contact">
-              <Button variant="hero" size="xl" className="gap-2">
-                Boek een strategiesessie <ArrowRight className="w-5 h-5" />
-              </Button>
-            </Link>
           </div>
 
           {/* Portrait */}

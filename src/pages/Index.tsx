@@ -1,45 +1,31 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import HeroSection from "@/components/HeroSection";
+import HeroSection, { HeroServicesBlock, HeroCTABlock } from "@/components/HeroSection";
 import BridgeServicesPreview from "@/components/BridgeServicesPreview";
-import {
-  VertrouwdDoorCEOs,
-  WaaromRelanova,
-  ZoCreerenWaarde,
-  ManierenSamenwerken,
-  CasesResultaten,
-  OverMijPreview,
-  BoekStrategieSessie,
-  BridgeBand,
-} from "@/components/HomeSections";
+import StatsSection from "@/components/StatsSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import CTASection from "@/components/CTASection";
+import { HerkenJeDit, WieHelpIk, ValueProp, SeniorExpertise } from "@/components/HomeIntroSections";
 
 const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Relanova | Strategie. Relaties. Resultaat."
-        description="Relanova organiseert strategische groei. Ik verbind strategie, mensen en opportuniteiten zodat er groei ontstaat."
+        title="Relanova | Human Touch in a Connected World"
+        description="Strategisch advies, positionering en partnerships via de BRIDGE-methode. Monia Ben Tahar helpt bedrijven duurzaam groeien."
         path="/"
       />
-      {/* 1. Hero */}
       <HeroSection />
-      {/* 2. Vertrouwd door CEO's */}
-      <VertrouwdDoorCEOs />
-      {/* 3. Waarom bedrijven Relanova bellen */}
-      <WaaromRelanova />
-      {/* 4. Zo creëren wij waarde */}
-      <ZoCreerenWaarde />
-      {/* BRIDGE als ondersteunende band (Strategie → BRIDGE → Resultaat) */}
-      <BridgeBand />
+      <HerkenJeDit />
+      <WieHelpIk />
+      <ValueProp />
+      <HeroServicesBlock />
+      <HeroCTABlock />
+      <StatsSection />
+      <SeniorExpertise />
       <BridgeServicesPreview />
-      {/* 5. Manieren om samen te werken */}
-      <ManierenSamenwerken />
-      {/* 6. Cases & resultaten */}
-      <CasesResultaten />
-      {/* 7. Over Mij */}
-      <OverMijPreview />
-      {/* 8. Boek een strategiesessie */}
-      <BoekStrategieSessie />
+      <TestimonialsSection />
+      <CTASection />
     </Layout>
   );
 };
