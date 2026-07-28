@@ -31,16 +31,17 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-10 items-center justify-items-center max-w-5xl mx-auto">
           {logos.map((logo) => (
-            <img
-              key={logo.name}
-              src={logo.src}
-              alt={logo.name}
-              title={logo.name}
-              className="h-12 md:h-14 w-auto object-contain"
-              loading="lazy"
-            />
+            <div key={logo.name} className="flex items-center justify-center h-16 w-32 md:h-20 md:w-40">
+              <img
+                src={logo.src}
+                alt={logo.name}
+                title={logo.name}
+                className="max-h-full max-w-full object-contain"
+                loading="lazy"
+              />
+            </div>
           ))}
         </div>
       </div>
