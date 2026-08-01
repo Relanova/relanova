@@ -383,7 +383,7 @@ export const WieHelpIk = () => {
 };
 
 export const ValueProp = () => (
-  <section className="py-20 md:py-28 bg-primary">
+  <section className="py-10 md:py-14 bg-primary">
     <div className="container mx-auto max-w-3xl text-center">
       <p className="text-xl md:text-2xl font-serif text-primary-foreground leading-relaxed">
         Relanova brengt richting, relaties en resultaat.
