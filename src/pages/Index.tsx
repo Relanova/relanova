@@ -16,7 +16,6 @@ const Index = () => {
         path="/"
       />
       <HeroSection />
-      <CasesResultatenHome />
       <WaaromRelanova />
       <ZoCrerenWijWaarde />
       <ValueProp />
@@ -24,6 +23,7 @@ const Index = () => {
       <HeroCTABlock />
       <StatsSection />
       <TestimonialsSection />
+      <CasesResultatenHome />
       <CTASection />
     </Layout>
   );

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Target, BarChart3, Lightbulb, Map, Handshake, TrendingUp, Check } from "lucide-react";
 import CTASection from "@/components/CTASection";
-import { CasesResultatenHome } from "@/components/HomeIntroSections";
 import {
   Accordion,
   AccordionContent,
@@ -121,8 +120,6 @@ const Services = () => {
           </p>
         </div>
       </section>
-
-      <CasesResultatenHome />
 
       {/* Service Cards */}
       <section className="section-padding bg-background">
