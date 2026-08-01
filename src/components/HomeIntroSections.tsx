@@ -386,7 +386,7 @@ export const ValueProp = () => (
   <section className="py-12 md:py-16 bg-primary">
     <div className="container mx-auto max-w-3xl text-center">
       <p className="text-xl md:text-2xl font-serif text-primary-foreground leading-relaxed">
-        Ik vertaal complexe groei-uitdagingen naar een duidelijk verhaal, slimme keuzes en concrete uitvoering.
+        Relanova brengt richting, relaties en resultaat.
       </p>
     </div>
   </section>
