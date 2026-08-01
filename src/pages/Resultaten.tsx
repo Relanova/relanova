@@ -244,7 +244,13 @@ const Resultaten = () => {
         <section className="section-padding pt-0 bg-background">
           <div className="container mx-auto max-w-6xl">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-10" style={{ color: "#245163" }}>
-              Meer aanbevelingen
+              <button
+                type="button"
+                onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+                className="font-bold"
+              >
+                Meer aanbevelingen
+              </button>
             </h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {more.map((r) => (
