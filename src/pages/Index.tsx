@@ -16,13 +16,13 @@ const Index = () => {
         path="/"
       />
       <HeroSection />
+      <TestimonialsSection />
       <WaaromRelanova />
       <ZoCrerenWijWaarde />
       <ValueProp />
       <ManierenOmSamenTeWerken />
       <HeroCTABlock />
       <StatsSection />
-      <TestimonialsSection />
       <CasesResultatenHome />
       <CTASection />
     </Layout>
