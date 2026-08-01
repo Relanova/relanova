@@ -1,11 +1,11 @@
 import natlot from "@/assets/logos/natlot.jpg.asset.json";
-import base from "@/assets/logos/base.jpg.asset.json";
+import base from "@/assets/logos/BASE_transparant.png.asset.json";
 import telenet from "@/assets/logos/telenet.png.asset.json";
 import nestle from "@/assets/logos/nestle.png.asset.json";
-import vandemoortele from "@/assets/logos/vandemoortele.png.asset.json";
+import vandemoortele from "@/assets/logos/Vandemoortele_transparant.png.asset.json";
 import bnxt from "@/assets/logos/bnxt.png.asset.json";
-import herta from "@/assets/logos/herta.png.asset.json";
-import delmonte from "@/assets/logos/delmonte.png.asset.json";
+import herta from "@/assets/logos/Herta_transparant.png.asset.json";
+import delmonte from "@/assets/logos/DelMonte_transparant.png.asset.json";
 
 const logos = [
   { name: "Nationale Loterij", src: natlot.url },
