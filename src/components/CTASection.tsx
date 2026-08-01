@@ -2,7 +2,17 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const CTASection = () => {
+interface CTASectionProps {
+  title?: string;
+  description?: string;
+  buttonLabel?: string;
+}
+
+const CTASection = ({
+  title = "Klaar om samen te groeien?",
+  description = "Boek een gratis strategiegesprek van 15 minuten en ontdek of de BRIDGE-methode bij jou past. Geen verkooppraatje. Wel helder inzicht.",
+  buttonLabel = "Boek je gratis strategie-scan",
+}: CTASectionProps) => {
   return (
     <section className="section-padding bg-background">
       <div className="container mx-auto">
