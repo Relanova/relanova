@@ -65,7 +65,7 @@ export const ManierenOmSamenTeWerken = () => {
   const hoofddienst = {
     label: "Halve dag",
     icon: Compass,
-    title: "CEO-strategiesessie",
+    title: "Strategiesessie",
     items: [
       "Strategische analyse",
       "Commerciële kansen",
