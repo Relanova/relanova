@@ -236,7 +236,7 @@ export const ZoCrerenWijWaarde = () => {
     { icon: Key, label: "Toegang" },
     { icon: UsersRound, label: "Een sparringpartner" },
     { icon: DoorOpen, label: "Iemand die deuren opent" },
-    { icon: ChevronsRight, label: "Iemand die beweging creeert" },
+    { icon: ChevronsRight, label: "Iemand die beweging creëert" },
   ];
   return (
     <section className="section-padding bg-background">
@@ -383,7 +383,7 @@ export const WieHelpIk = () => {
 };
 
 export const ValueProp = () => (
-  <section className="py-12 md:py-16 bg-primary">
+  <section className="py-20 md:py-28 bg-primary">
     <div className="container mx-auto max-w-3xl text-center">
       <p className="text-xl md:text-2xl font-serif text-primary-foreground leading-relaxed">
         Relanova brengt richting, relaties en resultaat.
