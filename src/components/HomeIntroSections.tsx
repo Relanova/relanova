@@ -13,6 +13,16 @@ export const CasesResultatenHome = () => {
       name: "Manu Leroy",
       role: "Director Marketing & Communication at Royal Belgian FA",
     },
+    {
+      text: "Monia denkt heel oplossingsgericht en is steeds vlot bereikbaar om dingen te overleggen. Haar aanpak getuigt van veel inzichten en ze gaat resoluut voor duurzame lange termijn oplossingen.",
+      name: "Dirk Hermans",
+      role: "Partner at Deloitte Accountancy",
+    },
+    {
+      text: "Een empathische, gedreven en enthousiaste persoonlijkheid die met grote transparantie en professionalisme steeds zoekt naar de meest optimale samenwerking met haar partners.",
+      name: "Chris Bergs",
+      role: "Sportpaleisgroep",
+    },
   ];
 
   return (
