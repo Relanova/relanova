@@ -1,7 +1,6 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import HeroSection, { HeroCTABlock } from "@/components/HeroSection";
-import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 
@@ -22,7 +21,6 @@ const Index = () => {
       <ValueProp />
       <ManierenOmSamenTeWerken />
       <HeroCTABlock />
-      <StatsSection />
       <CasesResultatenHome />
       <CTASection />
     </Layout>
