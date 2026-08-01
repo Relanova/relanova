@@ -154,19 +154,9 @@ export const HeroCTABlock = () => {
               </Button>
             </Link>
           </div>
-          <p className="text-sm text-primary-foreground/80 font-sans mb-10 max-w-xl">
+          <p className="text-sm text-primary-foreground/80 font-sans max-w-xl">
             Je krijgt direct 1-2 heldere inzichten over jouw groeivraag - ook als we niet samenwerken.
           </p>
-
-          {/* Trust Signals */}
-          <div className="flex flex-wrap gap-6 text-sm text-primary-foreground/70">
-            {["15+ jaar ervaring", "40+ LinkedIn-aanbevelingen"].map((item) => (
-              <span key={item} className="flex items-center gap-1.5">
-                <CheckCircle className="w-4 h-4 text-secondary" />
-                {item}
-              </span>
-            ))}
-          </div>
         </div>
       </div>
     </section>

@@ -22,7 +22,6 @@ const Index = () => {
       <ValueProp />
       <ManierenOmSamenTeWerken />
       <HeroCTABlock />
-      <StatsSection />
       <CasesResultatenHome />
       <CTASection />
     </Layout>
