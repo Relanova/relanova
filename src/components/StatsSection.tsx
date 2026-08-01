@@ -1,10 +1,10 @@
-import { Award, Layers, Heart, Linkedin } from "lucide-react";
+import { Award, Linkedin, Quote, Handshake } from "lucide-react";
 
 const items = [
   { icon: Award, label: "15+ jaar ervaring" },
-  { icon: Layers, label: "BRIDGE-methode" },
-  { icon: Heart, label: "Human Touch in a Connected World" },
   { icon: Linkedin, label: "Aanbevolen op LinkedIn" },
+  { icon: Quote, label: "40+ LinkedIn-aanbevelingen" },
+  { icon: Handshake, label: "Strategisch en operationeel inzetbaar" },
 ];
 
 const StatsSection = () => {
