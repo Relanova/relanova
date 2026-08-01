@@ -1,32 +1,41 @@
 import heroBg from "@/assets/hero-bg-pattern.jpg";
+import relanovaIcon from "@/assets/relanova-icon.png.asset.json";
 
 const BrandOutro = () => {
   return (
-    <>
-      <div aria-hidden="true" className="h-10 md:h-14 w-full bg-background" />
-      <section className="relative overflow-hidden" style={{ backgroundColor: "#245163" }}>
-        <img
-          src={heroBg}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
-        />
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-10">
-          <div className="max-w-2xl mx-auto text-center">
-            <p className="font-sans text-white/70 text-xs md:text-sm font-semibold tracking-[0.3em] uppercase mb-4">
-              Relanova
-            </p>
-            <h2 className="font-sans font-bold text-white text-3xl md:text-4xl mb-3">
-              Strategy. Relationships. Results.
-            </h2>
-            <p className="font-sans text-white/70 text-base md:text-lg">
-              Where strategy meets relationships and execution.
-            </p>
+    <section className="bg-background py-12 md:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          className="relative overflow-hidden rounded-2xl shadow-xl max-w-3xl mx-auto"
+          style={{ backgroundColor: "#245163" }}
+        >
+          <img
+            src={heroBg}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
+          />
+          <div className="relative flex items-center justify-between gap-6 px-6 py-6 md:px-10 md:py-8">
+            <div className="text-left">
+              <p className="font-sans text-white/70 text-[10px] md:text-xs font-semibold tracking-[0.3em] uppercase mb-2">
+                Relanova
+              </p>
+              <h2 className="font-sans font-bold text-white text-xl md:text-2xl mb-1.5">
+                Strategy. Relationships. Results.
+              </h2>
+              <p className="font-sans text-white/70 text-xs md:text-sm">
+                Where strategy meets relationships and execution.
+              </p>
+            </div>
+            <img
+              src={relanovaIcon.url}
+              alt="Relanova"
+              className="w-14 h-14 md:w-20 md:h-20 shrink-0 brightness-0 invert opacity-90"
+            />
           </div>
         </div>
-      </section>
-      <div aria-hidden="true" className="h-10 md:h-14 w-full bg-background" />
-    </>
+      </div>
+    </section>
   );
 };
 
