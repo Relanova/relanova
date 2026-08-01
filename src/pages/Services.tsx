@@ -122,6 +122,8 @@ const Services = () => {
         </div>
       </section>
 
+      <CasesResultatenHome />
+
       {/* Service Cards */}
       <section className="section-padding bg-background">
         <div className="container mx-auto max-w-5xl space-y-8">
