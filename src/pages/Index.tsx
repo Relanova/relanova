@@ -1,12 +1,11 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import HeroSection, { HeroServicesBlock, HeroCTABlock } from "@/components/HeroSection";
-import BridgeServicesPreview from "@/components/BridgeServicesPreview";
+import HeroSection, { HeroCTABlock } from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
 
-import { HerkenJeDit, WieHelpIk, ValueProp, SeniorExpertise, WaaromRelanova, ZoCrerenWijWaarde, ManierenOmSamenTeWerken, CasesResultatenHome } from "@/components/HomeIntroSections";
+import { ValueProp, WaaromRelanova, ZoCrerenWijWaarde, ManierenOmSamenTeWerken, CasesResultatenHome } from "@/components/HomeIntroSections";
 
 const Index = () => {
   return (
@@ -17,23 +16,18 @@ const Index = () => {
         path="/"
       />
       <HeroSection />
-      <HerkenJeDit />
-      <WieHelpIk />
       <WaaromRelanova />
       <ZoCrerenWijWaarde />
       <ValueProp />
-      <HeroServicesBlock />
       <ManierenOmSamenTeWerken />
       <HeroCTABlock />
       <StatsSection />
-      <SeniorExpertise />
-      <BridgeServicesPreview />
       <TestimonialsSection />
       <CasesResultatenHome />
       <CTASection />
-      
     </Layout>
   );
 };
 
 export default Index;
+
