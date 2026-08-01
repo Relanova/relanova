@@ -30,8 +30,8 @@ export const CasesResultatenHome = () => {
               <Quote className="w-8 h-8 text-[#245163] mb-4" />
               <p className="text-gray-800 leading-relaxed mb-5">"{q.text}"</p>
               <div className="border-t border-gray-100 pt-4">
-                <p className="font-bold text-[#245163]">{q.name}</p>
-                <p className="text-sm text-gray-600">{q.role}</p>
+                <p className="text-sm font-normal text-gray-500">{q.name}</p>
+                <p className="text-xs text-gray-400">{q.role}</p>
               </div>
             </div>
           ))}
