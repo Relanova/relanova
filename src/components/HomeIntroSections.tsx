@@ -29,7 +29,7 @@ export const CasesResultatenHome = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#245163] mb-3">Cases &amp; resultaten</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#245163] mb-3">Wat bedrijven zeggen</h2>
           <p className="text-lg text-gray-700">Echte verhalen. Meetbare impact.</p>
           <p className="text-sm text-gray-500 mt-2 italic">Aanbevelingen afkomstig van LinkedIn.</p>
         </div>
@@ -60,7 +60,7 @@ export const CasesResultatenHome = () => {
 
         <div className="text-center">
           <Link
-            to="/cases"
+            to="/resultaten"
             className="inline-block bg-[#245163] hover:bg-[#1c3f4e] text-white font-semibold px-8 py-3 rounded-lg transition-colors"
           >
             Bekijk alle aanbevelingen
