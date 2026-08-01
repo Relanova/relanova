@@ -31,9 +31,12 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-10 items-center justify-items-center max-w-5xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 justify-items-center max-w-5xl mx-auto">
           {logos.map((logo) => (
-            <div key={logo.name} className="flex items-center justify-center h-12 w-24 md:h-14 md:w-28">
+            <div
+              key={logo.name}
+              className="w-[160px] md:w-[176px] h-[100px] md:h-[108px] rounded-xl bg-card shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center p-5"
+            >
               <img
                 src={logo.src}
                 alt={logo.name}
