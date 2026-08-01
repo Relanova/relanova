@@ -29,11 +29,7 @@ const Index = () => {
       <BridgeServicesPreview />
       <TestimonialsSection />
       <CasesResultatenHome />
-      <CTASection
-        title="Klaar om samen te groeien?"
-        description="De eerste stap naar helderheid, richting en groei. Boek een gratis strategiegesprek - geen verkooppraatje, wel helder inzicht."
-        buttonLabel="Boek een strategiesessie"
-      />
+      <CTASection />
     </Layout>
   );
 };
