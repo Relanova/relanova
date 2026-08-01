@@ -2,7 +2,10 @@ import heroBg from "@/assets/hero-bg-pattern.jpg";
 
 const BrandOutro = () => {
   return (
-    <section className="relative overflow-hidden" style={{ backgroundColor: "#245163" }}>
+    <section
+      className="relative overflow-hidden border-t border-white/15"
+      style={{ backgroundColor: "#1C4150" }}
+    >
       <img
         src={heroBg}
         alt=""
