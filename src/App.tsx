@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,7 +9,7 @@ import Index from "./pages/Index.tsx";
 import About from "./pages/About.tsx";
 import Services from "./pages/Services.tsx";
 import Contact from "./pages/Contact.tsx";
-import Cases from "./pages/Cases.tsx";
+import Resultaten from "./pages/Resultaten.tsx";
 import Blog from "./pages/Blog.tsx";
 import News from "./pages/News.tsx";
 import NewsPost from "./pages/NewsPost.tsx";
@@ -33,7 +33,8 @@ const App = () => (
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/cases" element={<Cases />} />
+            <Route path="/resultaten" element={<Resultaten />} />
+            <Route path="/cases" element={<Navigate to="/resultaten" replace />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/nieuws" element={<News />} />
             <Route path="/nieuws/:slug" element={<NewsPost />} />

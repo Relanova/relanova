@@ -9,7 +9,7 @@ Relanova helpt ambitieuze bedrijven hun strategie, positionering en partnerships
 - [Home](/): Overzicht van Relanova, BRIDGE-methode en aanpak.
 - [Over mij](/about): Achtergrond van Monia Ben Tahar, Ecosystem Architect.
 - [Diensten](/services): Strategische diensten, pakketten en FAQ rond de BRIDGE-methode.
-- [Cases](/cases): Praktijkvoorbeelden en resultaten van klanten.
+- [Resultaten](/resultaten): Aanbevelingen, praktijkvoorbeelden en resultaten van klanten.
 - [Nieuws](/nieuws): Artikels en inzichten over strategie, partnerships en groei.
 - [Blog](/blog): Diepgaande blogposts over ecosysteem-gedreven groei.
 - [Contact](/contact): Boek een gratis 15-minuten strategiegesprek.
