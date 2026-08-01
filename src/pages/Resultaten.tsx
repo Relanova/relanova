@@ -55,9 +55,6 @@ const Resultaten = () => {
 
       <section className="section-padding bg-muted/30">
         <div className="container mx-auto text-center max-w-3xl">
-          <p className="text-xs tracking-widest uppercase font-sans mb-3" style={{ color: "#245163" }}>
-            Resultaten
-          </p>
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Resultaten</h1>
           <p className="text-muted-foreground text-lg font-sans mb-2">
             Echte verhalen. Meetbare impact.
