@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
                 src={logo.src}
                 alt={logo.name}
                 title={logo.name}
-                className="h-12 md:h-15 max-h-full max-w-full object-contain"
+                className="h-12 md:h-16 max-w-full object-contain"
                 loading="lazy"
               />
             </div>
