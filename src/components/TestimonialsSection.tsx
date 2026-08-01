@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-10 items-center justify-items-center max-w-5xl mx-auto">
           {logos.map((logo) => (
-            <div key={logo.name} className="flex items-center justify-center h-16 w-32 md:h-20 md:w-40">
+            <div key={logo.name} className="flex items-center justify-center h-12 w-24 md:h-14 md:w-28">
               <img
                 src={logo.src}
                 alt={logo.name}
