@@ -3,10 +3,10 @@ import relanovaIcon from "@/assets/relanova-icon.png.asset.json";
 
 const BrandOutro = () => {
   return (
-    <section className="bg-background py-6 md:py-8">
-      <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
+    <section className="bg-background py-3 md:py-4">
+      <div className="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8">
         <div
-          className="relative overflow-hidden rounded-2xl shadow-xl w-full max-w-3xl"
+          className="relative overflow-hidden rounded-2xl shadow-xl mx-auto w-full"
           style={{ backgroundColor: "#245163" }}
         >
           <img
