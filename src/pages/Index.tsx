@@ -5,6 +5,7 @@ import BridgeServicesPreview from "@/components/BridgeServicesPreview";
 import StatsSection from "@/components/StatsSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
+import BrandOutro from "@/components/BrandOutro";
 import { HerkenJeDit, WieHelpIk, ValueProp, SeniorExpertise, WaaromRelanova, ZoCrerenWijWaarde, ManierenOmSamenTeWerken, CasesResultatenHome } from "@/components/HomeIntroSections";
 
 const Index = () => {
@@ -30,6 +31,7 @@ const Index = () => {
       <TestimonialsSection />
       <CasesResultatenHome />
       <CTASection />
+      <BrandOutro />
     </Layout>
   );
 };
