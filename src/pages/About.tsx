@@ -2,35 +2,34 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Eye, Heart, Link2, Zap, TreeDeciduous, Layout as LayoutIcon, Target } from "lucide-react";
+import { ArrowRight, Link2, Compass, ShieldCheck, Zap, Heart } from "lucide-react";
 import heroPortrait from "@/assets/hero-portrait.jpg";
+import signatuur from "@/assets/monia-signatuur.png.asset.json";
 import CTASection from "@/components/CTASection";
 
 const values = [
-  { icon: Eye, title: "Helderheid", desc: "Altijd scherp, duidelijk en richtinggevend" },
-  { icon: Heart, title: "Menselijkheid (EQ)", desc: "Relaties, vertrouwen en context bepalen succes" },
-  { icon: Link2, title: "Verbinding", desc: "Breng mensen, ideeën en organisaties samen rond gedeelde belangen" },
-  { icon: Zap, title: "Relevantie", desc: "Alles moet waarde toevoegen voor markt en organisatie" },
-  { icon: TreeDeciduous, title: "Duurzaamheid", desc: "Geen quick wins, maar ecosystemen die blijven renderen" },
-  { icon: LayoutIcon, title: "Rust & structuur", desc: "Orde in complexiteit zodat keuzes eenvoudig worden" },
-  { icon: Target, title: "Impact", desc: "Alles draagt bij aan groei-tastbaar, meetbaar en strategisch" },
+  { icon: Link2, title: "Verbindend", desc: "Ik breng de juiste mensen bij elkaar." },
+  { icon: Compass, title: "Strategisch", desc: "Ik zorg voor een heldere koers en scherpe keuzes." },
+  { icon: ShieldCheck, title: "Betrouwbaar", desc: "Afspraken zijn afspraken, altijd." },
+  { icon: Zap, title: "Daadkrachtig", desc: "Van plan naar actie, zonder omwegen." },
+  { icon: Heart, title: "Mensgericht", desc: "Achter elke samenwerking staat een mens." },
 ];
 
 const bridgeLayers = [
-  { letter: "B", title: "Business Focus", detail: "Strategie & ambitie-ontwikkeling via CEO-interviews", layer: "Fase 1" },
-  { letter: "R", title: "Relevantie & Realiteit", detail: "Markt- en netwerkwaarde-analyse", layer: "Fase 1" },
-  { letter: "I", title: "Identiteit & Inzicht", detail: "Missie, visie en positioneringsbepaling", layer: "Fase 1" },
-  { letter: "D", title: "Design & Richting", detail: "Strategische keuzes en prioriteiten", layer: "Fase 1" },
-  { letter: "G", title: "Groei & Partnerships", detail: "Initiatieven, partnerships en activatie", layer: "Fase 2" },
-  { letter: "E", title: "Expansie & Evaluatie", detail: "Implementatie, schaling en ecosysteemrendement", layer: "Fase 2" },
+  { letter: "B", title: "Business Focus", detail: "We bepalen samen waar je naartoe wil." },
+  { letter: "R", title: "Relevantie & Realiteit", detail: "We kijken eerlijk naar je markt en je positie vandaag." },
+  { letter: "I", title: "Identiteit & Inzicht", detail: "We maken scherp wie je bent en waar je voor staat." },
+  { letter: "D", title: "Design & Richting", detail: "We kiezen de prioriteiten die er echt toe doen." },
+  { letter: "G", title: "Groei & Partnerships", detail: "We bouwen samenwerkingen die je verder brengen." },
+  { letter: "E", title: "Expansie & Evaluatie", detail: "We voeren uit, meten en sturen bij." },
 ];
 
 const About = () => {
   return (
     <Layout>
       <SEO
-        title="Over Monia Ben Tahar - Ecosystem Architect | Relanova"
-        description="Maak kennis met Monia Ben Tahar, oprichter van Relanova en bedenker van de BRIDGE-methode voor strategische groei via ecosystemen."
+        title="Over Monia Ben Tahar - Strategic Advisor | Relanova"
+        description="Maak kennis met Monia Ben Tahar, oprichter van Relanova. Strategie, mensen en relaties samenbrengen zodat er groei ontstaat."
         path="/about"
       />
       {/* Hero */}
@@ -42,16 +41,15 @@ const About = () => {
               <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-3 mb-6">
                 Monia Ben Tahar
               </h1>
-              <p className="text-xl text-secondary font-serif italic mb-6">Ecosystem Architect</p>
+              <p className="text-xl text-secondary font-serif italic mb-6">Strategic Advisor &amp; Growth Connector</p>
               <p className="text-muted-foreground leading-relaxed mb-4 font-sans">
-                Met meer dan 15 jaar ervaring in strategie en business development, met focus op marketing,
-                communicatie en partnerships, help ik ambitieuze bedrijven hun ecosysteem bouwen. Ik geloof dat duurzame groei
-                ontstaat wanneer strategie, mensen en relaties op elkaar worden afgestemd.
+                Al meer dan 15 jaar breng ik mensen, merken en organisaties samen. Mijn werk zit op het
+                kruispunt van strategie, marketing en partnerships - altijd met de mens als vertrekpunt.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
-                Als oprichter van Relanova - ontwikkelde ik de
-                BRIDGE-methode: een bewezen 6-laags framework dat bedrijven helpt hun marktpositie
-                te versterken en groei te versnellen door een scherp verhaal en een slim ecosysteem.
+                Als oprichter van Relanova help ik bedrijven hun verhaal scherp te krijgen, de juiste
+                mensen te vinden en van plannen echte resultaten te maken. Daarvoor gebruik ik de
+                BRIDGE-methode: een rustig kader dat structuur geeft van strategie tot resultaat.
               </p>
               <Link to="/contact">
                 <Button variant="navy" size="lg" className="gap-2">
@@ -62,7 +60,7 @@ const About = () => {
             <div className="flex justify-center">
               <img
                 src={heroPortrait}
-                alt="Monia Ben Tahar, Ecosystem Architect"
+                alt="Monia Ben Tahar, Strategic Advisor & Growth Connector"
                 className="rounded-2xl shadow-lg w-full max-w-sm object-cover aspect-[3/4]"
                 loading="lazy"
                 width={768}
@@ -80,17 +78,16 @@ const About = () => {
             <div className="bg-card rounded-xl p-8 border border-border">
               <h2 className="text-2xl font-serif font-bold text-foreground mb-4">Missie</h2>
               <p className="text-muted-foreground leading-relaxed font-sans">
-                Ik versterk bedrijven door hun strategie, verhaal en samenwerkingen te verbinden tot een slim
-                ecosysteem dat duurzame groei mogelijk maakt. Mijn missie is organisaties duidelijkheid, richting
-                en daadkracht geven - zodat strategie niet in documenten blijft hangen, maar echt rendeert in de markt.
+                Strategie, mensen en relaties samenbrengen zodat er groei ontstaat. Ik geef organisaties
+                helderheid, richting en daadkracht - zodat plannen niet in documenten blijven hangen,
+                maar zichtbaar worden in de markt.
               </p>
             </div>
             <div className="bg-card rounded-xl p-8 border border-border">
               <h2 className="text-2xl font-serif font-bold text-foreground mb-4">Visie</h2>
               <p className="text-muted-foreground leading-relaxed font-sans">
-                Bedrijven groeien niet langer lineair, maar via ecosystemen. De toekomst behoort toe aan organisaties die
-                helder weten wie ze zijn, relevant blijven in een snel veranderende markt, en slim samenwerken met de
-                juiste partners, kanalen en formats.
+                Groei ontstaat tussen mensen. Bedrijven die weten wie ze zijn, relevant blijven en
+                samenwerken met de juiste partners, gaan verder dan bedrijven die het alleen proberen.
               </p>
             </div>
           </div>
@@ -106,9 +103,9 @@ const About = () => {
               Waar ik voor sta
             </h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 max-w-5xl mx-auto">
             {values.map((v, i) => (
-              <div key={i} className={`bg-card rounded-xl p-5 border border-border text-center ${i === 6 ? 'sm:col-span-2 lg:col-span-1' : ''}`}>
+              <div key={i} className="bg-card rounded-xl p-5 border border-border text-center">
                 <div className="w-11 h-11 rounded-xl bg-secondary/10 flex items-center justify-center mx-auto mb-3">
                   <v.icon className="w-5 h-5 text-secondary" />
                 </div>
@@ -120,62 +117,58 @@ const About = () => {
         </div>
       </section>
 
-      {/* BRIDGE-methodeology Interactive */}
+      {/* BRIDGE-methode */}
       <section className="section-padding bg-background">
         <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Het Framework</span>
+          <div className="text-center mb-10">
+            <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Het raamwerk</span>
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">
               De BRIDGE-methode
             </h2>
             <p className="text-muted-foreground font-sans max-w-xl mx-auto">
-              Zes bewezen lagen die strategie, positionering en partnerships verbinden
-              tot een duurzaam groei-ecosysteem.
+              Zes stappen die structuur geven van strategie tot resultaat.
             </p>
           </div>
 
           {/* BRIDGE Letters */}
-          <div className="flex justify-center gap-2 md:gap-3 mb-12">
+          <div className="flex justify-center gap-2 md:gap-3 mb-10">
             {bridgeLayers.map((l) => (
-              <div key={l.letter} className="w-12 h-12 md:w-16 md:h-16 rounded-xl bg-primary flex items-center justify-center">
-                <span className="text-2xl md:text-3xl font-serif font-bold text-secondary">{l.letter}</span>
+              <div
+                key={l.letter}
+                className="w-12 h-12 md:w-16 md:h-16 rounded-xl flex items-center justify-center"
+                style={{ backgroundColor: "#245163" }}
+              >
+                <span className="text-2xl md:text-3xl font-serif font-bold text-white">{l.letter}</span>
               </div>
             ))}
           </div>
 
           {/* Layers */}
-          <div className="space-y-4">
+          <div className="grid gap-4 md:grid-cols-2">
             {bridgeLayers.map((l, i) => (
-              <div key={i} className="flex items-start gap-4 bg-card rounded-xl p-5 border border-border hover:border-secondary/30 transition-colors">
+              <div key={i} className="flex items-start gap-4 bg-card rounded-xl p-5 border border-border">
                 <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0">
                   <span className="font-serif font-bold text-secondary text-lg">{l.letter}</span>
                 </div>
                 <div className="flex-1">
-                  <div className="flex items-center gap-2 mb-1">
-                    <h3 className="font-serif font-semibold text-foreground">{l.title}</h3>
-                    <span className="text-[10px] uppercase tracking-wider text-muted-foreground bg-muted px-2 py-0.5 rounded-full font-sans">{l.layer}</span>
-                  </div>
+                  <h3 className="font-serif font-semibold text-foreground mb-1">{l.title}</h3>
                   <p className="text-sm text-muted-foreground font-sans">{l.detail}</p>
                 </div>
               </div>
             ))}
           </div>
+        </div>
+      </section>
 
-          {/* Three Layers Overview */}
-          <div className="mt-12 grid md:grid-cols-3 gap-5">
-            {[
-              { layer: "Fase 1", title: "Strategie & Positionering", letters: "B–R–I–D", desc: "Het fundament: wie ben je, waar sta je, en waar ga je heen?" },
-              { layer: "Fase 2", title: "Partnerships & Ecosystemen", letters: "G", desc: "Het netwerk: welke samenwerkingen versnellen jouw groei?" },
-              { layer: "Fase 2", title: "Groei & Activatie", letters: "G–E", desc: "De actie: implementeren, schalen en rendement meten." },
-            ].map((item, i) => (
-              <div key={i} className="bg-primary rounded-xl p-6 text-center">
-                <span className="text-xs text-secondary font-semibold uppercase tracking-widest font-sans">{item.layer}</span>
-                <h4 className="font-serif font-bold text-primary-foreground text-lg mt-2 mb-1">{item.title}</h4>
-                <p className="text-primary-foreground/60 text-xs font-sans mb-2">({item.letters})</p>
-                <p className="text-primary-foreground/70 text-sm font-sans">{item.desc}</p>
-              </div>
-            ))}
-          </div>
+      {/* Signatuur */}
+      <section className="pb-16 bg-background">
+        <div className="container mx-auto max-w-4xl flex justify-center">
+          <img
+            src={signatuur.url}
+            alt="Handtekening Monia - Creating connections that create growth"
+            className="w-full max-w-[260px] h-auto"
+            loading="lazy"
+          />
         </div>
       </section>
 
