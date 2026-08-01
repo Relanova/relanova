@@ -25,6 +25,7 @@ const BrandOutro = () => {
           </div>
         </div>
       </section>
+      <div aria-hidden="true" className="h-10 md:h-14 w-full bg-background" />
     </>
   );
 };
