@@ -1,4 +1,4 @@
-import natlot from "@/assets/logos/natlot.jpg.asset.json";
+import natlot from "@/assets/logos/NationaleLoterij_transparant.png.asset.json";
 import base from "@/assets/logos/BASE_transparant.png.asset.json";
 import telenet from "@/assets/logos/telenet.png.asset.json";
 import nestle from "@/assets/logos/nestle.png.asset.json";
