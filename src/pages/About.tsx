@@ -118,47 +118,34 @@ const About = () => {
       </section>
 
       {/* BRIDGE-methode */}
-      <section className="section-padding bg-background">
-        <div className="container mx-auto max-w-4xl">
-          <div className="text-center mb-10">
-            <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Het raamwerk</span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">
+      <section className="py-12 bg-background">
+        <div className="container mx-auto max-w-3xl">
+          <div className="text-center mb-6">
+            <span className="text-xs font-semibold text-secondary uppercase tracking-widest font-sans">Het raamwerk</span>
+            <h2 className="text-xl md:text-2xl font-serif font-semibold text-foreground mt-2 mb-2">
               De BRIDGE-methode
             </h2>
-            <p className="text-muted-foreground font-sans max-w-xl mx-auto">
+            <p className="text-sm text-muted-foreground font-sans">
               Zes stappen die structuur geven van strategie tot resultaat.
+            </p>
+            <p className="text-xs text-muted-foreground/80 font-sans mt-2 tracking-wide">
+              Strategie <span className="text-secondary">→</span> BRIDGE <span className="text-secondary">→</span> Resultaat
             </p>
           </div>
 
-          {/* BRIDGE Letters */}
-          <div className="flex justify-center gap-2 md:gap-3 mb-10">
-            {bridgeLayers.map((l) => (
-              <div
-                key={l.letter}
-                className="w-12 h-12 md:w-16 md:h-16 rounded-xl flex items-center justify-center"
-                style={{ backgroundColor: "#245163" }}
-              >
-                <span className="text-2xl md:text-3xl font-serif font-bold text-white">{l.letter}</span>
-              </div>
-            ))}
-          </div>
-
-          {/* Layers */}
-          <div className="grid gap-4 md:grid-cols-2">
+          {/* Layers - rustige lijst */}
+          <ul className="divide-y divide-border border-y border-border">
             {bridgeLayers.map((l, i) => (
-              <div key={i} className="flex items-start gap-4 bg-card rounded-xl p-5 border border-border">
-                <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0">
-                  <span className="font-serif font-bold text-secondary text-lg">{l.letter}</span>
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-serif font-semibold text-foreground mb-1">{l.title}</h3>
-                  <p className="text-sm text-muted-foreground font-sans">{l.detail}</p>
-                </div>
-              </div>
+              <li key={i} className="flex items-baseline gap-3 py-2.5">
+                <span className="w-5 shrink-0 font-serif font-bold text-secondary text-sm">{l.letter}</span>
+                <span className="text-sm font-sans text-foreground font-medium">{l.title}</span>
+                <span className="text-xs font-sans text-muted-foreground">{l.detail}</span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
+
 
       {/* Signatuur */}
       <section className="pb-16 bg-background">
