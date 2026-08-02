@@ -24,8 +24,8 @@ const HeroSection = () => {
               Relanova
             </p>
 
-            <h1 className="font-sans text-left text-4xl md:text-5xl lg:text-[3.5rem] leading-[1.15] mb-4 text-white" style={{ fontWeight: 700 }}>
-              Strategic Advisor &amp;<br />Growth Connector
+            <h1 className="font-sans text-left text-xl md:text-2xl leading-snug mb-5 text-white opacity-100" style={{ fontWeight: 700 }}>
+              Strategic Advisor &amp; Growth Connector
             </h1>
             <p className="font-sans text-left text-white max-w-xl mb-3" style={{ fontSize: "22px", fontWeight: 700 }}>
               Strategie, relaties en executie verbinden<br />om groei te versnellen.
