@@ -139,24 +139,21 @@ export const HeroCTABlock = () => {
         <img src={heroBg} alt="" className="w-full h-full object-cover" aria-hidden="true" />
         <div className="absolute inset-0 bg-primary/90" />
       </div>
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="max-w-3xl mx-auto text-primary-foreground">
-          <div className="flex flex-col sm:flex-row gap-4 mb-3">
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 flex items-center justify-center min-h-[9.5rem]">
+        <div className="text-primary-foreground w-full">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center">
             <Link to="/contact">
-              <Button variant="hero" size="xl" className="gap-2">
+              <Button variant="hero" size="xl" className="gap-2 shadow-lg">
                 Plan een vrijblijvend kennismakingsgesprek
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
             <Link to="/services">
               <Button variant="hero-outline" size="xl">
-                Bekijk Diensten
+                Bekijk diensten
               </Button>
             </Link>
           </div>
-          <p className="text-sm text-primary-foreground/80 font-sans max-w-xl">
-            Je krijgt direct 1-2 heldere inzichten over jouw groeivraag - ook als we niet samenwerken.
-          </p>
         </div>
       </div>
     </section>
