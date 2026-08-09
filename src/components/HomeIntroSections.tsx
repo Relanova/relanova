@@ -308,11 +308,11 @@ export const ZoCrerenWijWaarde = () => {
 
 export const WaaromRelanova = () => {
   const items = [
-    { icon: TrendingUp, title: "Groei", text: "Strategische keuzes die zorgen voor blijvende, meetbare groei." },
-    { icon: Handshake, title: "Partnerships", text: "De juiste samenwerkingen die deuren openen en waarde creëren." },
-    { icon: Target, title: "Stakeholder-alignment", text: "Alle neuzen in dezelfde richting, intern en extern." },
-    { icon: Network, title: "Ecosystemen", text: "Een sterk netwerk bouwen rond je organisatie." },
-    { icon: Rocket, title: "Executie", text: "Van plan naar actie, zodat er echt beweging ontstaat." },
+    { icon: TrendingUp, title: "Groei", text: "Strategische keuzes die zorgen voor duurzame, meetbare groei." },
+    { icon: Handshake, title: "Partnerships", text: "De juiste samenwerkingen die nieuwe deuren openen en waarde creëren." },
+    { icon: Target, title: "Stakeholders", text: "Alle neuzen in dezelfde richting, intern en extern." },
+    { icon: Network, title: "Strategisch netwerk", text: "De juiste mensen en organisaties rond je bedrijf verbinden." },
+    { icon: Rocket, title: "Executie", text: "Van strategie naar actie zodat plannen resultaat opleveren." },
   ];
   return (
     <section className="section-padding bg-background">
