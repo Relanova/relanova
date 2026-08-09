@@ -19,7 +19,7 @@ const CTASection = () => {
           </h2>
           <p className="font-sans text-white/80 text-lg mb-8">
             De eerste stap naar helderheid, richting en groei. Boek een gratis strategiegesprek - geen
-            verkooppraatje, wel helder inzicht.
+            verkooppraatje wel helder inzicht.
           </p>
           <Link to="/contact">
             <Button variant="hero" size="xl" className="gap-2">
