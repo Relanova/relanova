@@ -243,7 +243,7 @@ export const ZoCrerenWijWaarde = () => {
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
-            Zo creeren wij waarde
+            Zo creëren wij waarde
           </h2>
           <p className="text-muted-foreground font-sans">Onze aanpak. Jouw resultaat.</p>
         </div>
@@ -285,7 +285,7 @@ export const ZoCrerenWijWaarde = () => {
 export const WaaromRelanova = () => {
   const items = [
     { icon: TrendingUp, title: "Groei", text: "Strategische keuzes die zorgen voor blijvende, meetbare groei." },
-    { icon: Handshake, title: "Partnerships", text: "De juiste samenwerkingen die deuren openen en waarde creeren." },
+    { icon: Handshake, title: "Partnerships", text: "De juiste samenwerkingen die deuren openen en waarde creëren." },
     { icon: Target, title: "Stakeholder-alignment", text: "Alle neuzen in dezelfde richting, intern en extern." },
     { icon: Network, title: "Ecosystemen", text: "Een sterk netwerk bouwen rond je organisatie." },
     { icon: Rocket, title: "Executie", text: "Van plan naar actie, zodat er echt beweging ontstaat." },

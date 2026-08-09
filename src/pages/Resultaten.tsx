@@ -24,7 +24,7 @@ const featured: Recommendation[] = [
   },
   {
     quote:
-      "Ik ken Monia al jaren binnen het Belgische sponsorshipmilieu. Monia is een uitstekende people manager met een uniek vermogen om een omgeving te creeren waarin teamleden worden aangemoedigd om hun eigen initiatief te nemen. Ze is zeer toegewijd aan haar werk en een ware experte in het opbouwen van relaties. Ze weet effectief te communiceren met verschillende belanghebbenden en heeft het talent om duidelijkheid te bieden en richting te geven aan haar team. De wensen van het hoger management worden correct omgezet in concrete doelstellingen en strategieen, waardoor ze een cruciale schakel is tussen het strategische beleid en de dagelijkse operaties. Ik kan Monia van harte aanbevelen voor elke functie waar leiderschap, kennis, betrokkenheid en effectieve teamwerking van essentieel belang zijn.",
+      "Ik ken Monia al jaren binnen het Belgische sponsorshipmilieu. Monia is een uitstekende people manager met een uniek vermogen om een omgeving te creëren waarin teamleden worden aangemoedigd om hun eigen initiatief te nemen. Ze is zeer toegewijd aan haar werk en een ware experte in het opbouwen van relaties. Ze weet effectief te communiceren met verschillende belanghebbenden en heeft het talent om duidelijkheid te bieden en richting te geven aan haar team. De wensen van het hoger management worden correct omgezet in concrete doelstellingen en strategieen, waardoor ze een cruciale schakel is tussen het strategische beleid en de dagelijkse operaties. Ik kan Monia van harte aanbevelen voor elke functie waar leiderschap, kennis, betrokkenheid en effectieve teamwerking van essentieel belang zijn.",
     name: "Maaike Bauwens",
     role: "Sponsoring & partnerships - Nationale Loterij",
   },
