@@ -71,11 +71,13 @@ export const CasesResultatenHome = () => {
   );
 };
 
-export const ManierenOmSamenTeWerken = () => {
+export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean }) => {
   const hoofddienst = {
     label: "Halve dag",
     icon: Compass,
     title: "Strategiesessie",
+    summary:
+      "Een halve dag om helderheid te krijgen over je positionering, commerciële kansen en strategische prioriteiten.",
     items: [
       "Strategische analyse",
       "Commerciële kansen",
@@ -90,6 +92,8 @@ export const ManierenOmSamenTeWerken = () => {
       label: "Maandabonnement",
       icon: MessageCircle,
       title: "Strategisch adviseur",
+      summary:
+        "Vaste strategische sparring en ondersteuning voor scherpe beslissingen en richting wanneer je die nodig hebt.",
       items: [
         "Twee strategiesessies",
         "Telefonische sparring",
@@ -104,6 +108,8 @@ export const ManierenOmSamenTeWerken = () => {
       label: "Projectbasis",
       icon: HandshakeIcon,
       title: "Partnership-strategie",
+      summary:
+        "Sterke partnerships en sponsorstrategieën ontwikkelen die nieuwe kansen creëren en commerciële groei versterken.",
       subtitle: "voor organisaties die:",
       items: [
         "Strategische partnerships zoeken",
@@ -116,6 +122,8 @@ export const ManierenOmSamenTeWerken = () => {
       label: "Succesfee",
       icon: Users2,
       title: "Executive matchmaking",
+      summary:
+        "Geen recruitment, maar het strategisch verbinden van CEO’s, bedrijven, investeerders en experts die elkaar versterken.",
       subtitle: "geen recruitment, maar:",
       items: [
         "CEO's verbinden",
@@ -129,6 +137,8 @@ export const ManierenOmSamenTeWerken = () => {
       label: "Dagtarief",
       icon: Presentation,
       title: "Executive facilitatie",
+      summary:
+        "Professionele begeleiding van board meetings, strategiedagen en leiderschapssessies die leiden tot heldere keuzes en actie.",
       subtitle: "faciliteren van:",
       items: [
         "Board meetings",
@@ -142,6 +152,8 @@ export const ManierenOmSamenTeWerken = () => {
       label: "Binnenkort",
       icon: Sparkles,
       title: "Relanova Circle",
+      summary:
+        "Een besloten community voor CEO’s, founders en decision makers rond diepgaande gesprekken, waardevolle relaties en nieuwe opportuniteiten.",
       subtitle: "een exclusieve community voor CEO's, founders en decision makers, met:",
       items: [
         "Besloten diners",
@@ -176,21 +188,27 @@ export const ManierenOmSamenTeWerken = () => {
                 De eerste stap · {hoofddienst.label}
               </span>
               <h3 className="font-serif font-bold text-white text-xl md:text-2xl mb-2">{hoofddienst.title}</h3>
-              <ul className="grid gap-y-1.5 gap-x-4 sm:grid-cols-2 mb-2">
-                {hoofddienst.items.map((it) => (
-                  <li key={it} className="flex items-start gap-2 text-white/90 font-sans text-sm leading-relaxed">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white/70 shrink-0" />
-                    <span>{it}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-white font-sans italic text-sm mt-2">Alles begint met helderheid en richting.</p>
+              {compact ? (
+                <p className="text-white/90 font-sans text-sm leading-relaxed">{hoofddienst.summary}</p>
+              ) : (
+                <>
+                  <ul className="grid gap-y-1.5 gap-x-4 sm:grid-cols-2 mb-2">
+                    {hoofddienst.items.map((it) => (
+                      <li key={it} className="flex items-start gap-2 text-white/90 font-sans text-sm leading-relaxed">
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white/70 shrink-0" />
+                        <span>{it}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="text-white font-sans italic text-sm mt-2">Alles begint met helderheid en richting.</p>
+                </>
+              )}
             </div>
           </div>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch [&>*:last-child:nth-child(3n-2)]:lg:col-start-2">
-          {diensten.map(({ label, icon: Icon, title, subtitle, items }) => (
+          {diensten.map(({ label, icon: Icon, title, subtitle, items, summary }) => (
             <div
               key={title}
               className="bg-card rounded-lg p-6 border border-border flex flex-col h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
@@ -203,17 +221,23 @@ export const ManierenOmSamenTeWerken = () => {
               </div>
 
               <h3 className="font-serif font-semibold text-foreground text-lg mb-1">{title}</h3>
-              {subtitle && (
-                <p className="text-muted-foreground font-sans text-sm italic mb-2">{subtitle}</p>
+              {compact ? (
+                <p className="text-muted-foreground font-sans text-sm leading-relaxed mt-1">{summary}</p>
+              ) : (
+                <>
+                  {subtitle && (
+                    <p className="text-muted-foreground font-sans text-sm italic mb-2">{subtitle}</p>
+                  )}
+                  <ul className="space-y-1.5 mt-1">
+                    {items.map((it) => (
+                      <li key={it} className="flex items-start gap-2 text-muted-foreground font-sans text-sm leading-relaxed">
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#245163" }} />
+                        <span>{it}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </>
               )}
-              <ul className="space-y-1.5 mt-1">
-                {items.map((it) => (
-                  <li key={it} className="flex items-start gap-2 text-muted-foreground font-sans text-sm leading-relaxed">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#245163" }} />
-                    <span>{it}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
