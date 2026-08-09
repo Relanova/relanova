@@ -96,7 +96,7 @@ const more: Recommendation[] = [
     quote:
       "If you are looking for a highly skilled and motivated marketing and communication professional with loads of experience, look no further. I had the pleasure of working on numerous projects in the field of sponsorship and marketing with Monia. Strategically well thought out, always realistic and with attention to detail and an unrelenting work ethic. A good communicator on a personal level with a strong vision, combined with a highly empathic ability, working from a sense of trust will always be part of any collaboration with Monia.",
     name: "Wim Van de Keere",
-    role: "General Manager at betFIRST BNXT League",
+    role: "General Manager at BNXT League",
   },
   {
     quote:
