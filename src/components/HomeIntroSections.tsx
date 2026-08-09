@@ -166,7 +166,7 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
   ];
   const HoofdIcon = hoofddienst.icon;
   return (
-    <section className="section-padding bg-background">
+    <section className={`bg-background px-4 sm:px-6 lg:px-8 ${compact ? "pt-20 md:pt-28 pb-8 md:pb-10" : "py-20 md:py-28"}`}>
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
