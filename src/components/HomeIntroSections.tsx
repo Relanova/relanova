@@ -172,7 +172,7 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
             Manieren om samen te werken
           </h2>
-          <p className="text-muted-foreground font-sans">Kies wat jouw organisatie vandaag nodig heeft. Elke samenwerking start met een Strategiesessie.</p>
+          <p className="text-muted-foreground font-sans">Kies wat jouw organisatie vandaag nodig heeft. Elke samenwerking start met een strategiesessie.</p>
         </div>
 
         <div
