@@ -87,7 +87,7 @@ const About = () => {
               <h2 className="text-2xl font-serif font-bold text-foreground mb-4">Visie</h2>
               <p className="text-muted-foreground leading-relaxed font-sans">
                 Groei ontstaat tussen mensen. Bedrijven die weten wie ze zijn, relevant blijven en
-                samenwerken met de juiste partners, gaan verder dan bedrijven die het alleen proberen.
+                samenwerken met de juiste partners geraken verder dan bedrijven die het alleen proberen.
               </p>
             </div>
           </div>
