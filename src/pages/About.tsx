@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Link2, Compass, ShieldCheck, Zap, Heart } from "lucide-react";
 import heroPortrait from "@/assets/hero-portrait.jpg";
 import signatuur from "@/assets/monia-signatuur.png.asset.json";
-import CTASection from "@/components/CTASection";
+import { HeroCTABlock } from "@/components/HeroSection";
 
 const values = [
   { icon: Link2, title: "Verbindend", desc: "Ik breng de juiste mensen bij elkaar." },
@@ -159,7 +159,7 @@ const About = () => {
         </div>
       </section>
 
-      <CTASection />
+      <HeroCTABlock />
     </Layout>
   );
 };

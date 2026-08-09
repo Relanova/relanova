@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import CTASection from "@/components/CTASection";
+import { HeroCTABlock } from "@/components/HeroSection";
 import { Quote } from "lucide-react";
 
 type Recommendation = {
@@ -287,7 +287,7 @@ const Resultaten = () => {
         </div>
       </section>
 
-      <CTASection />
+      <HeroCTABlock />
     </Layout>
   );
 };
