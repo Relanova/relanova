@@ -2,7 +2,7 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import HeroSection, { HeroCTABlock } from "@/components/HeroSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import CTASection from "@/components/CTASection";
+
 
 import { ValueProp, WaaromRelanova, ZoCrerenWijWaarde, ManierenOmSamenTeWerken, CasesResultatenHome } from "@/components/HomeIntroSections";
 
@@ -22,7 +22,6 @@ const Index = () => {
       <ManierenOmSamenTeWerken compact />
       <HeroCTABlock />
       <CasesResultatenHome />
-      <CTASection />
     </Layout>
   );
 };

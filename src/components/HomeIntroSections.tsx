@@ -26,7 +26,7 @@ export const CasesResultatenHome = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="pt-20 pb-10 bg-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#245163] mb-3">Wat bedrijven zeggen</h2>
