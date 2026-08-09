@@ -22,7 +22,6 @@ const Index = () => {
       <ManierenOmSamenTeWerken compact />
       <HeroCTABlock />
       <CasesResultatenHome />
-      <CTASection />
     </Layout>
   );
 };
