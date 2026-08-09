@@ -142,8 +142,11 @@ export const HeroCTABlock = () => {
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 flex items-center justify-center min-h-[9.5rem]">
         <div className="text-primary-foreground w-full flex flex-col items-center text-center gap-5">
           <h2 className="font-sans font-bold text-primary-foreground text-2xl md:text-3xl max-w-2xl">
-            Klaar om te ontdekken wat Relanova voor jou kan betekenen?
+            Klaar om samen te groeien?
           </h2>
+          <p className="font-sans text-primary-foreground/80 max-w-2xl -mt-2">
+            De eerste stap naar helderheid en richting. Laten we vrijblijvend kennismaken en ontdekken waar jouw kansen liggen.
+          </p>
           <Link to="/contact">
             <Button variant="hero" size="xl" className="gap-2 shadow-lg">
               Plan een vrijblijvend kennismakingsgesprek
