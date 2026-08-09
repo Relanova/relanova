@@ -76,80 +76,38 @@ export const ManierenOmSamenTeWerken = () => {
     label: "Halve dag",
     icon: Compass,
     title: "Strategiesessie",
-    items: [
-      "Strategische analyse",
-      "Commerciële kansen",
-      "Partnerships",
-      "Stakeholdermapping",
-      "Positionering",
-      "Prioriteiten bepalen",
-    ],
+    text: "Een halve dag om helderheid te krijgen over je positionering, commerciële kansen en strategische prioriteiten.",
   };
   const diensten = [
     {
       label: "Maandabonnement",
       icon: MessageCircle,
       title: "Strategisch adviseur",
-      items: [
-        "Twee strategiesessies",
-        "Telefonische sparring",
-        "WhatsApp",
-        "Review van documenten",
-        "Snelle strategische ondersteuning",
-        "Fractional CMO",
-        "Marketing services (projectbasis)",
-      ],
+      text: "Vaste strategische sparring en ondersteuning voor scherpe beslissingen en richting wanneer je die nodig hebt.",
     },
     {
       label: "Projectbasis",
       icon: HandshakeIcon,
       title: "Partnership-strategie",
-      subtitle: "voor organisaties die:",
-      items: [
-        "Strategische partnerships zoeken",
-        "Sponsorstrategieën willen ontwikkelen",
-        "Ecosystemen willen bouwen",
-        "Nieuwe commerciële kansen zoeken",
-      ],
+      text: "Sterke partnerships en sponsorstrategieën ontwikkelen die nieuwe kansen creëren en commerciële groei versterken.",
     },
     {
       label: "Succesfee",
       icon: Users2,
       title: "Executive matchmaking",
-      subtitle: "geen recruitment, maar:",
-      items: [
-        "CEO's verbinden",
-        "Bedrijven koppelen",
-        "Investeerders introduceren",
-        "Experts samenbrengen",
-        "Strategische coalities vormen",
-      ],
+      text: "Geen recruitment, maar het strategisch verbinden van CEO's, bedrijven, investeerders en experts die elkaar versterken.",
     },
     {
       label: "Dagtarief",
       icon: Presentation,
       title: "Executive facilitatie",
-      subtitle: "faciliteren van:",
-      items: [
-        "Board meetings",
-        "Strategiedagen",
-        "Leiderschapssessies",
-        "Stakeholderbijeenkomsten",
-        "Partnerdagen",
-      ],
+      text: "Professionele begeleiding van board meetings, strategiedagen en leiderschapssessies die leiden tot heldere keuzes en actie.",
     },
     {
       label: "Binnenkort",
       icon: Sparkles,
       title: "Relanova Circle",
-      subtitle: "een exclusieve community voor CEO's, founders en decision makers, met:",
-      items: [
-        "Besloten diners",
-        "Round tables",
-        "Mastermindgroepen",
-        "Inspiratiesessies",
-        "High-level networking",
-      ],
+      text: "Een besloten community voor CEO's, founders en decision makers rond diepgaande gesprekken, waardevolle relaties en nieuwe opportuniteiten.",
     },
   ];
   const HoofdIcon = hoofddienst.icon;
@@ -160,7 +118,7 @@ export const ManierenOmSamenTeWerken = () => {
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
             Manieren om samen te werken
           </h2>
-          <p className="text-muted-foreground font-sans">Kies wat jouw organisatie vandaag nodig heeft. Elke samenwerking start met een Strategiesessie.</p>
+          <p className="text-muted-foreground font-sans">Kies wat jouw organisatie vandaag nodig heeft. Elke samenwerking start met een strategiesessie.</p>
         </div>
 
         <div
@@ -176,21 +134,13 @@ export const ManierenOmSamenTeWerken = () => {
                 De eerste stap · {hoofddienst.label}
               </span>
               <h3 className="font-serif font-bold text-white text-xl md:text-2xl mb-2">{hoofddienst.title}</h3>
-              <ul className="grid gap-y-1.5 gap-x-4 sm:grid-cols-2 mb-2">
-                {hoofddienst.items.map((it) => (
-                  <li key={it} className="flex items-start gap-2 text-white/90 font-sans text-sm leading-relaxed">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white/70 shrink-0" />
-                    <span>{it}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-white font-sans italic text-sm mt-2">Alles begint met helderheid en richting.</p>
+              <p className="text-white/90 font-sans text-sm leading-relaxed">{hoofddienst.text}</p>
             </div>
           </div>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch [&>*:last-child:nth-child(3n-2)]:lg:col-start-2">
-          {diensten.map(({ label, icon: Icon, title, subtitle, items }) => (
+          {diensten.map(({ label, icon: Icon, title, text }) => (
             <div
               key={title}
               className="bg-card rounded-lg p-6 border border-border flex flex-col h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
@@ -202,18 +152,8 @@ export const ManierenOmSamenTeWerken = () => {
                 <Icon className="w-5 h-5 text-white" />
               </div>
 
-              <h3 className="font-serif font-semibold text-foreground text-lg mb-1">{title}</h3>
-              {subtitle && (
-                <p className="text-muted-foreground font-sans text-sm italic mb-2">{subtitle}</p>
-              )}
-              <ul className="space-y-1.5 mt-1">
-                {items.map((it) => (
-                  <li key={it} className="flex items-start gap-2 text-muted-foreground font-sans text-sm leading-relaxed">
-                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#245163" }} />
-                    <span>{it}</span>
-                  </li>
-                ))}
-              </ul>
+              <h3 className="font-serif font-semibold text-foreground text-lg mb-2">{title}</h3>
+              <p className="text-muted-foreground font-sans text-sm leading-relaxed">{text}</p>
             </div>
           ))}
         </div>
@@ -221,6 +161,7 @@ export const ManierenOmSamenTeWerken = () => {
     </section>
   );
 };
+
 
 
 export const ZoCrerenWijWaarde = () => {
