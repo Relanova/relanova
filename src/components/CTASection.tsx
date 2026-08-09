@@ -12,7 +12,7 @@ const CTASection = () => {
         aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
       />
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-24">
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-13 md:py-16 flex items-center justify-center">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-sans font-bold text-white text-3xl md:text-4xl mb-4">
             Klaar om samen te groeien?
