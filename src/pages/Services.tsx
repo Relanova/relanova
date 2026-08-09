@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { ManierenOmSamenTeWerken } from "@/components/HomeIntroSections";
+import { HeroCTABlock } from "@/components/HeroSection";
 
 const Services = () => {
   return (
@@ -12,6 +13,7 @@ const Services = () => {
       />
 
       <ManierenOmSamenTeWerken />
+      <HeroCTABlock hideSecondary />
     </Layout>
   );
 };

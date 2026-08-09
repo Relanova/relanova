@@ -132,7 +132,7 @@ export const HeroServicesBlock = () => {
   );
 };
 
-export const HeroCTABlock = () => {
+export const HeroCTABlock = ({ hideSecondary = false }: { hideSecondary?: boolean }) => {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
@@ -153,12 +153,14 @@ export const HeroCTABlock = () => {
               <ArrowRight className="w-5 h-5" />
             </Button>
           </Link>
-          <p className="font-sans text-sm text-primary-foreground/70">
-            Liever eerst verder kijken?{" "}
-            <Link to="/services" className="underline underline-offset-4 hover:text-primary-foreground transition-colors">
-              Bekijk onze diensten →
-            </Link>
-          </p>
+          {!hideSecondary && (
+            <p className="font-sans text-sm text-primary-foreground/70">
+              Liever eerst verder kijken?{" "}
+              <Link to="/services" className="underline underline-offset-4 hover:text-primary-foreground transition-colors">
+                Bekijk onze diensten →
+              </Link>
+            </p>
+          )}
         </div>
       </div>
     </section>
