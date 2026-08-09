@@ -109,7 +109,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="py-6 border-t border-primary-foreground/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-primary-foreground/50 text-xs text-center sm:text-left">
-            © 2026 Relanova · Reg: BE1004.202.297 · BRIDGE-methode is a registered trademark.
+            © 2026 Relanova · Reg: BE1004.202.297
           </p>
           <div className="flex items-center gap-4 text-xs text-primary-foreground/50">
             <Link to="/privacy" className="hover:text-secondary transition-colors">Privacy Policy</Link>
