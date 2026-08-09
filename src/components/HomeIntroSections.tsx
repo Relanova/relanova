@@ -71,7 +71,7 @@ export const CasesResultatenHome = () => {
   );
 };
 
-export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean }) => {
+export const ManierenOmSamenTeWerken = () => {
   const hoofddienst = {
     label: "Halve dag",
     icon: Compass,
@@ -176,19 +176,15 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
                 De eerste stap · {hoofddienst.label}
               </span>
               <h3 className="font-serif font-bold text-white text-xl md:text-2xl mb-2">{hoofddienst.title}</h3>
-              {!compact && (
-                <>
-                  <ul className="grid gap-y-1.5 gap-x-4 sm:grid-cols-2 mb-2">
-                    {hoofddienst.items.map((it) => (
-                      <li key={it} className="flex items-start gap-2 text-white/90 font-sans text-sm leading-relaxed">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white/70 shrink-0" />
-                        <span>{it}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-white font-sans italic text-sm mt-2">Alles begint met helderheid en richting.</p>
-                </>
-              )}
+              <ul className="grid gap-y-1.5 gap-x-4 sm:grid-cols-2 mb-2">
+                {hoofddienst.items.map((it) => (
+                  <li key={it} className="flex items-start gap-2 text-white/90 font-sans text-sm leading-relaxed">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white/70 shrink-0" />
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-white font-sans italic text-sm mt-2">Alles begint met helderheid en richting.</p>
             </div>
           </div>
         </div>
@@ -207,21 +203,17 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
               </div>
 
               <h3 className="font-serif font-semibold text-foreground text-lg mb-1">{title}</h3>
-              {!compact && (
-                <>
-                  {subtitle && (
-                    <p className="text-muted-foreground font-sans text-sm italic mb-2">{subtitle}</p>
-                  )}
-                  <ul className="space-y-1.5 mt-1">
-                    {items.map((it) => (
-                      <li key={it} className="flex items-start gap-2 text-muted-foreground font-sans text-sm leading-relaxed">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#245163" }} />
-                        <span>{it}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </>
+              {subtitle && (
+                <p className="text-muted-foreground font-sans text-sm italic mb-2">{subtitle}</p>
               )}
+              <ul className="space-y-1.5 mt-1">
+                {items.map((it) => (
+                  <li key={it} className="flex items-start gap-2 text-muted-foreground font-sans text-sm leading-relaxed">
+                    <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#245163" }} />
+                    <span>{it}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
