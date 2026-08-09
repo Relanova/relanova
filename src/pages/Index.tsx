@@ -19,7 +19,7 @@ const Index = () => {
       <WaaromRelanova />
       <ZoCrerenWijWaarde />
       <ValueProp />
-      <ManierenOmSamenTeWerken />
+      <ManierenOmSamenTeWerken compact />
       <HeroCTABlock />
       <CasesResultatenHome />
       <CTASection />
