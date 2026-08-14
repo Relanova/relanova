@@ -1,5 +1,5 @@
 import heroBg from "@/assets/hero-bg-pattern.jpg";
-import relanovaLogoWhite from "@/assets/relanova-logo-white.png.asset.json";
+import relanovaIconWhite from "@/assets/relanova-icon-white.png.asset.json";
 
 const BrandOutro = () => {
   return (
@@ -28,9 +28,9 @@ const BrandOutro = () => {
               </p>
             </div>
             <img
-              src={relanovaLogoWhite.url}
+              src={relanovaIconWhite.url}
               alt="Relanova"
-              className="h-10 md:h-14 w-auto shrink-0 opacity-90"
+              className="w-10 h-10 md:w-14 md:h-14 shrink-0 opacity-90"
             />
 
           </div>
