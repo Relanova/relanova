@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import BrandIcon from "@/components/BrandIcon";
 import relanovaIcon from "@/assets/relanova-icon.png.asset.json";
 
 const navLinks = [
@@ -53,7 +54,7 @@ const Header = () => {
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center gap-3">
           <a href="tel:+32488285886" className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors">
-            <Phone className="w-4 h-4" />
+            <BrandIcon name="tel" className="w-4 h-4" />
             <span>+32 488 285 886</span>
           </a>
           <Link to="/contact">
