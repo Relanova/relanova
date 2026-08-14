@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Instagram, ArrowUp, MessageCircle, FileText } from "lucide-react";
 import BrandIcon from "@/components/BrandIcon";
-import relanovaIcon from "@/assets/relanova-icon.png.asset.json";
+import relanovaLogoWhite from "@/assets/relanova-logo-white.png.asset.json";
 
 const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
