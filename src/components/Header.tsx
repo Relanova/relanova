@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import BrandIcon from "@/components/BrandIcon";
-import relanovaIcon from "@/assets/relanova-icon.png.asset.json";
+import relanovaLogo from "@/assets/relanova-logo.png.asset.json";
 
 const navLinks = [
   { label: "Home", path: "/" },
