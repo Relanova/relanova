@@ -53,7 +53,7 @@
     --warm-gray: 200 15% 96%;
 
     /* Huisstijl-gradient */
-    --hero-gradient: linear-gradient(180deg, #2E636B 0%, #2F5D6A 50%, #304F63 100%);
+    --hero-gradient: linear-gradient(180deg, #2E636B 0%, #2E636B 25%, #2F5D6A 50%, #305503 75%, #304F63 100%);
     --card-shadow: 0 4px 24px -4px hsl(197 47% 26% / 0.08);
     --card-shadow-hover: 0 8px 32px -4px hsl(197 47% 26% / 0.15);
 
