@@ -1,5 +1,5 @@
 import heroBg from "@/assets/hero-bg-pattern.jpg";
-import relanovaIconWhite from "@/assets/relanova-icon-white.png.asset.json";
+import relanovaLogoWhite from "@/assets/relanova-logo-white.png.asset.json";
 
 const BrandOutro = () => {
   return (
