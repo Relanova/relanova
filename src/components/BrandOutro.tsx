@@ -3,10 +3,10 @@ import relanovaIconWhite from "@/assets/relanova-icon-white.png.asset.json";
 
 const BrandOutro = () => {
   return (
-    <section className="bg-background pt-2 pb-5 md:pt-3 md:pb-6">
+    <section className="bg-background pt-2 pb-4 md:pt-2 md:pb-5">
       <div className="w-full flex justify-center px-4 sm:px-6 lg:px-8">
         <div
-          className="relative overflow-hidden rounded-2xl shadow-xl w-full max-w-[34rem] mx-auto"
+          className="relative overflow-hidden rounded-xl shadow-lg w-full max-w-[26rem] mx-auto"
           style={{ backgroundColor: "#245163" }}
         >
           <img
@@ -15,22 +15,22 @@ const BrandOutro = () => {
             aria-hidden="true"
             className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
           />
-          <div className="relative flex items-center justify-between gap-4 px-4 py-4 md:px-7 md:py-5">
+          <div className="relative flex items-center justify-between gap-3 px-3 py-3 md:px-5 md:py-4">
             <div className="text-left">
-              <p className="font-sans text-white/70 text-[9px] md:text-[10px] font-semibold tracking-[0.3em] uppercase mb-1.5">
+              <p className="font-sans text-white/70 text-[8px] md:text-[9px] font-semibold tracking-[0.3em] uppercase mb-1">
                 Relanova
               </p>
-              <h2 className="font-sans font-bold text-white text-base md:text-lg mb-1">
+              <h2 className="font-sans font-bold text-white text-sm md:text-base mb-0.5">
                 Strategy. Relationships. Results.
               </h2>
-              <p className="font-sans text-white/70 text-[11px] md:text-xs">
+              <p className="font-sans text-white/70 text-[10px] md:text-[11px]">
                 Where strategy meets relationships and execution.
               </p>
             </div>
             <img
               src={relanovaIconWhite.url}
               alt="Relanova"
-              className="w-10 h-10 md:w-14 md:h-14 shrink-0 opacity-90"
+              className="w-8 h-8 md:w-11 md:h-11 shrink-0 opacity-90"
             />
 
           </div>
