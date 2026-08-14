@@ -5,13 +5,16 @@ import heroBg from "@/assets/hero-bg-pattern.jpg";
 
 const CTASection = () => {
   return (
-    <section className="relative overflow-hidden" style={{ backgroundColor: "#245163" }}>
-      <img
-        src={heroBg}
-        alt=""
-        aria-hidden="true"
-        className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
-      />
+    <section className="relative overflow-hidden">
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-hero-gradient" />
+        <img
+          src={heroBg}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay"
+        />
+      </div>
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-[3.25rem] md:py-16 flex items-center justify-center">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="font-sans font-bold text-white text-3xl md:text-4xl mb-4">

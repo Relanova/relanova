@@ -1,4 +1,5 @@
 import { Award, Linkedin, Quote, Handshake } from "lucide-react";
+import heroBg from "@/assets/hero-bg-pattern.jpg";
 
 const items = [
   { icon: Award, label: "15+ jaar ervaring" },
