@@ -9,10 +9,7 @@ const HeroSection = () => {
     <section className="relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div
-          className="absolute inset-0"
-          style={{ background: "linear-gradient(135deg, #2E636B 0%, #2F5D6A 50%, #304F63 100%)" }}
-        />
+        <div className="absolute inset-0 bg-hero-gradient" />
         <img src={heroBg} alt="" className="w-full h-full object-cover opacity-20 mix-blend-overlay" aria-hidden="true" />
       </div>
 
@@ -76,7 +73,7 @@ export const HeroServicesBlock = () => {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="w-full h-full object-cover" aria-hidden="true" />
-        <div className="absolute inset-0 bg-primary/90" />
+        <div className="absolute inset-0 bg-hero-gradient opacity-90" />
       </div>
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
         <div className="max-w-3xl mx-auto text-primary-foreground">
@@ -137,7 +134,7 @@ export const HeroCTABlock = ({ hideSecondary = false }: { hideSecondary?: boolea
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="w-full h-full object-cover" aria-hidden="true" />
-        <div className="absolute inset-0 bg-primary/90" />
+        <div className="absolute inset-0 bg-hero-gradient opacity-90" />
       </div>
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 flex items-center justify-center min-h-[9.5rem]">
         <div className="text-primary-foreground w-full flex flex-col items-center text-center gap-5">
