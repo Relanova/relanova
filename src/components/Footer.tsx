@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Linkedin, Instagram, ArrowUp, MessageCircle, FileText } from "lucide-react";
 import BrandIcon from "@/components/BrandIcon";
-import relanovaIcon from "@/assets/relanova-icon.png.asset.json";
+import relanovaLogoWhite from "@/assets/relanova-logo-white.png.asset.json";
 
 const Footer = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
@@ -13,17 +13,14 @@ const Footer = () => {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="mb-4">
               <img
-                src={relanovaIcon.url}
-                alt="Relanova"
-                className="w-8 h-8 shrink-0 brightness-0 invert"
+                src={relanovaLogoWhite.url}
+                alt="Relanova - human touch in a connected world"
+                className="h-11 w-auto"
               />
-              <div className="flex flex-col leading-none">
-                <span className="font-serif font-bold text-base">Relanova</span>
-                <span className="text-primary-foreground/60 text-[10px] tracking-widest uppercase">Human Touch in a Connected World</span>
-              </div>
             </div>
+
             <p className="text-primary-foreground/70 text-sm leading-relaxed mb-3">
               Strategische groei via de BRIDGE-methode.
             </p>
