@@ -2,7 +2,8 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Clock, Send, MessageCircle, Loader2 } from "lucide-react";
+import { Clock, Send, MessageCircle, Loader2 } from "lucide-react";
+import BrandIcon from "@/components/BrandIcon";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "@/hooks/use-toast";
 
@@ -115,13 +116,13 @@ const Contact = () => {
                 <h3 className="font-serif font-bold text-foreground text-lg">Direct Contact</h3>
                 <a href="mailto:monia@relanova.be" className="flex items-center gap-3 text-muted-foreground hover:text-secondary transition-colors font-sans text-sm group">
                   <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                    <Mail className="w-4 h-4 text-secondary" />
+                    <BrandIcon name="mail" className="w-4 h-4" />
                   </div>
                   monia@relanova.be
                 </a>
                 <a href="tel:+32488285886" className="flex items-center gap-3 text-muted-foreground hover:text-secondary transition-colors font-sans text-sm group">
                   <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                    <Phone className="w-4 h-4 text-secondary" />
+                    <BrandIcon name="tel" className="w-4 h-4" />
                   </div>
                   +32 488 285 886
                 </a>
@@ -138,7 +139,7 @@ const Contact = () => {
                 </a>
                 <div className="flex items-start gap-3 text-muted-foreground font-sans text-sm">
                   <div className="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center shrink-0">
-                    <MapPin className="w-4 h-4 text-secondary" />
+                    <BrandIcon name="location" className="w-4 h-4" />
                   </div>
                   <span>Vijvedreef 67<br />8710 Sint-Baafs-Vijve, België<br /><span className="text-xs text-muted-foreground/70">Reg: BE1004.202.297</span></span>
                 </div>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Linkedin, Instagram, ArrowUp, MessageCircle, FileText } from "lucide-react";
+import { Linkedin, Instagram, ArrowUp, MessageCircle, FileText } from "lucide-react";
+import BrandIcon from "@/components/BrandIcon";
 import relanovaIcon from "@/assets/relanova-icon.png.asset.json";
 
 const Footer = () => {
@@ -82,13 +83,13 @@ const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a href="mailto:monia@relanova.be" className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-secondary transition-colors">
-                  <Mail className="w-4 h-4 shrink-0" />
+                  <BrandIcon name="mail" className="w-4 h-4 shrink-0 brightness-0 invert" />
                   monia@relanova.be
                 </a>
               </li>
               <li>
                 <a href="tel:+32488285886" className="flex items-center gap-2 text-sm text-primary-foreground/70 hover:text-secondary transition-colors">
-                  <Phone className="w-4 h-4 shrink-0" />
+                  <BrandIcon name="tel" className="w-4 h-4 shrink-0 brightness-0 invert" />
                   +32 488 285 886 (WhatsApp)
                 </a>
               </li>
@@ -99,7 +100,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="flex items-start gap-2 text-sm text-primary-foreground/70">
-                <MapPin className="w-4 h-4 shrink-0 mt-0.5" />
+                <BrandIcon name="location" className="w-4 h-4 shrink-0 mt-0.5 brightness-0 invert" />
                 <span>Vijvedreef 67<br />8710 Sint-Baafs-Vijve, België</span>
               </li>
             </ul>
