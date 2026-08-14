@@ -133,8 +133,8 @@ export const HeroCTABlock = ({ hideSecondary = false }: { hideSecondary?: boolea
   return (
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover" aria-hidden="true" />
-        <div className="absolute inset-0 bg-primary/90" />
+        <div className="absolute inset-0 bg-hero-gradient" />
+        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-20 mix-blend-overlay" aria-hidden="true" />
       </div>
       <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 flex items-center justify-center min-h-[9.5rem]">
         <div className="text-primary-foreground w-full flex flex-col items-center text-center gap-5">
