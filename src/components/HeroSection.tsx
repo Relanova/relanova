@@ -9,10 +9,7 @@ const HeroSection = () => {
     <section className="relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <div
-          className="absolute inset-0"
-          style={{ background: "linear-gradient(135deg, #2E636B 0%, #2F5D6A 50%, #304F63 100%)" }}
-        />
+        <div className="absolute inset-0 bg-hero-gradient" />
         <img src={heroBg} alt="" className="w-full h-full object-cover opacity-20 mix-blend-overlay" aria-hidden="true" />
       </div>
 
