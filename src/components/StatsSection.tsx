@@ -1,4 +1,5 @@
 import { Award, Linkedin, Quote, Handshake } from "lucide-react";
+import heroBg from "@/assets/hero-bg-pattern.jpg";
 
 const items = [
   { icon: Award, label: "15+ jaar ervaring" },
@@ -9,8 +10,12 @@ const items = [
 
 const StatsSection = () => {
   return (
-    <section className="bg-hero-gradient py-12 md:py-16">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden py-12 md:py-16">
+      <div className="absolute inset-0">
+        <div className="absolute inset-0 bg-hero-gradient" />
+        <img src={heroBg} alt="" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-overlay" aria-hidden="true" />
+      </div>
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-4">
           {items.map((item, i) => (
             <div key={i} className="text-center">
