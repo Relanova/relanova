@@ -71,6 +71,14 @@ export const CasesResultatenHome = () => {
   );
 };
 
+const serviceSlug = (title: string) =>
+  title
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
 export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean }) => {
   const hoofddienst = {
     label: "Halve dag",
@@ -87,6 +95,7 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
       "Prioriteiten bepalen",
     ],
   };
+
   const diensten = [
     {
       label: "Maandabonnement",
@@ -175,72 +184,108 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
           <p className="text-muted-foreground font-sans">Kies wat jouw organisatie vandaag nodig heeft. Elke samenwerking start met een strategiesessie.</p>
         </div>
 
-        <div
-          className="rounded-2xl p-5 md:p-6 mb-8 text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-          style={{ backgroundColor: "#245163" }}
-        >
-          <div className="flex items-start gap-4">
-            <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-white/10 shrink-0">
-              <HoofdIcon className="w-5 h-5 text-white" />
+        {(() => {
+          const slug = serviceSlug(hoofddienst.title);
+          const inner = (
+            <div className="flex items-start gap-4">
+              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-white/10 shrink-0">
+                <HoofdIcon className="w-5 h-5 text-white" />
+              </div>
+              <div className="flex-1">
+                <span className="block text-[11px] uppercase tracking-widest text-white/70 font-sans font-medium mb-1">
+                  De eerste stap · {hoofddienst.label}
+                </span>
+                <h3 className="font-serif font-bold text-white text-xl md:text-2xl mb-2">{hoofddienst.title}</h3>
+                {compact ? (
+                  <>
+                    <p className="text-white/90 font-sans text-sm leading-relaxed">{hoofddienst.summary}</p>
+                    <span className="inline-block mt-3 text-sm font-sans font-medium text-white/90 underline underline-offset-4 decoration-white/40 group-hover:text-white">
+                      Ontdek deze dienst →
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <ul className="grid gap-y-1.5 gap-x-4 sm:grid-cols-2 mb-2">
+                      {hoofddienst.items.map((it) => (
+                        <li key={it} className="flex items-start gap-2 text-white/90 font-sans text-sm leading-relaxed">
+                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white/70 shrink-0" />
+                          <span>{it}</span>
+                        </li>
+                      ))}
+                    </ul>
+                    <p className="text-white font-sans italic text-sm mt-2">Alles begint met helderheid en richting.</p>
+                  </>
+                )}
+              </div>
             </div>
-            <div className="flex-1">
-              <span className="block text-[11px] uppercase tracking-widest text-white/70 font-sans font-medium mb-1">
-                De eerste stap · {hoofddienst.label}
-              </span>
-              <h3 className="font-serif font-bold text-white text-xl md:text-2xl mb-2">{hoofddienst.title}</h3>
-              {compact ? (
-                <p className="text-white/90 font-sans text-sm leading-relaxed">{hoofddienst.summary}</p>
-              ) : (
-                <>
-                  <ul className="grid gap-y-1.5 gap-x-4 sm:grid-cols-2 mb-2">
-                    {hoofddienst.items.map((it) => (
-                      <li key={it} className="flex items-start gap-2 text-white/90 font-sans text-sm leading-relaxed">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white/70 shrink-0" />
-                        <span>{it}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="text-white font-sans italic text-sm mt-2">Alles begint met helderheid en richting.</p>
-                </>
-              )}
+          );
+          const cls =
+            "group block rounded-2xl p-5 md:p-6 mb-8 text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#245163] scroll-mt-28";
+          return compact ? (
+            <Link to={`/services#${slug}`} className={cls} style={{ backgroundColor: "#245163" }}>
+              {inner}
+            </Link>
+          ) : (
+            <div id={slug} className={cls} style={{ backgroundColor: "#245163" }}>
+              {inner}
             </div>
-          </div>
-        </div>
+          );
+        })()}
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-stretch [&>*:last-child:nth-child(3n-2)]:lg:col-start-2">
-          {diensten.map(({ label, icon: Icon, title, subtitle, items, summary }) => (
-            <div
-              key={title}
-              className="bg-card rounded-lg p-6 border border-border flex flex-col h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-            >
-              <span className="text-[11px] uppercase tracking-widest font-sans font-medium mb-3" style={{ color: "#245163" }}>
-                {label}
-              </span>
-              <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl mb-4" style={{ backgroundColor: "#245163" }}>
-                <Icon className="w-5 h-5 text-white" />
-              </div>
+          {diensten.map(({ label, icon: Icon, title, subtitle, items, summary }) => {
+            const slug = serviceSlug(title);
+            const cardClass =
+              "group bg-card rounded-lg p-6 border border-border flex flex-col h-full transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:border-[#245163]/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#245163] scroll-mt-28";
+            const body = (
+              <>
+                <span className="text-[11px] uppercase tracking-widest font-sans font-medium mb-3" style={{ color: "#245163" }}>
+                  {label}
+                </span>
+                <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl mb-4" style={{ backgroundColor: "#245163" }}>
+                  <Icon className="w-5 h-5 text-white" />
+                </div>
 
-              <h3 className="font-serif font-semibold text-foreground text-lg mb-1">{title}</h3>
-              {compact ? (
-                <p className="text-muted-foreground font-sans text-sm leading-relaxed mt-1">{summary}</p>
-              ) : (
-                <>
-                  {subtitle && (
-                    <p className="text-muted-foreground font-sans text-sm italic mb-2">{subtitle}</p>
-                  )}
-                  <ul className="space-y-1.5 mt-1">
-                    {items.map((it) => (
-                      <li key={it} className="flex items-start gap-2 text-muted-foreground font-sans text-sm leading-relaxed">
-                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#245163" }} />
-                        <span>{it}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </>
-              )}
-            </div>
-          ))}
+                <h3 className="font-serif font-semibold text-foreground text-lg mb-1">{title}</h3>
+                {compact ? (
+                  <>
+                    <p className="text-muted-foreground font-sans text-sm leading-relaxed mt-1">{summary}</p>
+                    <span
+                      className="mt-4 inline-block text-sm font-sans font-medium underline underline-offset-4 decoration-current/40"
+                      style={{ color: "#245163" }}
+                    >
+                      Ontdek deze dienst →
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    {subtitle && (
+                      <p className="text-muted-foreground font-sans text-sm italic mb-2">{subtitle}</p>
+                    )}
+                    <ul className="space-y-1.5 mt-1">
+                      {items.map((it) => (
+                        <li key={it} className="flex items-start gap-2 text-muted-foreground font-sans text-sm leading-relaxed">
+                          <span className="mt-1.5 w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#245163" }} />
+                          <span>{it}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+              </>
+            );
+            return compact ? (
+              <Link key={title} to={`/services#${slug}`} className={cardClass}>
+                {body}
+              </Link>
+            ) : (
+              <div key={title} id={slug} className={cardClass}>
+                {body}
+              </div>
+            );
+          })}
         </div>
+
       </div>
     </section>
   );
