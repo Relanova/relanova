@@ -71,6 +71,14 @@ export const CasesResultatenHome = () => {
   );
 };
 
+const serviceSlug = (title: string) =>
+  title
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
 export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean }) => {
   const hoofddienst = {
     label: "Halve dag",
@@ -87,6 +95,7 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
       "Prioriteiten bepalen",
     ],
   };
+
   const diensten = [
     {
       label: "Maandabonnement",
