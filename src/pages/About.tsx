@@ -57,7 +57,7 @@ const About = () => {
                 </Button>
               </Link>
             </div>
-            <div className="w-full lg:w-[45%] flex justify-center lg:justify-center">
+            <div className="w-full md:w-[45%] flex justify-center">
               <img
                 src={heroPortrait}
                 alt="Monia Ben Tahar, Strategic Advisor & Growth Connector"
