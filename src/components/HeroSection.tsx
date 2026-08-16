@@ -17,15 +17,11 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="text-primary-foreground">
-            <p className="font-sans uppercase text-white text-left" style={{ fontSize: "22px", fontWeight: 700, letterSpacing: "4px", marginBottom: "16px" }}>
-              Relanova
-            </p>
-
             <h1 className="font-sans text-left text-xl md:text-2xl leading-snug mb-5 text-white opacity-100" style={{ fontWeight: 700 }}>
               Strategic Advisor &amp; Growth Connector
             </h1>
             <p className="font-sans text-left text-white max-w-xl mb-3" style={{ fontSize: "22px", fontWeight: 700 }}>
-              Strategie, relaties en executie verbinden<br />om groei te versnellen.
+              Strategie, relaties en executie verbinden om groei te versnellen.
             </p>
 
 
