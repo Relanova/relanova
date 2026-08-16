@@ -35,7 +35,7 @@ const HeroSection = () => {
           </div>
 
           {/* Portrait */}
-          <div className="flex justify-center md:justify-end md:-mt-8">
+          <div className="flex justify-center md:justify-end md:-mt-[57px]">
             <div className="relative">
               <div className="absolute -inset-4 bg-secondary/20 rounded-2xl rotate-3" />
               <img
@@ -48,8 +48,8 @@ const HeroSection = () => {
                 loading="eager"
                 decoding="async"
               />
-              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-10 bg-white border border-border shadow-lg rounded-full px-4 py-1.5 text-xs md:text-sm text-primary font-sans whitespace-nowrap">
-                🌉 BRIDGE-methode <span className="text-primary/60">/ 6-Layer Strategic Framework</span>
+              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-10 bg-white/80 border border-primary/10 shadow-sm rounded-full px-3 py-1 text-[10px] md:text-xs text-primary/80 font-normal font-sans whitespace-nowrap">
+                🌉 BRIDGE-methode <span className="text-primary/50">/ 6-Layer Strategic Framework</span>
               </div>
             </div>
           </div>
