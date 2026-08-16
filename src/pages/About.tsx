@@ -33,10 +33,10 @@ const About = () => {
         path="/about"
       />
       {/* Hero */}
-      <section className="flex items-center min-h-[70vh] md:min-h-[75vh] py-10 md:py-12 lg:py-14 bg-muted/30">
+      <section className="flex items-start min-h-[70vh] md:min-h-[75vh] pt-16 md:pt-20 lg:pt-24 pb-10 md:pb-12 lg:pb-14 bg-muted/30">
         <div className="container mx-auto max-w-[77rem] px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-16 lg:gap-20">
-            <div className="flex-1 flex md:justify-end">
+          <div className="flex flex-col md:flex-row md:items-start gap-10 md:gap-16 lg:gap-20">
+            <div className="flex-1 flex md:justify-end md:mt-4 lg:mt-6">
               <div className="w-full max-w-[32rem]">
                 <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Over Mij</span>
                 <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-3 mb-6">
@@ -59,11 +59,11 @@ const About = () => {
                 </Link>
               </div>
             </div>
-            <div className="flex-1 flex justify-center md:justify-start">
+            <div className="flex-1 flex justify-center md:justify-start md:-mt-6 lg:-mt-8">
               <img
                 src={heroPortrait}
                 alt="Monia Ben Tahar, Strategic Advisor & Growth Connector"
-                className="rounded-2xl shadow-lg w-full max-w-[27rem] object-cover aspect-[3/4]"
+                className="rounded-2xl shadow-lg w-full max-w-[24rem] object-cover aspect-[3/4]"
                 loading="lazy"
                 width={768}
                 height={960}
