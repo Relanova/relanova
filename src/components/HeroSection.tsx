@@ -13,40 +13,35 @@ const HeroSection = () => {
         <img src={heroBg} alt="" className="w-full h-full object-cover opacity-20 mix-blend-overlay" aria-hidden="true" />
       </div>
 
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr_360px] gap-10 md:gap-12 items-start">
           {/* Text Content */}
-          <div className="text-primary-foreground">
-            <h1 className="font-sans text-left text-xl md:text-2xl leading-snug mb-5 text-white opacity-100" style={{ fontWeight: 700 }}>
+          <div className="text-primary-foreground md:-mt-4">
+            <h1 className="font-sans text-left text-[34px] leading-tight mb-5 text-white" style={{ fontWeight: 700 }}>
               Strategic Advisor &amp; Growth Connector
             </h1>
-            <p className="font-sans text-left text-white max-w-xl mb-3" style={{ fontSize: "22px", fontWeight: 700 }}>
+            <p className="font-sans text-left text-white max-w-xl mb-5 text-[28px] leading-snug" style={{ fontWeight: 700 }}>
               Strategie, relaties en executie verbinden om groei te versnellen.
             </p>
-
-
-            <p className="font-sans text-left max-w-xl mb-6 italic text-white/80">
+            <p className="font-sans text-left max-w-xl mb-6 text-[22px] text-white/90">
               Strategie. Relaties. Resultaat.
             </p>
-
-
             <Link to="/contact">
-              <Button variant="hero" size="xl" className="gap-2 whitespace-nowrap">
+              <Button variant="hero" size="xl" className="gap-2 whitespace-nowrap text-lg px-8 py-6 h-auto">
                 Boek een strategiesessie
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
           </div>
 
-
           {/* Portrait */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center md:justify-end md:-mt-8">
             <div className="relative">
               <div className="absolute -inset-4 bg-secondary/20 rounded-2xl rotate-3" />
               <img
                 src={heroPortrait}
                 alt="Monia Ben Tahar - Ecosystem Architect en oprichtster van Relanova"
-                className="relative rounded-2xl shadow-2xl w-full max-w-md object-cover aspect-[3/4]"
+                className="relative rounded-2xl shadow-2xl w-full max-w-[360px] object-cover aspect-[3/4]"
                 width={768}
                 height={960}
                 fetchPriority="high"
