@@ -48,8 +48,8 @@ const HeroSection = () => {
                 loading="eager"
                 decoding="async"
               />
-              <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 z-10 bg-white/80 border border-primary/10 shadow-sm rounded-full px-3 py-1 text-[10px] md:text-xs text-primary/80 font-normal font-sans whitespace-nowrap">
-                🌉 BRIDGE-methode <span className="text-primary/50">/ 6-Layer Strategic Framework</span>
+              <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 z-10 bg-white/80 border border-primary/10 shadow-sm rounded-full px-2.5 py-0.5 text-[9px] md:text-[10px] leading-tight text-primary/80 font-normal font-sans whitespace-nowrap">
+                <span className="text-[8px] md:text-[9px]">🌉</span> BRIDGE-methode <span className="text-primary/50">/ 6-Layer Strategic Framework</span>
               </div>
             </div>
           </div>
