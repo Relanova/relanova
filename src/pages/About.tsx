@@ -34,30 +34,32 @@ const About = () => {
       />
       {/* Hero */}
       <section className="flex items-center min-h-[70vh] md:min-h-[75vh] py-10 md:py-12 lg:py-14 bg-muted/30">
-        <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-8 md:gap-10">
-            <div className="w-full md:w-[48%]">
-              <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Over Mij</span>
-              <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-3 mb-6">
-                Monia Ben Tahar
-              </h1>
-              <p className="text-xl text-secondary font-serif italic mb-6">Strategic Advisor &amp; Growth Connector</p>
-              <p className="text-muted-foreground leading-relaxed mb-4 font-sans">
-                Al meer dan 15 jaar breng ik mensen, merken en organisaties samen. Mijn werk zit op het
-                kruispunt van strategie, marketing en partnerships - altijd met de mens als vertrekpunt.
-              </p>
-              <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
-                Als oprichter van Relanova help ik bedrijven hun verhaal scherp te krijgen, de juiste
-                mensen te vinden en van plannen echte resultaten te maken. Daarvoor gebruik ik de
-                BRIDGE-methode: een rustig kader dat structuur geeft van strategie tot resultaat.
-              </p>
-              <Link to="/contact">
-                <Button variant="navy" size="lg" className="gap-2">
-                  Neem Contact Op <ArrowRight className="w-4 h-4" />
-                </Button>
-              </Link>
+        <div className="container mx-auto max-w-[77rem] px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-center gap-10 md:gap-16 lg:gap-20">
+            <div className="flex-1 flex md:justify-end">
+              <div className="w-full max-w-[32rem]">
+                <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Over Mij</span>
+                <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-3 mb-6">
+                  Monia Ben Tahar
+                </h1>
+                <p className="text-xl text-secondary font-serif italic mb-6">Strategic Advisor &amp; Growth Connector</p>
+                <p className="text-muted-foreground leading-relaxed mb-4 font-sans">
+                  Al meer dan 15 jaar breng ik mensen, merken en organisaties samen. Mijn werk zit op het
+                  kruispunt van strategie, marketing en partnerships - altijd met de mens als vertrekpunt.
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
+                  Als oprichter van Relanova help ik bedrijven hun verhaal scherp te krijgen, de juiste
+                  mensen te vinden en van plannen echte resultaten te maken. Daarvoor gebruik ik de
+                  BRIDGE-methode: een rustig kader dat structuur geeft van strategie tot resultaat.
+                </p>
+                <Link to="/contact">
+                  <Button variant="navy" size="lg" className="gap-2">
+                    Neem Contact Op <ArrowRight className="w-4 h-4" />
+                  </Button>
+                </Link>
+              </div>
             </div>
-            <div className="w-full md:w-[44%] flex justify-center">
+            <div className="flex-1 flex justify-center md:justify-start">
               <img
                 src={heroPortrait}
                 alt="Monia Ben Tahar, Strategic Advisor & Growth Connector"
