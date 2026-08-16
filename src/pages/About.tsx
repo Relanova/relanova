@@ -33,28 +33,30 @@ const About = () => {
         path="/about"
       />
       {/* Hero */}
-      <section className="pt-[90px] pb-[70px] bg-muted/30">
+      <section className="pt-8 pb-12 md:pt-10 md:pb-16 bg-muted/30">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_420px] gap-10 md:gap-[70px] items-center">
-            <div className="max-w-[500px]">
-              <p className="text-xl text-secondary font-serif italic mb-4">Strategic Advisor &amp; Growth Connector</p>
-              <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_360px] gap-10 md:gap-12 items-start">
+            <div className="max-w-[540px]">
+              <p className="text-[34px] leading-tight text-secondary font-serif italic mb-5">
+                Strategic Advisor &amp; Growth Connector
+              </p>
+              <p className="text-[28px] font-bold text-foreground leading-snug mb-5 font-sans">
                 Strategie, relaties en executie verbinden om groei te versnellen.
               </p>
-              <p className="text-xl font-serif font-bold text-foreground mb-6">
+              <p className="text-[22px] font-serif font-bold text-foreground mb-6">
                 Strategie. Relaties. Resultaat.
               </p>
               <Link to="/contact">
-                <Button variant="navy" size="lg" className="gap-2">
-                  Boek een strategiesessie <ArrowRight className="w-4 h-4" />
+                <Button variant="navy" size="lg" className="gap-2 text-lg px-8 py-6 h-auto">
+                  Boek een strategiesessie <ArrowRight className="w-5 h-5" />
                 </Button>
               </Link>
             </div>
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-center md:justify-start md:-mt-8">
               <img
                 src={heroPortrait}
                 alt="Monia Ben Tahar, Strategic Advisor & Growth Connector"
-                className="rounded-2xl shadow-lg w-full max-w-[420px] object-cover aspect-[3/4]"
+                className="rounded-2xl shadow-lg w-full max-w-[360px] object-cover aspect-[3/4]"
                 loading="lazy"
                 width={768}
                 height={960}
