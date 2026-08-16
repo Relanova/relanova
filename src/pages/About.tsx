@@ -33,37 +33,28 @@ const About = () => {
         path="/about"
       />
       {/* Hero */}
-      <section className="flex items-start min-h-[70vh] md:min-h-[75vh] pt-16 md:pt-20 lg:pt-24 pb-10 md:pb-12 lg:pb-14 bg-muted/30">
-        <div className="container mx-auto max-w-[77rem] px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-start gap-10 md:gap-16 lg:gap-20">
-            <div className="flex-1 flex md:justify-end md:-mt-6 lg:-mt-4">
-              <div className="w-full max-w-[32rem]">
-                <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Over Mij</span>
-                <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-3 mb-6">
-                  Monia Ben Tahar
-                </h1>
-                <p className="text-xl text-secondary font-serif italic mb-6">Strategic Advisor &amp; Growth Connector</p>
-                <p className="text-muted-foreground leading-relaxed mb-4 font-sans">
-                  Al meer dan 15 jaar breng ik mensen, merken en organisaties samen. Mijn werk zit op het
-                  kruispunt van strategie, marketing en partnerships - altijd met de mens als vertrekpunt.
-                </p>
-                <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
-                  Als oprichter van Relanova help ik bedrijven hun verhaal scherp te krijgen, de juiste
-                  mensen te vinden en van plannen echte resultaten te maken. Daarvoor gebruik ik de
-                  BRIDGE-methode: een rustig kader dat structuur geeft van strategie tot resultaat.
-                </p>
-                <Link to="/contact">
-                  <Button variant="navy" size="lg" className="gap-2">
-                    Neem Contact Op <ArrowRight className="w-4 h-4" />
-                  </Button>
-                </Link>
-              </div>
+      <section className="pt-[90px] pb-[70px] bg-muted/30">
+        <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_420px] gap-10 md:gap-[70px] items-center">
+            <div className="max-w-[500px]">
+              <p className="text-xl text-secondary font-serif italic mb-4">Strategic Advisor &amp; Growth Connector</p>
+              <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
+                Strategie, relaties en executie verbinden om groei te versnellen.
+              </p>
+              <p className="text-xl font-serif font-bold text-foreground mb-6">
+                Strategie. Relaties. Resultaat.
+              </p>
+              <Link to="/contact">
+                <Button variant="navy" size="lg" className="gap-2">
+                  Boek een strategiesessie <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
             </div>
-            <div className="flex-1 flex justify-center md:justify-start md:-mt-20 lg:-mt-24">
+            <div className="flex justify-center md:justify-start">
               <img
                 src={heroPortrait}
                 alt="Monia Ben Tahar, Strategic Advisor & Growth Connector"
-                className="rounded-2xl shadow-lg w-full max-w-[25rem] object-cover aspect-[3/4]"
+                className="rounded-2xl shadow-lg w-full max-w-[420px] object-cover aspect-[3/4]"
                 loading="lazy"
                 width={768}
                 height={960}
