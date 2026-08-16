@@ -36,7 +36,7 @@ const About = () => {
       <section className="py-16 md:py-20 lg:py-24 bg-muted/30">
         <div className="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-center gap-10 md:gap-[8%] lg:gap-[10%]">
-            <div className="w-full lg:w-[45%]">
+            <div className="w-full md:w-[45%]">
               <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">Over Mij</span>
               <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mt-3 mb-6">
                 Monia Ben Tahar
