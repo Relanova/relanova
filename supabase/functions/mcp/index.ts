@@ -10,7 +10,7 @@ import { defineTool } from "npm:@lovable.dev/mcp-js@0.24.0";
 import { z } from "npm:zod@^4.4.3";
 
 // src/lib/mcp/tools/supabase-client.ts
-import { createClient } from "npm:@supabase/supabase-js@^2.103.3";
+import { createClient as createClient2 } from "npm:@supabase/supabase-js@^2.103.3";
 function env(...names) {
   for (const name of names) {
     const value = globalThis.Deno?.env?.get?.(name) ?? process.env?.[name];
@@ -19,7 +19,7 @@ function env(...names) {
   throw new Error(`Missing environment variable: ${names.join(" / ")}`);
 }
 function createPublicClient() {
-  return createClient(
+  return createClient2(
     env("SUPABASE_URL"),
     env("SUPABASE_PUBLISHABLE_KEY", "SUPABASE_ANON_KEY"),
     { auth: { persistSession: false, autoRefreshToken: false } }
@@ -51,7 +51,6 @@ var list_news_posts_default = defineTool({
 
 // src/lib/mcp/tools/get-news-post.ts
 import { defineTool as defineTool2 } from "npm:@lovable.dev/mcp-js@0.24.0";
-import { createClient as createClient2 } from "npm:@supabase/supabase-js@^2.103.3";
 import { z as z2 } from "npm:zod@^4.4.3";
 var get_news_post_default = defineTool2({
   name: "get_news_post",
@@ -62,7 +61,7 @@ var get_news_post_default = defineTool2({
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: async ({ slug }) => {
-    const supabase = createClient2(
+    const supabase = createClient(
       process.env.SUPABASE_URL,
       process.env.SUPABASE_PUBLISHABLE_KEY,
       { auth: { persistSession: false, autoRefreshToken: false } }
