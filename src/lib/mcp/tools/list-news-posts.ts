@@ -1,6 +1,6 @@
 import { defineTool } from "@lovable.dev/mcp-js";
-import { createClient } from "@supabase/supabase-js";
 import { z } from "zod";
+import { createPublicClient } from "./supabase-client";
 
 export default defineTool({
   name: "list_news_posts",
@@ -12,11 +12,7 @@ export default defineTool({
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: async ({ limit, category }) => {
-    const supabase = createClient(
-      process.env.SUPABASE_URL!,
-      process.env.SUPABASE_PUBLISHABLE_KEY!,
-      { auth: { persistSession: false, autoRefreshToken: false } },
-    );
+    const supabase = createPublicClient();
     let q = supabase
       .from("blog_posts")
       .select("slug,title,excerpt,category,tags,author,published_at,cover_image_url")
