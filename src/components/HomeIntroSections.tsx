@@ -296,7 +296,7 @@ export const ZoCrerenWijWaarde = () => {
   const pijlers = [
     { icon: Compass, title: "Strategie", text: "duidelijke koers, scherpe keuzes." },
     { icon: HeartHandshake, title: "Relaties", text: "de juiste mensen, waardevolle connecties." },
-    { icon: Zap, title: "Uitvoering", text: "van plan naar actie, van actie naar resultaat." },
+    { icon: Zap, title: "Actie", text: "van plan naar actie, van actie naar resultaat." },
   ];
   const begrippen = [
     { icon: HandshakeIcon, label: "Vertrouwen" },
@@ -357,7 +357,7 @@ export const WaaromRelanova = () => {
     { icon: Handshake, title: "Partnerships", text: "De juiste samenwerkingen die nieuwe deuren openen en waarde creëren." },
     { icon: Target, title: "Stakeholders", text: "Alle neuzen in dezelfde richting, intern en extern." },
     { icon: Network, title: "Strategisch netwerk", text: "De juiste mensen en organisaties rond je bedrijf verbinden." },
-    { icon: Rocket, title: "Uitvoering", text: "Van strategie naar actie zodat plannen resultaat opleveren." },
+    { icon: Rocket, title: "Actie", text: "Van strategie naar actie zodat plannen resultaat opleveren." },
   ];
   return (
     <section className="section-padding bg-background">
@@ -415,7 +415,7 @@ export const HerkenJeDit = () => {
 
 export const WieHelpIk = () => {
   const items = [
-    "Kleine bedrijven, KMO's en corporates die strategie willen verbinden met concrete uitvoering",
+    "Kleine bedrijven, KMO's en corporates die strategie willen verbinden met concrete actie",
     "Teams die senior expertise zoeken - van strategische koers tot dagelijkse implementatie",
     "Organisaties die positionering en partnerships willen laten renderen",
     "Leiders die samenwerkingen willen opbouwen die echt bijdragen, ondersteund door een actief netwerk",
@@ -441,7 +441,7 @@ export const WieHelpIk = () => {
           ))}
         </ul>
         <p className="text-foreground font-sans mt-8 italic">
-          Elke organisatie is welkom die klaar is voor groei zonder ruis - van visie tot uitvoering.
+          Elke organisatie is welkom die klaar is voor groei zonder ruis - van visie tot actie.
         </p>
         <p className="text-foreground font-sans mt-4 italic">
           Bij Relanova begint elke strategie bij de mens. Omdat AI kan analyseren, maar alleen mensen kunnen verbinden.
