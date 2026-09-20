@@ -21,7 +21,7 @@ const HeroSection = () => {
               Strategic Advisor &amp; Growth Connector
             </h1>
             <p className="font-sans text-left text-white max-w-xl mb-5 text-[28px] leading-snug" style={{ fontWeight: 700 }}>
-              Strategie, relaties en executie verbinden om groei te versnellen.
+              Strategie, relaties en uitvoering verbinden om groei te versnellen.
             </p>
             <p className="font-sans text-left max-w-xl mb-6 text-[22px] text-white/90">
               Strategie. Relaties. Resultaat.
