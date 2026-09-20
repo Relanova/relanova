@@ -8,6 +8,25 @@ import { defineMcp } from "npm:@lovable.dev/mcp-js@0.24.0";
 // src/lib/mcp/tools/list-news-posts.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.24.0";
 import { z } from "npm:zod@^4.4.3";
+
+// src/lib/mcp/tools/supabase-client.ts
+import { createClient } from "npm:@supabase/supabase-js@^2.103.3";
+function env(...names) {
+  for (const name of names) {
+    const value = globalThis.Deno?.env?.get?.(name) ?? process.env?.[name];
+    if (value) return value;
+  }
+  throw new Error(`Missing environment variable: ${names.join(" / ")}`);
+}
+function createPublicClient() {
+  return createClient(
+    env("SUPABASE_URL"),
+    env("SUPABASE_PUBLISHABLE_KEY", "SUPABASE_ANON_KEY"),
+    { auth: { persistSession: false, autoRefreshToken: false } }
+  );
+}
+
+// src/lib/mcp/tools/list-news-posts.ts
 var list_news_posts_default = defineTool({
   name: "list_news_posts",
   title: "List news posts",
@@ -18,11 +37,7 @@ var list_news_posts_default = defineTool({
   },
   annotations: { readOnlyHint: true, idempotentHint: true, openWorldHint: false },
   handler: async ({ limit, category }) => {
-    const supabase = createClient(
-      process.env.SUPABASE_URL,
-      process.env.SUPABASE_PUBLISHABLE_KEY,
-      { auth: { persistSession: false, autoRefreshToken: false } }
-    );
+    const supabase = createPublicClient();
     let q = supabase.from("blog_posts").select("slug,title,excerpt,category,tags,author,published_at,cover_image_url").eq("published", true).order("published_at", { ascending: false }).limit(limit ?? 10);
     if (category) q = q.eq("category", category);
     const { data, error } = await q;
