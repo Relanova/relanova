@@ -7,7 +7,6 @@ import { defineMcp } from "npm:@lovable.dev/mcp-js@0.24.0";
 
 // src/lib/mcp/tools/list-news-posts.ts
 import { defineTool } from "npm:@lovable.dev/mcp-js@0.24.0";
-import { createClient } from "npm:@supabase/supabase-js@^2.103.3";
 import { z } from "npm:zod@^4.4.3";
 var list_news_posts_default = defineTool({
   name: "list_news_posts",

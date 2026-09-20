@@ -1,6 +1,6 @@
 import { defineTool } from "@lovable.dev/mcp-js";
-import { createClient } from "@supabase/supabase-js";
 import { z } from "zod";
+import { createPublicClient } from "./supabase-client";
 
 export default defineTool({
   name: "list_news_posts",
