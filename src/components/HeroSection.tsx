@@ -21,7 +21,7 @@ const HeroSection = () => {
               Strategic Advisor &amp; Growth Connector
             </h1>
             <p className="font-sans text-left text-white max-w-xl mb-5 text-[28px] leading-snug" style={{ fontWeight: 700 }}>
-              Strategie, relaties en uitvoering verbinden om groei te versnellen.
+              Strategie, relaties en actie verbinden om groei te versnellen.
             </p>
             <p className="font-sans text-left max-w-xl mb-6 text-[22px] text-white/90">
               Strategie. Relaties. Resultaat.
@@ -98,7 +98,7 @@ export const HeroServicesBlock = () => {
             <div>
               <h3 className="font-serif font-semibold text-primary-foreground text-lg">Marketing & Team Versterking</h3>
               <p>
-                Een goed plan is niets zonder uitvoering. Of je nu tijdelijke versterking nodig hebt, marketing
+                Een goed plan is niets zonder actie. Of je nu tijdelijke versterking nodig hebt, marketing
                 expertise zoekt of je team wilt versterken: ik zorg voor de kennis en capaciteit om je plannen
                 tot leven te brengen.
               </p>

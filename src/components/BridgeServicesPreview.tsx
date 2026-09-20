@@ -60,11 +60,11 @@ const BridgeServicesPreview = () => {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <span className="text-sm font-semibold text-secondary uppercase tracking-widest font-sans">De BRIDGE-methode</span>
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mt-3 mb-4">
-            De BRIDGE-methode: Van strategie naar uitvoering
+            De BRIDGE-methode: Van strategie naar actie
           </h2>
           <p className="text-muted-foreground leading-relaxed font-sans">
             Om groei te stimuleren werk ik met de BRIDGE-methode - een gefaseerde aanpak die
-            strategie verbindt met uitvoering:
+            strategie verbindt met actie:
           </p>
           <p className="text-muted-foreground leading-relaxed font-sans mt-2">
             Elke laag apart inzetbaar, of als complete reis. Start waar jij bent.
@@ -120,7 +120,7 @@ const BridgeServicesPreview = () => {
 
         <div className="max-w-3xl mx-auto mb-10 bg-muted/40 border border-border rounded-xl p-5 text-center">
           <p className="font-sans text-foreground">
-            <span className="text-destructive font-semibold">❌</span> Strategie blijft hangen in presentaties → <span className="text-secondary font-semibold">✅</span> Met BRIDGE: uitvoering die gemeten en bijgestuurd wordt.
+            <span className="text-destructive font-semibold">❌</span> Strategie blijft hangen in presentaties → <span className="text-secondary font-semibold">✅</span> Met BRIDGE: actie die gemeten en bijgestuurd wordt.
           </p>
         </div>
 

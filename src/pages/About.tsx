@@ -39,7 +39,7 @@ const About = () => {
             <div className="max-w-[500px]">
               <p className="text-xl text-secondary font-serif italic mb-4">Strategic Advisor &amp; Growth Connector</p>
               <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
-                Strategie, relaties en executie verbinden om groei te versnellen.
+                Strategie, relaties en actie verbinden om groei te versnellen.
               </p>
               <p className="text-xl font-serif font-bold text-foreground mb-6">
                 Strategie. Relaties. Resultaat.
