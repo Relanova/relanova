@@ -296,7 +296,7 @@ export const ZoCrerenWijWaarde = () => {
   const pijlers = [
     { icon: Compass, title: "Strategie", text: "duidelijke koers, scherpe keuzes." },
     { icon: HeartHandshake, title: "Relaties", text: "de juiste mensen, waardevolle connecties." },
-    { icon: Zap, title: "Executie", text: "van plan naar actie, van actie naar resultaat." },
+    { icon: Zap, title: "Uitvoering", text: "van plan naar actie, van actie naar resultaat." },
   ];
   const begrippen = [
     { icon: HandshakeIcon, label: "Vertrouwen" },
@@ -357,7 +357,7 @@ export const WaaromRelanova = () => {
     { icon: Handshake, title: "Partnerships", text: "De juiste samenwerkingen die nieuwe deuren openen en waarde creëren." },
     { icon: Target, title: "Stakeholders", text: "Alle neuzen in dezelfde richting, intern en extern." },
     { icon: Network, title: "Strategisch netwerk", text: "De juiste mensen en organisaties rond je bedrijf verbinden." },
-    { icon: Rocket, title: "Executie", text: "Van strategie naar actie zodat plannen resultaat opleveren." },
+    { icon: Rocket, title: "Uitvoering", text: "Van strategie naar actie zodat plannen resultaat opleveren." },
   ];
   return (
     <section className="section-padding bg-background">
