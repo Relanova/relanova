@@ -50,7 +50,7 @@ const About = () => {
                 </Button>
               </Link>
             </div>
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-center md:justify-start md:-mt-6 lg:-mt-7">
               <img
                 src={heroPortrait}
                 alt="Monia Ben Tahar, Strategic Advisor & Growth Connector"
