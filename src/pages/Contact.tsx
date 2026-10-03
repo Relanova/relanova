@@ -219,7 +219,7 @@ const Contact = () => {
                     </div>
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-1.5 font-sans">Dienst Interesse</label>
+                    <label className="block text-sm font-medium text-foreground mb-1.5 font-sans">Waarmee kan ik je helpen?</label>
                     <select
                       value={formData.service}
                       onChange={(e) => setFormData({ ...formData, service: e.target.value })}
