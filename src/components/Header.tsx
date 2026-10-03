@@ -55,7 +55,7 @@ const Header = () => {
             <span>+32 488 285 886</span>
           </a>
           <Link to="/contact">
-            <Button variant="navy" size="default">Gratis Gesprek</Button>
+            <Button variant="navy" size="default">Boek een strategiesessie</Button>
           </Link>
         </div>
 
@@ -89,7 +89,7 @@ const Header = () => {
             ))}
             <div className="pt-3 border-t border-border mt-2">
               <Link to="/contact" onClick={() => setIsOpen(false)}>
-                <Button variant="navy" className="w-full">Gratis Gesprek</Button>
+                <Button variant="navy" className="w-full">Boek een strategiesessie</Button>
               </Link>
             </div>
           </nav>

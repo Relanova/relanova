@@ -94,7 +94,7 @@ const Contact = () => {
     <Layout>
       <SEO
         title="Contact - Plan een gratis gesprek | Relanova"
-        description="Boek een gratis 15-minuten strategiegesprek met Monia Ben Tahar of stuur direct een bericht via het contactformulier."
+        description="Boek een strategiesessie met Monia Ben Tahar of stuur direct een bericht via het contactformulier."
         path="/contact"
       />
       <section className="section-padding bg-muted/30">
@@ -105,7 +105,7 @@ const Contact = () => {
               Laten we kennismaken
             </h1>
             <p className="text-muted-foreground font-sans text-lg">
-              Boek een gratis 15-minuten strategiegesprek of stuur me direct een bericht.
+              Boek een strategiesessie of stuur me direct een bericht.
             </p>
           </div>
 

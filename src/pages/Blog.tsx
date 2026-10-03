@@ -39,7 +39,7 @@ const Blog = () => {
     <Layout>
       <SEO
         title="Blog & Inzichten | Relanova"
-        description="Artikelen, analyses en tips over strategie, partnerships en ecosysteem-gedreven groei."
+        description="Artikelen, analyses en tips over strategie, partnerships en strategische groei."
         path="/blog"
       />
       <section className="section-padding bg-muted/30">
@@ -49,7 +49,7 @@ const Blog = () => {
             Strategische inzichten voor groei
           </h1>
           <p className="text-muted-foreground text-lg font-sans">
-            Artikelen, analyses en praktische tips over strategie, partnerships en ecosysteem-gedreven groei.
+            Artikelen, analyses en praktische tips over strategie, partnerships en strategische groei.
           </p>
         </div>
       </section>

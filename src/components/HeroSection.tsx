@@ -141,7 +141,7 @@ export const HeroCTABlock = ({ hideSecondary = false }: { hideSecondary?: boolea
           </p>
           <Link to="/contact">
             <Button variant="hero" size="xl" className="gap-2 shadow-lg">
-              Plan een vrijblijvend kennismakingsgesprek
+              Boek een strategiesessie
               <ArrowRight className="w-5 h-5" />
             </Button>
           </Link>
