@@ -17,12 +17,12 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_360px] gap-10 md:gap-12 items-start">
           {/* Text Content */}
           <div className="text-primary-foreground md:-mt-4">
-            <h1 className="font-sans text-left text-[34px] leading-tight mb-5 text-white" style={{ fontWeight: 700 }}>
+            <p className="font-sans text-left text-white/90 mb-3 text-[16px] uppercase tracking-wide" style={{ fontWeight: 500 }}>
               Strategic Advisor &amp; Growth Connector
-            </h1>
-            <p className="font-sans text-left text-white max-w-xl mb-5 text-[28px] leading-snug" style={{ fontWeight: 700 }}>
-              Strategie, relaties en uitvoering verbinden om groei te versnellen.
             </p>
+            <h1 className="font-sans text-left text-[34px] leading-tight mb-5 text-white max-w-xl" style={{ fontWeight: 700 }}>
+              Strategie, relaties en uitvoering verbinden om groei te versnellen.
+            </h1>
             <p className="font-sans text-left max-w-xl mb-6 text-[22px] text-white/90">
               Strategie. Relaties. Resultaat.
             </p>
