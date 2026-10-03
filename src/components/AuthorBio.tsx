@@ -29,7 +29,7 @@ const AuthorBio = () => {
           Monia Ben Tahar
         </h3>
         <p className="text-sm text-muted-foreground font-sans mb-3">
-          Ecosystem Architect & oprichter van Relanova · 10+ jaar ervaring in
+          Strategic Advisor & Growth Connector, oprichter van Relanova · 15+ jaar ervaring in
           strategische bedrijfsontwikkeling, positionering en partnerships ·
           Bedenker van de BRIDGE-methode
         </p>
