@@ -27,7 +27,7 @@ const HeroSection = () => {
               Strategie. Relaties. Resultaat.
             </p>
             <p className="font-sans text-left text-white/80 text-lg leading-relaxed">
-              Wil je groeien maar mis je richting, de juiste connecties of slagkracht? Laten we erover praten.
+              Wil je groeien maar mis je richting, de juiste connecties of slagkracht? Laten we praten.
             </p>
             <Link to="/contact">
               <Button variant="hero" size="xl" className="gap-2 whitespace-nowrap text-lg px-8 py-6 h-auto">
