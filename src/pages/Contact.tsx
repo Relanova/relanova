@@ -94,7 +94,7 @@ const Contact = () => {
     <Layout>
       <SEO
         title="Contact - Plan een gratis gesprek | Relanova"
-        description="Boek een strategiesessie met Monia Ben Tahar of stuur direct een bericht via het contactformulier."
+        description="Plan een vrijblijvende kennismaking met Monia Ben Tahar of stuur direct een bericht via het contactformulier."
         path="/contact"
       />
       <section className="section-padding bg-muted/30">
