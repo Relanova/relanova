@@ -32,7 +32,7 @@ const HeroSection = () => {
             </p>
             <Link to="/contact">
               <Button variant="hero" size="xl" className="gap-2 whitespace-nowrap text-lg px-8 py-6 h-auto">
-                Boek een strategiesessie
+                Plan een kennismaking
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
