@@ -105,7 +105,7 @@ const Contact = () => {
               Laten we kennismaken
             </h1>
             <p className="text-muted-foreground font-sans text-lg">
-              Boek een strategiesessie of stuur me direct een bericht.
+              Plan een vrijblijvende kennismaking of stuur me direct een bericht.
             </p>
           </div>
 
