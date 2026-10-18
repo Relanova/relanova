@@ -15,7 +15,7 @@ interface ContactConfirmationProps {
 const ContactConfirmationEmail = ({ name, message }: ContactConfirmationProps) => (
   <Html lang="nl" dir="ltr">
     <Head />
-    <Preview>Bedankt voor uw bericht — we nemen binnen 24 uur contact met u op</Preview>
+    <Preview>Bedankt voor uw bericht. We nemen binnen 24 uur contact met u op.</Preview>
     <Body style={main}>
       <Container style={container}>
         <Section style={header}>
