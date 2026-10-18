@@ -93,7 +93,7 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Contact - Plan een vrijblijvende kennismaking | Relanova"
+        title="Relanova | Contact, strategisch advies en partnerships"
         description="Plan een vrijblijvende kennismaking of stuur direct een bericht via het contactformulier."
         path="/contact"
       />

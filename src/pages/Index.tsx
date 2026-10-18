@@ -10,8 +10,8 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Relanova | Human Touch in a Connected World"
-        description="Strategisch advies, positionering en partnerships via de BRIDGE-methode. Monia Ben Tahar helpt bedrijven duurzaam groeien."
+        title="Relanova | Monia Ben Tahar, strategisch advies en partnerships"
+        description="Strategisch advies, partnerships en sponsoring. Relanova verbindt strategie, mensen en uitvoering zodat bedrijven groeien."
         path="/"
       />
       <HeroSection />

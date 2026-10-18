@@ -38,7 +38,7 @@ const Blog = () => {
   return (
     <Layout>
       <SEO
-        title="Blog & Inzichten | Relanova"
+        title="Relanova | Blog & Inzichten, strategisch advies en partnerships"
         description="Artikelen, analyses en tips over strategie, partnerships en strategische groei."
         path="/blog"
       />

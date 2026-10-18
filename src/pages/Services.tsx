@@ -7,7 +7,7 @@ const Services = () => {
   return (
     <Layout>
       <SEO
-        title="Diensten & Pakketten - BRIDGE-methode | Relanova"
+        title="Relanova | Diensten & Pakketten, strategisch advies en partnerships"
         description="Strategie, positionering, partnerships en groei. Ontdek de BRIDGE-diensten en pakketten van Relanova voor KMO's en scale-ups."
         path="/services"
       />

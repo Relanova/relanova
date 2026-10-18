@@ -37,7 +37,7 @@ const About = () => {
   return (
     <Layout>
       <SEO
-        title="Over Monia Ben Tahar - Strategic Advisor | Relanova"
+        title="Relanova | Over Monia Ben Tahar, strategisch advies en partnerships"
         description="Maak kennis met Monia Ben Tahar, oprichter van Relanova. Strategie, mensen en relaties samenbrengen zodat er groei ontstaat."
         path="/about"
       />
