@@ -94,11 +94,11 @@ const About = () => {
                 Niet vanop de zijlijn maar mee aan tafel.
               </p>
               <p className="text-muted-foreground leading-relaxed font-sans text-base md:text-[17px]">
-                Ik beweeg al jaren in de wereld van sport, sponsoring en business, ook aan de
-                bestuurstafel. Ik was bestuurslid bij Filou BC Oostende, richtte de Business Ladies van
-                SV Zulte-Waregem op en zetel in het provinciaal bestuur van Cycling Vlaanderen. Die
-                plekken leerden me hoe beslissingen vallen en hoe je mensen en organisaties
-                samenbrengt die elkaar nodig hebben.
+                Ik beweeg al jaren in de wereld van sport, sponsoring en business. Niet alleen als
+                partner maar ook aan de bestuurstafel: ik was bestuurslid bij Filou BC Oostende,
+                richtte de Business Ladies van SV Zulte-Waregem op en zetel in het provinciaal bestuur
+                van Cycling Vlaanderen. Die plekken leerden me hoe beslissingen vallen en hoe je
+                mensen en organisaties samenbrengt die elkaar nodig hebben.
               </p>
             </div>
             <aside
