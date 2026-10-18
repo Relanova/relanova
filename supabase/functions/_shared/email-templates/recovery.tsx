@@ -36,7 +36,7 @@ export const RecoveryEmail = ({
           Nieuw wachtwoord instellen
         </Button>
         <Text style={footer}>
-          Heb je dit niet aangevraagd? Dan kan je deze e-mail negeren — je
+          Heb je dit niet aangevraagd? Dan kan je deze e-mail negeren. Je
           wachtwoord blijft ongewijzigd.
         </Text>
       </Container>
