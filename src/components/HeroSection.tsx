@@ -137,7 +137,7 @@ export const HeroCTABlock = ({ hideSecondary = false }: { hideSecondary?: boolea
             Klaar om samen te groeien?
           </h2>
           <p className="font-sans text-primary-foreground/80 max-w-2xl -mt-2">
-            De eerste stap naar helderheid en richting. Laten we vrijblijvend kennismaken en ontdekken waar jouw kansen liggen.
+            De eerste stap naar helderheid en richting. Boek een strategiesessie en ontdek waar jouw kansen liggen.
           </p>
           <Link to="/contact">
             <Button variant="hero" size="xl" className="gap-2 shadow-lg">
