@@ -18,7 +18,7 @@ const ContactNotificationEmail = ({
 }: ContactNotificationProps) => (
   <Html lang="nl" dir="ltr">
     <Head />
-    <Preview>Nieuw contactformulier — {name || 'onbekend'}</Preview>
+    <Preview>Nieuw contactformulier - {name || 'onbekend'}</Preview>
     <Body style={main}>
       <Container style={container}>
         <Heading style={h1}>📬 Nieuw bericht via relanova.be</Heading>
@@ -51,7 +51,7 @@ const Field = ({ label, value }: { label: string; value?: string }) => (
       <Text style={fieldLabel}>{label}</Text>
     </Column>
     <Column>
-      <Text style={fieldValue}>{value || '—'}</Text>
+      <Text style={fieldValue}>{value || '-'}</Text>
     </Column>
   </Row>
 )
@@ -59,7 +59,7 @@ const Field = ({ label, value }: { label: string; value?: string }) => (
 export const template = {
   component: ContactNotificationEmail,
   subject: (data: Record<string, any>) =>
-    `Nieuw contactformulier — ${data.name || 'onbekend'}`,
+    `Nieuw contactformulier - ${data.name || 'onbekend'}`,
   displayName: 'Contact notificatie (Monia)',
   previewData: {
     name: 'Jan Janssens',
