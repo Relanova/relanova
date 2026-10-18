@@ -2,7 +2,7 @@ import { Award, Linkedin, Quote, Handshake } from "lucide-react";
 import heroBg from "@/assets/hero-bg-pattern.jpg";
 
 const items = [
-  { icon: Award, label: "15+ jaar ervaring" },
+  { icon: Award, label: "Jarenlange ervaring" },
   { icon: Linkedin, label: "Aanbevolen op LinkedIn" },
   { icon: Quote, label: "40+ LinkedIn-aanbevelingen" },
   { icon: Handshake, label: "Strategisch en operationeel inzetbaar" },
