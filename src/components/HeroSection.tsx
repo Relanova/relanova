@@ -44,7 +44,7 @@ const HeroSection = () => {
               <div className="absolute -inset-4 bg-secondary/20 rounded-2xl rotate-3" />
               <img
                 src={heroPortrait}
-                alt="Monia Ben Tahar - Ecosystem Architect en oprichtster van Relanova"
+                alt="Monia Ben Tahar - Strategic Advisor & Growth Connector en oprichtster van Relanova"
                 className="relative rounded-2xl shadow-2xl w-full max-w-[360px] object-cover aspect-[3/4]"
                 width={768}
                 height={960}
