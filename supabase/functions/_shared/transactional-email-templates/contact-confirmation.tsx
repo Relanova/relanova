@@ -47,7 +47,7 @@ const ContactConfirmationEmail = ({ name, message }: ContactConfirmationProps) =
         <Text style={signature}>
           Hartelijke groet,<br />
           <strong>Monia Ben Tahar</strong><br />
-          Ecosystem Architect — Relanova
+          Ecosystem Architect - Relanova
         </Text>
       </Container>
     </Body>
@@ -56,7 +56,7 @@ const ContactConfirmationEmail = ({ name, message }: ContactConfirmationProps) =
 
 export const template = {
   component: ContactConfirmationEmail,
-  subject: 'Bedankt voor uw bericht — Relanova',
+  subject: 'Bedankt voor uw bericht - Relanova',
   displayName: 'Contact bevestiging (visitor)',
   previewData: { name: 'Jan', message: 'Ik wil graag een gratis strategiegesprek inplannen.' },
 } satisfies TemplateEntry
