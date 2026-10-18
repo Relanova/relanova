@@ -106,7 +106,7 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
       items: [
         "Twee strategiesessies",
         "Telefonische sparring",
-        "WhatsApp",
+        "WhatsApp - wekelijks contact",
         "Review van documenten",
         "Snelle strategische ondersteuning",
         "Fractional CMO",
