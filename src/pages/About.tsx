@@ -27,7 +27,7 @@ const bridgeLayers = [
 const kortOverMij = [
   "15+ jaar ervaring in strategie, marketing en partnerships",
   "Werkte voor Nationale Loterij, BASE, Telenet, Nestlé, Vandemoortele e.a.",
-  "Met Relanova o.a.: Orange, Unilin, Herta, BNXT League",
+  "Met Relanova o.a. Orange, Unilin, Herta, BNXT League",
   "Van strategie en positionering tot sponsoring, activatie en events",
   "Board member van de Belgian Sponsorship Association",
 ];
