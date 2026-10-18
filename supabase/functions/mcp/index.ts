@@ -77,7 +77,7 @@ import { defineTool as defineTool3 } from "npm:@lovable.dev/mcp-js@0.24.0";
 var INFO = {
   name: "Relanova",
   founder: "Monia Ben Tahar",
-  role: "Ecosystem Architect",
+  role: "Strategic Advisor & Growth Connector",
   location: "Sint-Baafs-Vijve, Belgi\xEB",
   email: "monia@mbtconsult.be",
   phone: "+32 488 285 886",

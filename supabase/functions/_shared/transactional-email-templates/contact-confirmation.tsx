@@ -47,7 +47,7 @@ const ContactConfirmationEmail = ({ name, message }: ContactConfirmationProps) =
         <Text style={signature}>
           Hartelijke groet,<br />
           <strong>Monia Ben Tahar</strong><br />
-          Ecosystem Architect - Relanova
+          Strategic Advisor & Growth Connector - Relanova
         </Text>
       </Container>
     </Body>
