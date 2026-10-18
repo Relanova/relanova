@@ -24,6 +24,15 @@ const bridgeLayers = [
   { letter: "E", title: "Expansie & Evaluatie", detail: "We voeren uit, meten en sturen bij." },
 ];
 
+const kortOverMij = [
+  "15+ jaar ervaring in strategie, marketing en partnerships",
+  "Werkte voor Nationale Loterij, BASE, Telenet, Nestlé, Vandemoortele e.a.",
+  "Met Relanova vandaag: Orange, Unilin, Herta, BNXT League",
+  "Van strategie en positionering tot sponsoring, activatie en events",
+  "Board member van de Belgian Sponsorship Association",
+];
+
+
 const About = () => {
   return (
     <Layout>
@@ -33,15 +42,17 @@ const About = () => {
         path="/about"
       />
       {/* Hero */}
-      <section className="pt-[90px] pb-[70px] bg-muted/30">
+      <section className="pt-[90px] pb-[60px] bg-muted/30">
         <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_420px] gap-10 md:gap-[70px] items-center">
-            <div className="max-w-[500px]">
-              <p className="text-xl text-secondary font-serif italic mb-4">Strategic Advisor &amp; Growth Connector</p>
-              <p className="text-muted-foreground leading-relaxed mb-6 font-sans">
-                Strategie, relaties en uitvoering verbinden om groei te versnellen.
+            <div className="max-w-[520px]">
+              <p className="text-xs uppercase tracking-widest text-secondary font-semibold font-sans mb-3">
+                Strategic Advisor &amp; Growth Connector
               </p>
-              <p className="text-xl font-serif font-bold text-foreground mb-6">
+              <h1 className="font-serif font-bold text-foreground text-4xl sm:text-5xl lg:text-[56px] leading-[1.05] mb-4">
+                Monia Ben Tahar
+              </h1>
+              <p className="text-lg text-muted-foreground font-sans mb-6">
                 Strategie. Relaties. Resultaat.
               </p>
               <Link to="/contact">
@@ -55,7 +66,7 @@ const About = () => {
                 src={heroPortrait}
                 alt="Monia Ben Tahar, Strategic Advisor & Growth Connector"
                 className="rounded-2xl shadow-lg w-full max-w-[420px] object-cover aspect-[3/4]"
-                loading="lazy"
+                loading="eager"
                 width={768}
                 height={960}
               />
@@ -63,6 +74,54 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Verhaal */}
+      <section className="section-padding bg-background">
+        <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-10 lg:gap-[60px] items-start">
+            <div className="max-w-[680px] space-y-5">
+              <p className="text-muted-foreground leading-relaxed font-sans text-base md:text-[17px]">
+                Ik ben Monia. Al meer dan 15 jaar help ik bedrijven groeien met strategie, de juiste
+                mensen en sterke partnerships. Ik werkte voor merken als de Nationale Loterij, BASE,
+                Telenet, Nestlé en Vandemoortele e.a., van strategie en positionering tot sponsoring,
+                activatie en events. Met Relanova help ik vandaag bedrijven zoals Orange, Unilin, Herta
+                en de BNXT League verder.
+              </p>
+              <p className="text-muted-foreground leading-relaxed font-sans text-base md:text-[17px]">
+                In al die jaren heb ik één ding geleerd. Een goede strategie is maar het begin. Het
+                verschil maak je door de juiste mensen samen te brengen en ervoor te zorgen dat plannen
+                ook echt gebeuren. Ik verbind, ik open deuren en ik blijf tot het resultaat er staat.
+                Niet vanop de zijlijn maar mee aan tafel.
+              </p>
+              <p className="text-muted-foreground leading-relaxed font-sans text-base md:text-[17px]">
+                Ik beweeg al jaren in de wereld van sport, sponsoring en business, ook aan de
+                bestuurstafel. Ik was bestuurslid bij Filou BC Oostende, richtte de Business Ladies van
+                SV Zulte-Waregem op en zetel in het provinciaal bestuur van Cycling Vlaanderen. Die
+                plekken leerden me hoe beslissingen vallen en hoe je mensen en organisaties
+                samenbrengt die elkaar nodig hebben.
+              </p>
+            </div>
+            <aside
+              className="bg-card border border-border rounded-xl p-6 lg:sticky lg:top-28"
+              aria-label="Kort over mij"
+            >
+              <h2 className="font-serif font-bold text-foreground text-lg mb-4">Kort over mij</h2>
+              <ul className="space-y-3">
+                {kortOverMij.map((item, i) => (
+                  <li
+                    key={i}
+                    className="flex gap-2.5 text-sm text-muted-foreground font-sans leading-relaxed"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-secondary shrink-0 mt-[7px]" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
 
       {/* Mission & Vision */}
       <section className="section-padding bg-background">
