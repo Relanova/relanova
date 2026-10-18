@@ -369,13 +369,14 @@ export const WaaromRelanova = () => {
           <p className="text-muted-foreground font-sans">Voor groei die blijvend impact maakt.</p>
         </div>
         <ul className="grid gap-4 md:grid-cols-2 [&>li:last-child:nth-child(odd)]:md:col-span-2 [&>li:last-child:nth-child(odd)]:md:max-w-md [&>li:last-child:nth-child(odd)]:md:mx-auto [&>li:last-child:nth-child(odd)]:md:w-full">
-          {items.map(({ icon: Icon, title, text }) => (
+          {items.map(({ icon: Icon, title, question, text }) => (
             <li key={title} className="flex items-start gap-4 bg-card rounded-lg p-5 border border-border">
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-secondary/10 shrink-0">
                 <Icon className="w-5 h-5 text-secondary" />
               </div>
               <div>
                 <h3 className="font-serif font-semibold text-foreground mb-1">{title}</h3>
+                <p className="font-sans text-sm italic mb-1" style={{ color: "#245163" }}>{question}</p>
                 <p className="text-muted-foreground font-sans text-sm">{text}</p>
               </div>
             </li>
