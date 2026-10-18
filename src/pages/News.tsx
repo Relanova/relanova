@@ -37,7 +37,7 @@ const News = () => {
   return (
     <Layout>
       <SEO
-        title="Nieuws & Inzichten | Relanova"
+        title="Relanova | Nieuws & Inzichten, strategisch advies en partnerships"
         description="Praktische artikels over strategie, partnerships en duurzame groei door Monia Ben Tahar."
         path="/nieuws"
       />
