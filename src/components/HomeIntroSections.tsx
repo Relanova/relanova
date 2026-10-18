@@ -294,9 +294,9 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
 
 export const ZoCrerenWijWaarde = () => {
   const pijlers = [
-    { icon: Compass, title: "Strategie", text: "duidelijke koers, scherpe keuzes." },
-    { icon: HeartHandshake, title: "Relaties", text: "de juiste mensen, waardevolle connecties." },
-    { icon: Zap, title: "Uitvoering", text: "van plan naar actie, van actie naar resultaat." },
+    { icon: Compass, title: "Strategie", text: "Duidelijke koers, scherpe keuzes." },
+    { icon: HeartHandshake, title: "Relaties", text: "De juiste mensen, waardevolle connecties." },
+    { icon: Zap, title: "Uitvoering", text: "Van plan naar actie, van actie naar resultaat." },
   ];
   const begrippen = [
     { icon: HandshakeIcon, label: "Vertrouwen" },
