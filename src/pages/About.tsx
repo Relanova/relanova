@@ -84,8 +84,8 @@ const About = () => {
                 Ik ben Monia. Al meer dan 15 jaar help ik bedrijven groeien met strategie, de juiste
                 mensen en sterke partnerships. Ik werkte voor merken als de Nationale Loterij, BASE,
                 Telenet, Nestlé, Vandemoortele e.a., van strategie en positionering tot sponsoring,
-                activatie en events. Met Relanova help ik vandaag bedrijven zoals Orange, Unilin, Herta
-                en de BNXT League verder.
+                activatie en events. Met Relanova help ik vandaag onder meer bedrijven zoals Orange,
+                Unilin, Herta en de BNXT League verder.
               </p>
               <p className="text-muted-foreground leading-relaxed font-sans text-base md:text-[17px]">
                 In al die jaren heb ik één ding geleerd. Een goede strategie is maar het begin. Het
