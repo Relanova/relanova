@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useEffect } from "react";
 
 interface SEOProps {
   title: string;
@@ -16,7 +17,15 @@ const DEFAULT_IMAGE =
 const SEO = ({ title, description, path, ogType = "website", image, jsonLd }: SEOProps) => {
   const url = `${BASE_URL}${path}`;
   const ogImage = image || DEFAULT_IMAGE;
-  const ldArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+  const ldArray = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : []) : [];
+
+  // De vaste metadata uit index.html blijft in de meegeleverde HTML staan als vangnet
+  // voor scrapers zonder JavaScript, maar in een browser moet de pagina-eigen tekst winnen.
+  useEffect(() => {
+    const statisch =
+      'meta[name="description"]:not([data-rh]), meta[property="og:description"]:not([data-rh]), meta[name="twitter:description"]:not([data-rh])';
+    document.querySelectorAll(statisch).forEach((el) => el.remove());
+  }, []);
 
   return (
     <Helmet>
