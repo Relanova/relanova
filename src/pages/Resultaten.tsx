@@ -199,7 +199,7 @@ const Resultaten = () => {
   return (
     <Layout>
       <SEO
-        title="Resultaten | Relanova"
+        title="Relanova | Resultaten, strategisch advies en partnerships"
         description="Echte verhalen. Meetbare impact. Aanbevelingen van partners en opdrachtgevers over de samenwerking met Monia Ben Tahar."
         path="/resultaten"
       />
