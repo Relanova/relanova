@@ -23,9 +23,6 @@ const HeroSection = () => {
             <h1 className="font-sans text-left text-[34px] leading-tight mb-5 text-white max-w-xl" style={{ fontWeight: 700 }}>
               Strategie, relaties en uitvoering verbinden om groei te versnellen.
             </h1>
-            <p className="font-sans text-left max-w-xl mb-6 text-[22px] text-white/90">
-              Strategie. Relaties. Resultaat.
-            </p>
             <p className="font-sans text-left text-white/80 text-lg leading-relaxed">
               Wil je groeien maar mis je richting, de juiste connecties of slagkracht?<br />
               Laten we praten.
