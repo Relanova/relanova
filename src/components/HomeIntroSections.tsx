@@ -270,6 +270,15 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
                         </li>
                       ))}
                     </ul>
+                    {title === "Strategisch adviseur" && (
+                      <Link
+                        to="/about#bridge-methode"
+                        className="mt-4 inline-block text-sm font-sans font-medium underline underline-offset-4 decoration-current/40"
+                        style={{ color: "#245163" }}
+                      >
+                        Ontdek onze aanpak: de BRIDGE-methode →
+                      </Link>
+                    )}
                   </>
                 )}
               </>
@@ -286,17 +295,6 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
           })}
         </div>
 
-        {!compact && (
-          <div className="text-center mt-10">
-            <Link
-              to="/about#bridge-methode"
-              className="inline-block text-white font-semibold px-8 py-3 rounded-lg transition-colors hover:opacity-90"
-              style={{ backgroundColor: "#245163" }}
-            >
-              Ontdek onze aanpak: de BRIDGE-methode →
-            </Link>
-          </div>
-        )}
 
       </div>
     </section>
