@@ -26,9 +26,6 @@ const TestimonialsSection = () => {
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-3">
             Vertrouwd door merken en organisaties
           </h2>
-          <p className="text-muted-foreground font-sans">
-            Bekende organisaties en leiders vertrouwen op Relanova.
-          </p>
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-x-8 gap-y-10 items-center justify-items-center max-w-5xl mx-auto">
