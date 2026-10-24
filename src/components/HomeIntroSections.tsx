@@ -276,7 +276,7 @@ export const ManierenOmSamenTeWerken = ({ compact = false }: { compact?: boolean
                         className="mt-4 inline-block text-sm font-sans font-medium underline underline-offset-4 decoration-current/40"
                         style={{ color: "#245163" }}
                       >
-                        Ontdek onze aanpak: de BRIDGE-methode →
+                        Bekijk de BRIDGE-methode →
                       </Link>
                     )}
                   </>
