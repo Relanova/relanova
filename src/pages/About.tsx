@@ -170,7 +170,7 @@ const About = () => {
       </section>
 
       {/* BRIDGE-methode */}
-      <section className="py-12 bg-background">
+      <section id="bridge-methode" className="py-12 bg-background scroll-mt-24">
         <div className="container mx-auto max-w-3xl">
           <div className="text-center mb-6">
             <span className="text-xs font-semibold text-secondary uppercase tracking-widest font-sans">Het raamwerk</span>
