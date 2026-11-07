@@ -122,6 +122,22 @@ const About = () => {
         </div>
       </section>
 
+      {/* Waar Relanova voor staat */}
+      <section className="pb-16 bg-background">
+        <div className="max-w-[1180px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-[680px] border-l-2 border-secondary/30 pl-6">
+            <h2 className="font-serif font-bold text-foreground text-xl md:text-2xl mb-3">
+              Waar Relanova voor staat
+            </h2>
+            <p className="text-muted-foreground leading-relaxed font-sans text-base md:text-[17px]">
+              De naam zegt het al: <span className="italic text-secondary">Rela</span> staat voor
+              relaties, <span className="italic text-secondary">nova</span> voor nieuw. Relanova staat
+              voor een vernieuwde manier van denken waarin echte waarde ontstaat door relaties,
+              verbinding en vertrouwen.
+            </p>
+          </div>
+        </div>
+      </section>
 
       {/* Mission & Vision */}
       <section className="section-padding bg-background">
